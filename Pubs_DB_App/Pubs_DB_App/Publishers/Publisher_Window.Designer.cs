@@ -38,15 +38,15 @@
             this.label4 = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btn_jobs = new System.Windows.Forms.Button();
+            this.btn_titles = new System.Windows.Forms.Button();
+            this.btn_employees = new System.Windows.Forms.Button();
+            this.btn_sales = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
+            this.btn_newJob = new System.Windows.Forms.Button();
+            this.btn_submitTitle = new System.Windows.Forms.Button();
+            this.btn_hireEmployees = new System.Windows.Forms.Button();
+            this.btn_makeSale = new System.Windows.Forms.Button();
             this.rtb_info = new System.Windows.Forms.RichTextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.btn_edit = new System.Windows.Forms.Button();
@@ -61,9 +61,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(28, 29);
+            this.label1.Location = new System.Drawing.Point(37, 36);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(81, 13);
+            this.label1.Size = new System.Drawing.Size(108, 17);
             this.label1.TabIndex = 0;
             this.label1.Text = "Publisher Name";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -71,60 +72,67 @@
             // tb_pubname
             // 
             this.tb_pubname.Enabled = false;
-            this.tb_pubname.Location = new System.Drawing.Point(115, 26);
+            this.tb_pubname.Location = new System.Drawing.Point(153, 32);
+            this.tb_pubname.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tb_pubname.Name = "tb_pubname";
-            this.tb_pubname.Size = new System.Drawing.Size(163, 20);
+            this.tb_pubname.Size = new System.Drawing.Size(216, 22);
             this.tb_pubname.TabIndex = 1;
             this.tb_pubname.TextChanged += new System.EventHandler(this.tb_pubname_TextChanged);
             // 
             // tb_city
             // 
             this.tb_city.Enabled = false;
-            this.tb_city.Location = new System.Drawing.Point(115, 78);
+            this.tb_city.Location = new System.Drawing.Point(153, 96);
+            this.tb_city.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tb_city.Name = "tb_city";
-            this.tb_city.Size = new System.Drawing.Size(163, 20);
+            this.tb_city.Size = new System.Drawing.Size(216, 22);
             this.tb_city.TabIndex = 3;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(85, 81);
+            this.label2.Location = new System.Drawing.Point(113, 100);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(24, 13);
+            this.label2.Size = new System.Drawing.Size(31, 17);
             this.label2.TabIndex = 2;
             this.label2.Text = "City";
             // 
             // tb_state
             // 
             this.tb_state.Enabled = false;
-            this.tb_state.Location = new System.Drawing.Point(115, 104);
+            this.tb_state.Location = new System.Drawing.Point(153, 128);
+            this.tb_state.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tb_state.Name = "tb_state";
-            this.tb_state.Size = new System.Drawing.Size(163, 20);
+            this.tb_state.Size = new System.Drawing.Size(216, 22);
             this.tb_state.TabIndex = 5;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(77, 107);
+            this.label3.Location = new System.Drawing.Point(103, 132);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(32, 13);
+            this.label3.Size = new System.Drawing.Size(41, 17);
             this.label3.TabIndex = 4;
             this.label3.Text = "State";
             // 
             // tb_country
             // 
             this.tb_country.Enabled = false;
-            this.tb_country.Location = new System.Drawing.Point(115, 130);
+            this.tb_country.Location = new System.Drawing.Point(153, 160);
+            this.tb_country.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tb_country.Name = "tb_country";
-            this.tb_country.Size = new System.Drawing.Size(163, 20);
+            this.tb_country.Size = new System.Drawing.Size(216, 22);
             this.tb_country.TabIndex = 7;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(66, 133);
+            this.label4.Location = new System.Drawing.Point(88, 164);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(43, 13);
+            this.label4.Size = new System.Drawing.Size(57, 17);
             this.label4.TabIndex = 6;
             this.label4.Text = "Country";
             // 
@@ -132,139 +140,153 @@
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Location = new System.Drawing.Point(303, 26);
+            this.tabControl1.Location = new System.Drawing.Point(404, 32);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(250, 268);
+            this.tabControl1.Size = new System.Drawing.Size(333, 330);
             this.tabControl1.TabIndex = 12;
             // 
             // tabPage1
             // 
-            this.tabPage1.Controls.Add(this.button1);
-            this.tabPage1.Controls.Add(this.button2);
-            this.tabPage1.Controls.Add(this.button3);
-            this.tabPage1.Controls.Add(this.button4);
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Controls.Add(this.btn_jobs);
+            this.tabPage1.Controls.Add(this.btn_titles);
+            this.tabPage1.Controls.Add(this.btn_employees);
+            this.tabPage1.Controls.Add(this.btn_sales);
+            this.tabPage1.Location = new System.Drawing.Point(4, 25);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(242, 242);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage1.Size = new System.Drawing.Size(325, 301);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "View";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // btn_jobs
             // 
-            this.button1.Location = new System.Drawing.Point(6, 68);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(230, 50);
-            this.button1.TabIndex = 17;
-            this.button1.Text = "Jobs";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btn_jobs.Location = new System.Drawing.Point(8, 84);
+            this.btn_jobs.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_jobs.Name = "btn_jobs";
+            this.btn_jobs.Size = new System.Drawing.Size(307, 62);
+            this.btn_jobs.TabIndex = 17;
+            this.btn_jobs.Text = "Jobs";
+            this.btn_jobs.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btn_titles
             // 
-            this.button2.Location = new System.Drawing.Point(6, 124);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(230, 50);
-            this.button2.TabIndex = 19;
-            this.button2.Text = "Titles";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btn_titles.Location = new System.Drawing.Point(8, 153);
+            this.btn_titles.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_titles.Name = "btn_titles";
+            this.btn_titles.Size = new System.Drawing.Size(307, 62);
+            this.btn_titles.TabIndex = 19;
+            this.btn_titles.Text = "Titles";
+            this.btn_titles.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // btn_employees
             // 
-            this.button3.Location = new System.Drawing.Point(6, 12);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(230, 50);
-            this.button3.TabIndex = 16;
-            this.button3.Text = "Employees";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btn_employees.Location = new System.Drawing.Point(8, 15);
+            this.btn_employees.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_employees.Name = "btn_employees";
+            this.btn_employees.Size = new System.Drawing.Size(307, 62);
+            this.btn_employees.TabIndex = 16;
+            this.btn_employees.Text = "Employees";
+            this.btn_employees.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // btn_sales
             // 
-            this.button4.Location = new System.Drawing.Point(6, 180);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(230, 50);
-            this.button4.TabIndex = 18;
-            this.button4.Text = "Sales";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btn_sales.Location = new System.Drawing.Point(8, 222);
+            this.btn_sales.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_sales.Name = "btn_sales";
+            this.btn_sales.Size = new System.Drawing.Size(307, 62);
+            this.btn_sales.TabIndex = 18;
+            this.btn_sales.Text = "Sales";
+            this.btn_sales.UseVisualStyleBackColor = true;
             // 
             // tabPage2
             // 
-            this.tabPage2.Controls.Add(this.button5);
-            this.tabPage2.Controls.Add(this.button6);
-            this.tabPage2.Controls.Add(this.button7);
-            this.tabPage2.Controls.Add(this.button8);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Controls.Add(this.btn_newJob);
+            this.tabPage2.Controls.Add(this.btn_submitTitle);
+            this.tabPage2.Controls.Add(this.btn_hireEmployees);
+            this.tabPage2.Controls.Add(this.btn_makeSale);
+            this.tabPage2.Location = new System.Drawing.Point(4, 25);
+            this.tabPage2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(242, 242);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage2.Size = new System.Drawing.Size(325, 301);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Update";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // button5
+            // btn_newJob
             // 
-            this.button5.Location = new System.Drawing.Point(6, 68);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(230, 50);
-            this.button5.TabIndex = 13;
-            this.button5.Text = "Create New Job";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.btn_newJob.Location = new System.Drawing.Point(8, 84);
+            this.btn_newJob.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_newJob.Name = "btn_newJob";
+            this.btn_newJob.Size = new System.Drawing.Size(307, 62);
+            this.btn_newJob.TabIndex = 13;
+            this.btn_newJob.Text = "Create New Job";
+            this.btn_newJob.UseVisualStyleBackColor = true;
+            this.btn_newJob.Click += new System.EventHandler(this.button5_Click);
             // 
-            // button6
+            // btn_submitTitle
             // 
-            this.button6.Location = new System.Drawing.Point(6, 124);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(230, 50);
-            this.button6.TabIndex = 15;
-            this.button6.Text = "Submit Title";
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
+            this.btn_submitTitle.Location = new System.Drawing.Point(8, 153);
+            this.btn_submitTitle.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_submitTitle.Name = "btn_submitTitle";
+            this.btn_submitTitle.Size = new System.Drawing.Size(307, 62);
+            this.btn_submitTitle.TabIndex = 15;
+            this.btn_submitTitle.Text = "Submit Title";
+            this.btn_submitTitle.UseVisualStyleBackColor = true;
+            this.btn_submitTitle.Click += new System.EventHandler(this.button6_Click);
             // 
-            // button7
+            // btn_hireEmployees
             // 
-            this.button7.Location = new System.Drawing.Point(6, 12);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(230, 50);
-            this.button7.TabIndex = 12;
-            this.button7.Text = "Hire Employees";
-            this.button7.UseVisualStyleBackColor = true;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
+            this.btn_hireEmployees.Location = new System.Drawing.Point(8, 15);
+            this.btn_hireEmployees.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_hireEmployees.Name = "btn_hireEmployees";
+            this.btn_hireEmployees.Size = new System.Drawing.Size(307, 62);
+            this.btn_hireEmployees.TabIndex = 12;
+            this.btn_hireEmployees.Text = "Hire Employees";
+            this.btn_hireEmployees.UseVisualStyleBackColor = true;
+            this.btn_hireEmployees.Click += new System.EventHandler(this.button7_Click);
             // 
-            // button8
+            // btn_makeSale
             // 
-            this.button8.Location = new System.Drawing.Point(6, 180);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(230, 50);
-            this.button8.TabIndex = 14;
-            this.button8.Text = "Make Sale";
-            this.button8.UseVisualStyleBackColor = true;
-            this.button8.Click += new System.EventHandler(this.button8_Click);
+            this.btn_makeSale.Location = new System.Drawing.Point(8, 222);
+            this.btn_makeSale.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_makeSale.Name = "btn_makeSale";
+            this.btn_makeSale.Size = new System.Drawing.Size(307, 62);
+            this.btn_makeSale.TabIndex = 14;
+            this.btn_makeSale.Text = "Make Sale";
+            this.btn_makeSale.UseVisualStyleBackColor = true;
+            this.btn_makeSale.Click += new System.EventHandler(this.button8_Click);
             // 
             // rtb_info
             // 
             this.rtb_info.Enabled = false;
-            this.rtb_info.Location = new System.Drawing.Point(115, 156);
+            this.rtb_info.Location = new System.Drawing.Point(153, 192);
+            this.rtb_info.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.rtb_info.Name = "rtb_info";
-            this.rtb_info.Size = new System.Drawing.Size(163, 109);
+            this.rtb_info.Size = new System.Drawing.Size(216, 133);
             this.rtb_info.TabIndex = 13;
             this.rtb_info.Text = "";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(84, 199);
+            this.label5.Location = new System.Drawing.Point(112, 245);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(25, 13);
+            this.label5.Size = new System.Drawing.Size(31, 17);
             this.label5.TabIndex = 14;
             this.label5.Text = "Info";
             // 
             // btn_edit
             // 
-            this.btn_edit.Location = new System.Drawing.Point(31, 271);
+            this.btn_edit.Location = new System.Drawing.Point(41, 334);
+            this.btn_edit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_edit.Name = "btn_edit";
-            this.btn_edit.Size = new System.Drawing.Size(115, 23);
+            this.btn_edit.Size = new System.Drawing.Size(153, 28);
             this.btn_edit.TabIndex = 15;
             this.btn_edit.Text = "Edit";
             this.btn_edit.UseVisualStyleBackColor = true;
@@ -273,9 +295,10 @@
             // btn_save
             // 
             this.btn_save.Enabled = false;
-            this.btn_save.Location = new System.Drawing.Point(163, 271);
+            this.btn_save.Location = new System.Drawing.Point(217, 334);
+            this.btn_save.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_save.Name = "btn_save";
-            this.btn_save.Size = new System.Drawing.Size(115, 23);
+            this.btn_save.Size = new System.Drawing.Size(153, 28);
             this.btn_save.TabIndex = 16;
             this.btn_save.Text = "Save";
             this.btn_save.UseVisualStyleBackColor = true;
@@ -284,26 +307,28 @@
             // tb_pubid
             // 
             this.tb_pubid.Enabled = false;
-            this.tb_pubid.Location = new System.Drawing.Point(115, 52);
+            this.tb_pubid.Location = new System.Drawing.Point(153, 64);
+            this.tb_pubid.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tb_pubid.Name = "tb_pubid";
-            this.tb_pubid.Size = new System.Drawing.Size(163, 20);
+            this.tb_pubid.Size = new System.Drawing.Size(216, 22);
             this.tb_pubid.TabIndex = 18;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(45, 55);
+            this.label6.Location = new System.Drawing.Point(60, 68);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(64, 13);
+            this.label6.Size = new System.Drawing.Size(84, 17);
             this.label6.TabIndex = 17;
             this.label6.Text = "Publisher ID";
             this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // Publisher_Window
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(580, 321);
+            this.ClientSize = new System.Drawing.Size(773, 395);
             this.Controls.Add(this.tb_pubid);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.btn_save);
@@ -319,6 +344,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.tb_pubname);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Publisher_Window";
             this.Text = "Publisher_Window";
             this.tabControl1.ResumeLayout(false);
@@ -342,14 +368,14 @@
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btn_newJob;
+        private System.Windows.Forms.Button btn_submitTitle;
+        private System.Windows.Forms.Button btn_hireEmployees;
+        private System.Windows.Forms.Button btn_makeSale;
+        private System.Windows.Forms.Button btn_jobs;
+        private System.Windows.Forms.Button btn_titles;
+        private System.Windows.Forms.Button btn_employees;
+        private System.Windows.Forms.Button btn_sales;
         private System.Windows.Forms.RichTextBox rtb_info;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button btn_edit;

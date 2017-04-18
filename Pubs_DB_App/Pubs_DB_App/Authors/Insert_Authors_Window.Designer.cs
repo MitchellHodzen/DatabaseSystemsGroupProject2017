@@ -28,35 +28,35 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tb_state = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.tb_contracts = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.tb_zip = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.tb_city = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.tb_pubid = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.tb_country = new System.Windows.Forms.TextBox();
+            this.tb_address = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.tb_state = new System.Windows.Forms.TextBox();
+            this.tb_phoneNum = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.tb_city = new System.Windows.Forms.TextBox();
+            this.tb_authorID = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.tb_pubname = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btn_submit = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // textBox1
+            // tb_state
             // 
-            this.textBox1.Enabled = false;
-            this.textBox1.Location = new System.Drawing.Point(151, 200);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(216, 22);
-            this.textBox1.TabIndex = 60;
+            this.tb_state.Enabled = false;
+            this.tb_state.Location = new System.Drawing.Point(151, 200);
+            this.tb_state.Margin = new System.Windows.Forms.Padding(4);
+            this.tb_state.Name = "tb_state";
+            this.tb_state.Size = new System.Drawing.Size(216, 22);
+            this.tb_state.TabIndex = 60;
             // 
             // label5
             // 
@@ -68,14 +68,14 @@
             this.label5.TabIndex = 59;
             this.label5.Text = "State";
             // 
-            // textBox3
+            // tb_contracts
             // 
-            this.textBox3.Enabled = false;
-            this.textBox3.Location = new System.Drawing.Point(151, 266);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(216, 22);
-            this.textBox3.TabIndex = 58;
+            this.tb_contracts.Enabled = false;
+            this.tb_contracts.Location = new System.Drawing.Point(151, 266);
+            this.tb_contracts.Margin = new System.Windows.Forms.Padding(4);
+            this.tb_contracts.Name = "tb_contracts";
+            this.tb_contracts.Size = new System.Drawing.Size(216, 22);
+            this.tb_contracts.TabIndex = 58;
             // 
             // label8
             // 
@@ -87,14 +87,14 @@
             this.label8.TabIndex = 57;
             this.label8.Text = "Number of Contracts";
             // 
-            // textBox4
+            // tb_zip
             // 
-            this.textBox4.Enabled = false;
-            this.textBox4.Location = new System.Drawing.Point(151, 232);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(216, 22);
-            this.textBox4.TabIndex = 56;
+            this.tb_zip.Enabled = false;
+            this.tb_zip.Location = new System.Drawing.Point(151, 232);
+            this.tb_zip.Margin = new System.Windows.Forms.Padding(4);
+            this.tb_zip.Name = "tb_zip";
+            this.tb_zip.Size = new System.Drawing.Size(216, 22);
+            this.tb_zip.TabIndex = 56;
             // 
             // label9
             // 
@@ -106,14 +106,14 @@
             this.label9.TabIndex = 55;
             this.label9.Text = "Zip Code";
             // 
-            // textBox5
+            // tb_city
             // 
-            this.textBox5.Enabled = false;
-            this.textBox5.Location = new System.Drawing.Point(151, 172);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(216, 22);
-            this.textBox5.TabIndex = 54;
+            this.tb_city.Enabled = false;
+            this.tb_city.Location = new System.Drawing.Point(151, 172);
+            this.tb_city.Margin = new System.Windows.Forms.Padding(4);
+            this.tb_city.Name = "tb_city";
+            this.tb_city.Size = new System.Drawing.Size(216, 22);
+            this.tb_city.TabIndex = 54;
             // 
             // label10
             // 
@@ -144,14 +144,14 @@
             this.label6.TabIndex = 51;
             this.label6.Text = "Last Name";
             // 
-            // tb_country
+            // tb_address
             // 
-            this.tb_country.Enabled = false;
-            this.tb_country.Location = new System.Drawing.Point(151, 140);
-            this.tb_country.Margin = new System.Windows.Forms.Padding(4);
-            this.tb_country.Name = "tb_country";
-            this.tb_country.Size = new System.Drawing.Size(216, 22);
-            this.tb_country.TabIndex = 50;
+            this.tb_address.Enabled = false;
+            this.tb_address.Location = new System.Drawing.Point(151, 140);
+            this.tb_address.Margin = new System.Windows.Forms.Padding(4);
+            this.tb_address.Name = "tb_address";
+            this.tb_address.Size = new System.Drawing.Size(216, 22);
+            this.tb_address.TabIndex = 50;
             // 
             // label4
             // 
@@ -163,14 +163,14 @@
             this.label4.TabIndex = 49;
             this.label4.Text = "Address";
             // 
-            // tb_state
+            // tb_phoneNum
             // 
-            this.tb_state.Enabled = false;
-            this.tb_state.Location = new System.Drawing.Point(151, 108);
-            this.tb_state.Margin = new System.Windows.Forms.Padding(4);
-            this.tb_state.Name = "tb_state";
-            this.tb_state.Size = new System.Drawing.Size(216, 22);
-            this.tb_state.TabIndex = 48;
+            this.tb_phoneNum.Enabled = false;
+            this.tb_phoneNum.Location = new System.Drawing.Point(151, 108);
+            this.tb_phoneNum.Margin = new System.Windows.Forms.Padding(4);
+            this.tb_phoneNum.Name = "tb_phoneNum";
+            this.tb_phoneNum.Size = new System.Drawing.Size(216, 22);
+            this.tb_phoneNum.TabIndex = 48;
             // 
             // label3
             // 
@@ -182,14 +182,14 @@
             this.label3.TabIndex = 47;
             this.label3.Text = "Phone Number ";
             // 
-            // tb_city
+            // tb_authorID
             // 
-            this.tb_city.Enabled = false;
-            this.tb_city.Location = new System.Drawing.Point(151, 76);
-            this.tb_city.Margin = new System.Windows.Forms.Padding(4);
-            this.tb_city.Name = "tb_city";
-            this.tb_city.Size = new System.Drawing.Size(216, 22);
-            this.tb_city.TabIndex = 46;
+            this.tb_authorID.Enabled = false;
+            this.tb_authorID.Location = new System.Drawing.Point(151, 76);
+            this.tb_authorID.Margin = new System.Windows.Forms.Padding(4);
+            this.tb_authorID.Name = "tb_authorID";
+            this.tb_authorID.Size = new System.Drawing.Size(216, 22);
+            this.tb_authorID.TabIndex = 46;
             // 
             // label2
             // 
@@ -220,41 +220,41 @@
             this.label1.TabIndex = 43;
             this.label1.Text = "First Name";
             // 
-            // button3
+            // btn_submit
             // 
-            this.button3.Location = new System.Drawing.Point(8, 313);
-            this.button3.Margin = new System.Windows.Forms.Padding(4);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(359, 28);
-            this.button3.TabIndex = 61;
-            this.button3.Text = "Submit";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btn_submit.Location = new System.Drawing.Point(8, 313);
+            this.btn_submit.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_submit.Name = "btn_submit";
+            this.btn_submit.Size = new System.Drawing.Size(359, 28);
+            this.btn_submit.TabIndex = 61;
+            this.btn_submit.Text = "Submit";
+            this.btn_submit.UseVisualStyleBackColor = true;
             // 
-            // Form1
+            // Insert_Authors_Window
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(383, 351);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.btn_submit);
+            this.Controls.Add(this.tb_state);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.tb_contracts);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.tb_zip);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.tb_city);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.tb_pubid);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.tb_country);
+            this.Controls.Add(this.tb_address);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.tb_state);
+            this.Controls.Add(this.tb_phoneNum);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.tb_city);
+            this.Controls.Add(this.tb_authorID);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.tb_pubname);
             this.Controls.Add(this.label1);
-            this.Name = "Form1";
+            this.Name = "Insert_Authors_Window";
             this.Text = "Create New Author";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -263,24 +263,24 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tb_state;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox tb_contracts;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox tb_zip;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox tb_city;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox tb_pubid;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox tb_country;
+        private System.Windows.Forms.TextBox tb_address;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox tb_state;
+        private System.Windows.Forms.TextBox tb_phoneNum;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox tb_city;
+        private System.Windows.Forms.TextBox tb_authorID;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox tb_pubname;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btn_submit;
     }
 }

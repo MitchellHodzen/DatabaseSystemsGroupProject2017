@@ -21,5 +21,15 @@ namespace Pubs_DB_App
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tb_city_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
