@@ -105,5 +105,10 @@ namespace Pubs_DB_App
         {
 
         }
+
+        private void dataGridView4_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
