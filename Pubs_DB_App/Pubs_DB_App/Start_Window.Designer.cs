@@ -86,6 +86,8 @@
             this.checkBox18 = new System.Windows.Forms.CheckBox();
             this.button9 = new System.Windows.Forms.Button();
             this.dataGridView4 = new System.Windows.Forms.DataGridView();
+            this.button10 = new System.Windows.Forms.Button();
+            this.button11 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
@@ -570,6 +572,7 @@
             // 
             // splitContainer4.Panel1
             // 
+            this.splitContainer4.Panel1.Controls.Add(this.button10);
             this.splitContainer4.Panel1.Controls.Add(this.button9);
             this.splitContainer4.Panel1.Controls.Add(this.checkBox18);
             this.splitContainer4.Panel1.Controls.Add(this.checkBox17);
@@ -586,6 +589,7 @@
             // 
             // splitContainer4.Panel2
             // 
+            this.splitContainer4.Panel2.Controls.Add(this.button11);
             this.splitContainer4.Panel2.Controls.Add(this.dataGridView4);
             this.splitContainer4.Size = new System.Drawing.Size(757, 330);
             this.splitContainer4.SplitterDistance = 251;
@@ -707,8 +711,26 @@
             this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView4.Location = new System.Drawing.Point(-1, -3);
             this.dataGridView4.Name = "dataGridView4";
-            this.dataGridView4.Size = new System.Drawing.Size(510, 333);
+            this.dataGridView4.Size = new System.Drawing.Size(510, 304);
             this.dataGridView4.TabIndex = 0;
+            // 
+            // button10
+            // 
+            this.button10.Location = new System.Drawing.Point(4, 304);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(244, 23);
+            this.button10.TabIndex = 16;
+            this.button10.Text = "Add a Store";
+            this.button10.UseVisualStyleBackColor = true;
+            // 
+            // button11
+            // 
+            this.button11.Location = new System.Drawing.Point(3, 304);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(496, 23);
+            this.button11.TabIndex = 1;
+            this.button11.Text = "Select Store";
+            this.button11.UseVisualStyleBackColor = true;
             // 
             // Start_Window
             // 
@@ -812,6 +834,8 @@
         private System.Windows.Forms.CheckBox checkBox16;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.DataGridView dataGridView4;
+        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button button11;
     }
 }
 
