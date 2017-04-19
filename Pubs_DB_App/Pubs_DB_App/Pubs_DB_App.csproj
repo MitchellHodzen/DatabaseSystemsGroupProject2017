@@ -64,6 +64,30 @@
     <Compile Include="ConnectionWindow.Designer.cs">
       <DependentUpon>ConnectionWindow.cs</DependentUpon>
     </Compile>
+    <Compile Include="Stores_Sales\Insert_Window_Sale.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stores_Sales\Insert_Window_Sale.Designer.cs">
+      <DependentUpon>Insert_Window_Sale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stores_Sales\Insert_Window_Store.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stores_Sales\Insert_Window_Store.Designer.cs">
+      <DependentUpon>Insert_Window_Store.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stores_Sales\Sales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stores_Sales\Sales.Designer.cs">
+      <DependentUpon>Sales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stores_Sales\Stores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stores_Sales\Stores.Designer.cs">
+      <DependentUpon>Stores.cs</DependentUpon>
+    </Compile>
     <Compile Include="Titles\Title_Info_Window.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -128,6 +152,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ConnectionWindow.resx">
       <DependentUpon>ConnectionWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stores_Sales\Insert_Window_Sale.resx">
+      <DependentUpon>Insert_Window_Sale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stores_Sales\Insert_Window_Store.resx">
+      <DependentUpon>Insert_Window_Store.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stores_Sales\Sales.resx">
+      <DependentUpon>Sales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stores_Sales\Stores.resx">
+      <DependentUpon>Stores.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Titles\Title_Info_Window.resx">
       <DependentUpon>Title_Info_Window.cs</DependentUpon>
