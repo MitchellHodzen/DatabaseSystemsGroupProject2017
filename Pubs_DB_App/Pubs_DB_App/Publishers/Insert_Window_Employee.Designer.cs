@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.comboBox_job = new System.Windows.Forms.ComboBox();
+            this.combo_job = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -45,8 +45,8 @@
             this.tb_pubID = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.tb_hireDateY = new System.Windows.Forms.TextBox();
-            this.comboBox_hireDateD = new System.Windows.Forms.ComboBox();
-            this.comboBox_hiredateM = new System.Windows.Forms.ComboBox();
+            this.combo_hireDateD = new System.Windows.Forms.ComboBox();
+            this.combo_hiredateM = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
             this.tb_joblvl = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -55,14 +55,14 @@
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // comboBox_job
+            // combo_job
             // 
-            this.comboBox_job.FormattingEnabled = true;
-            this.comboBox_job.Location = new System.Drawing.Point(105, 55);
-            this.comboBox_job.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.comboBox_job.Name = "comboBox_job";
-            this.comboBox_job.Size = new System.Drawing.Size(160, 24);
-            this.comboBox_job.TabIndex = 0;
+            this.combo_job.FormattingEnabled = true;
+            this.combo_job.Location = new System.Drawing.Point(105, 55);
+            this.combo_job.Margin = new System.Windows.Forms.Padding(4);
+            this.combo_job.Name = "combo_job";
+            this.combo_job.Size = new System.Drawing.Size(160, 24);
+            this.combo_job.TabIndex = 0;
             // 
             // label1
             // 
@@ -97,7 +97,7 @@
             // tb_fName
             // 
             this.tb_fName.Location = new System.Drawing.Point(105, 22);
-            this.tb_fName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_fName.Margin = new System.Windows.Forms.Padding(4);
             this.tb_fName.Name = "tb_fName";
             this.tb_fName.Size = new System.Drawing.Size(155, 22);
             this.tb_fName.TabIndex = 4;
@@ -105,7 +105,7 @@
             // tb_lName
             // 
             this.tb_lName.Location = new System.Drawing.Point(105, 54);
-            this.tb_lName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_lName.Margin = new System.Windows.Forms.Padding(4);
             this.tb_lName.Name = "tb_lName";
             this.tb_lName.Size = new System.Drawing.Size(232, 22);
             this.tb_lName.TabIndex = 5;
@@ -123,7 +123,7 @@
             // tb_middle
             // 
             this.tb_middle.Location = new System.Drawing.Point(299, 22);
-            this.tb_middle.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_middle.Margin = new System.Windows.Forms.Padding(4);
             this.tb_middle.Name = "tb_middle";
             this.tb_middle.Size = new System.Drawing.Size(39, 22);
             this.tb_middle.TabIndex = 7;
@@ -140,9 +140,9 @@
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.tb_fName);
             this.groupBox1.Location = new System.Drawing.Point(16, 15);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(347, 129);
             this.groupBox1.TabIndex = 9;
             this.groupBox1.TabStop = false;
@@ -152,7 +152,7 @@
             // 
             this.btn_employee.Enabled = false;
             this.btn_employee.Location = new System.Drawing.Point(299, 86);
-            this.btn_employee.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_employee.Margin = new System.Windows.Forms.Padding(4);
             this.btn_employee.Name = "btn_employee";
             this.btn_employee.Size = new System.Drawing.Size(40, 30);
             this.btn_employee.TabIndex = 15;
@@ -164,7 +164,7 @@
             this.tb_SSN.Enabled = false;
             this.tb_SSN.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_SSN.Location = new System.Drawing.Point(105, 86);
-            this.tb_SSN.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_SSN.Margin = new System.Windows.Forms.Padding(4);
             this.tb_SSN.MaxLength = 3;
             this.tb_SSN.Name = "tb_SSN";
             this.tb_SSN.PasswordChar = '*';
@@ -188,17 +188,17 @@
             this.groupBox2.Controls.Add(this.tb_pubID);
             this.groupBox2.Controls.Add(this.label10);
             this.groupBox2.Controls.Add(this.tb_hireDateY);
-            this.groupBox2.Controls.Add(this.comboBox_hireDateD);
-            this.groupBox2.Controls.Add(this.comboBox_hiredateM);
+            this.groupBox2.Controls.Add(this.combo_hireDateD);
+            this.groupBox2.Controls.Add(this.combo_hiredateM);
             this.groupBox2.Controls.Add(this.label9);
             this.groupBox2.Controls.Add(this.tb_joblvl);
             this.groupBox2.Controls.Add(this.label8);
             this.groupBox2.Controls.Add(this.label1);
-            this.groupBox2.Controls.Add(this.comboBox_job);
+            this.groupBox2.Controls.Add(this.combo_job);
             this.groupBox2.Location = new System.Drawing.Point(16, 151);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox2.Size = new System.Drawing.Size(347, 162);
             this.groupBox2.TabIndex = 16;
             this.groupBox2.TabStop = false;
@@ -207,7 +207,7 @@
             // btn_job
             // 
             this.btn_job.Location = new System.Drawing.Point(299, 20);
-            this.btn_job.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_job.Margin = new System.Windows.Forms.Padding(4);
             this.btn_job.Name = "btn_job";
             this.btn_job.Size = new System.Drawing.Size(40, 28);
             this.btn_job.TabIndex = 39;
@@ -217,7 +217,7 @@
             // tb_pubID
             // 
             this.tb_pubID.Location = new System.Drawing.Point(105, 23);
-            this.tb_pubID.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_pubID.Margin = new System.Windows.Forms.Padding(4);
             this.tb_pubID.Name = "tb_pubID";
             this.tb_pubID.Size = new System.Drawing.Size(184, 22);
             this.tb_pubID.TabIndex = 10;
@@ -235,16 +235,16 @@
             // tb_hireDateY
             // 
             this.tb_hireDateY.Location = new System.Drawing.Point(235, 122);
-            this.tb_hireDateY.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_hireDateY.Margin = new System.Windows.Forms.Padding(4);
             this.tb_hireDateY.MaxLength = 4;
             this.tb_hireDateY.Name = "tb_hireDateY";
             this.tb_hireDateY.Size = new System.Drawing.Size(61, 22);
             this.tb_hireDateY.TabIndex = 8;
             // 
-            // comboBox_hireDateD
+            // combo_hireDateD
             // 
-            this.comboBox_hireDateD.FormattingEnabled = true;
-            this.comboBox_hireDateD.Items.AddRange(new object[] {
+            this.combo_hireDateD.FormattingEnabled = true;
+            this.combo_hireDateD.Items.AddRange(new object[] {
             "1",
             "2",
             "3",
@@ -276,16 +276,16 @@
             "29",
             "30",
             "31"});
-            this.comboBox_hireDateD.Location = new System.Drawing.Point(175, 121);
-            this.comboBox_hireDateD.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.comboBox_hireDateD.Name = "comboBox_hireDateD";
-            this.comboBox_hireDateD.Size = new System.Drawing.Size(51, 24);
-            this.comboBox_hireDateD.TabIndex = 7;
+            this.combo_hireDateD.Location = new System.Drawing.Point(175, 121);
+            this.combo_hireDateD.Margin = new System.Windows.Forms.Padding(4);
+            this.combo_hireDateD.Name = "combo_hireDateD";
+            this.combo_hireDateD.Size = new System.Drawing.Size(51, 24);
+            this.combo_hireDateD.TabIndex = 7;
             // 
-            // comboBox_hiredateM
+            // combo_hiredateM
             // 
-            this.comboBox_hiredateM.FormattingEnabled = true;
-            this.comboBox_hiredateM.Items.AddRange(new object[] {
+            this.combo_hiredateM.FormattingEnabled = true;
+            this.combo_hiredateM.Items.AddRange(new object[] {
             "Jan",
             "Feb",
             "Mar",
@@ -298,11 +298,11 @@
             "Oct",
             "Nov",
             "Dec"});
-            this.comboBox_hiredateM.Location = new System.Drawing.Point(105, 121);
-            this.comboBox_hiredateM.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.comboBox_hiredateM.Name = "comboBox_hiredateM";
-            this.comboBox_hiredateM.Size = new System.Drawing.Size(60, 24);
-            this.comboBox_hiredateM.TabIndex = 6;
+            this.combo_hiredateM.Location = new System.Drawing.Point(105, 121);
+            this.combo_hiredateM.Margin = new System.Windows.Forms.Padding(4);
+            this.combo_hiredateM.Name = "combo_hiredateM";
+            this.combo_hiredateM.Size = new System.Drawing.Size(60, 24);
+            this.combo_hiredateM.TabIndex = 6;
             // 
             // label9
             // 
@@ -317,7 +317,7 @@
             // tb_joblvl
             // 
             this.tb_joblvl.Location = new System.Drawing.Point(105, 89);
-            this.tb_joblvl.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_joblvl.Margin = new System.Windows.Forms.Padding(4);
             this.tb_joblvl.Name = "tb_joblvl";
             this.tb_joblvl.Size = new System.Drawing.Size(132, 22);
             this.tb_joblvl.TabIndex = 4;
@@ -335,7 +335,7 @@
             // btn_submit
             // 
             this.btn_submit.Location = new System.Drawing.Point(16, 321);
-            this.btn_submit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_submit.Margin = new System.Windows.Forms.Padding(4);
             this.btn_submit.Name = "btn_submit";
             this.btn_submit.Size = new System.Drawing.Size(347, 28);
             this.btn_submit.TabIndex = 17;
@@ -350,7 +350,7 @@
             this.Controls.Add(this.btn_submit);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Insert_Window_Employee";
             this.Text = "Hire New Employee";
             this.Load += new System.EventHandler(this.Insert_Window_Employee_Load);
@@ -364,7 +364,7 @@
 
         #endregion
 
-        private System.Windows.Forms.ComboBox comboBox_job;
+        private System.Windows.Forms.ComboBox combo_job;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
@@ -378,8 +378,8 @@
         private System.Windows.Forms.Button btn_employee;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.TextBox tb_hireDateY;
-        private System.Windows.Forms.ComboBox comboBox_hireDateD;
-        private System.Windows.Forms.ComboBox comboBox_hiredateM;
+        private System.Windows.Forms.ComboBox combo_hireDateD;
+        private System.Windows.Forms.ComboBox combo_hiredateM;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox tb_joblvl;
         private System.Windows.Forms.Label label8;

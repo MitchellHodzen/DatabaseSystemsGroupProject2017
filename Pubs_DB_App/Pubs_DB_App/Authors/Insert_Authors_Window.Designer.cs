@@ -36,7 +36,7 @@
             this.label9 = new System.Windows.Forms.Label();
             this.tb_city = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.tb_pubid = new System.Windows.Forms.TextBox();
+            this.tb_lName = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.tb_address = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -44,7 +44,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.tb_authorID = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.tb_pubname = new System.Windows.Forms.TextBox();
+            this.tb_fName = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btn_submit = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -125,14 +125,14 @@
             this.label10.TabIndex = 53;
             this.label10.Text = "City";
             // 
-            // tb_pubid
+            // tb_lName
             // 
-            this.tb_pubid.Enabled = false;
-            this.tb_pubid.Location = new System.Drawing.Point(151, 44);
-            this.tb_pubid.Margin = new System.Windows.Forms.Padding(4);
-            this.tb_pubid.Name = "tb_pubid";
-            this.tb_pubid.Size = new System.Drawing.Size(216, 22);
-            this.tb_pubid.TabIndex = 52;
+            this.tb_lName.Enabled = false;
+            this.tb_lName.Location = new System.Drawing.Point(151, 44);
+            this.tb_lName.Margin = new System.Windows.Forms.Padding(4);
+            this.tb_lName.Name = "tb_lName";
+            this.tb_lName.Size = new System.Drawing.Size(216, 22);
+            this.tb_lName.TabIndex = 52;
             // 
             // label6
             // 
@@ -201,14 +201,14 @@
             this.label2.TabIndex = 45;
             this.label2.Text = "Author ID ";
             // 
-            // tb_pubname
+            // tb_fName
             // 
-            this.tb_pubname.Enabled = false;
-            this.tb_pubname.Location = new System.Drawing.Point(151, 13);
-            this.tb_pubname.Margin = new System.Windows.Forms.Padding(4);
-            this.tb_pubname.Name = "tb_pubname";
-            this.tb_pubname.Size = new System.Drawing.Size(216, 22);
-            this.tb_pubname.TabIndex = 44;
+            this.tb_fName.Enabled = false;
+            this.tb_fName.Location = new System.Drawing.Point(151, 13);
+            this.tb_fName.Margin = new System.Windows.Forms.Padding(4);
+            this.tb_fName.Name = "tb_fName";
+            this.tb_fName.Size = new System.Drawing.Size(216, 22);
+            this.tb_fName.TabIndex = 44;
             // 
             // label1
             // 
@@ -244,7 +244,7 @@
             this.Controls.Add(this.label9);
             this.Controls.Add(this.tb_city);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.tb_pubid);
+            this.Controls.Add(this.tb_lName);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.tb_address);
             this.Controls.Add(this.label4);
@@ -252,7 +252,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.tb_authorID);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.tb_pubname);
+            this.Controls.Add(this.tb_fName);
             this.Controls.Add(this.label1);
             this.Name = "Insert_Authors_Window";
             this.Text = "Create New Author";
@@ -271,7 +271,7 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox tb_city;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox tb_pubid;
+        private System.Windows.Forms.TextBox tb_lName;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox tb_address;
         private System.Windows.Forms.Label label4;
@@ -279,7 +279,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox tb_authorID;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox tb_pubname;
+        private System.Windows.Forms.TextBox tb_fName;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btn_submit;
     }

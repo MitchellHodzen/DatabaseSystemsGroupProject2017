@@ -96,7 +96,7 @@ namespace Pubs_DB_App
                     //Displays output on grid view
                     DataTable dataTable = new DataTable();
                     adapter.Fill(dataTable);
-                    dataGridView1.DataSource = dataTable;
+                    dgv_pub.DataSource = dataTable;
                 }
                 catch (Exception error)
                 {
@@ -181,6 +181,11 @@ namespace Pubs_DB_App
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
         {
 
         }

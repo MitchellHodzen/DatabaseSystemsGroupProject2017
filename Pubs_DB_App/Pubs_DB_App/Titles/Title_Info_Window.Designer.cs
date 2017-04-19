@@ -45,12 +45,12 @@
             this.tb_title = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
+            this.dgv = new System.Windows.Forms.DataGridView();
+            this.btn_selectAuthor = new System.Windows.Forms.Button();
             this.btn_edit = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.btn_addTitle = new System.Windows.Forms.Button();
+            this.rtb_notes = new System.Windows.Forms.RichTextBox();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv)).BeginInit();
             this.SuspendLayout();
             // 
             // tb_pubDate
@@ -217,36 +217,28 @@
             this.label7.Text = "Notes";
             this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
-            // textBox2
+            // dgv
             // 
-            this.textBox2.Location = new System.Drawing.Point(152, 277);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(216, 86);
-            this.textBox2.TabIndex = 80;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.dgv.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(397, 13);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(418, 117);
-            this.dataGridView1.TabIndex = 82;
+            this.dgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv.Location = new System.Drawing.Point(397, 13);
+            this.dgv.Margin = new System.Windows.Forms.Padding(4);
+            this.dgv.Name = "dgv";
+            this.dgv.Size = new System.Drawing.Size(418, 211);
+            this.dgv.TabIndex = 82;
             // 
-            // button1
+            // btn_selectAuthor
             // 
-            this.button1.Location = new System.Drawing.Point(397, 145);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(418, 33);
-            this.button1.TabIndex = 83;
-            this.button1.Text = "Select Author";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btn_selectAuthor.Location = new System.Drawing.Point(397, 231);
+            this.btn_selectAuthor.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_selectAuthor.Name = "btn_selectAuthor";
+            this.btn_selectAuthor.Size = new System.Drawing.Size(418, 33);
+            this.btn_selectAuthor.TabIndex = 83;
+            this.btn_selectAuthor.Text = "Select Author";
+            this.btn_selectAuthor.UseVisualStyleBackColor = true;
+            this.btn_selectAuthor.Click += new System.EventHandler(this.button1_Click);
             // 
             // btn_edit
             // 
@@ -258,26 +250,34 @@
             this.btn_edit.Text = "Submit Edit";
             this.btn_edit.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btn_addTitle
             // 
-            this.button2.Location = new System.Drawing.Point(215, 400);
-            this.button2.Margin = new System.Windows.Forms.Padding(4);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(153, 28);
-            this.button2.TabIndex = 85;
-            this.button2.Text = "Add New Title";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btn_addTitle.Location = new System.Drawing.Point(215, 400);
+            this.btn_addTitle.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_addTitle.Name = "btn_addTitle";
+            this.btn_addTitle.Size = new System.Drawing.Size(153, 28);
+            this.btn_addTitle.TabIndex = 85;
+            this.btn_addTitle.Text = "Add New Title";
+            this.btn_addTitle.UseVisualStyleBackColor = true;
+            // 
+            // rtb_notes
+            // 
+            this.rtb_notes.Location = new System.Drawing.Point(152, 277);
+            this.rtb_notes.Name = "rtb_notes";
+            this.rtb_notes.Size = new System.Drawing.Size(216, 82);
+            this.rtb_notes.TabIndex = 86;
+            this.rtb_notes.Text = "";
             // 
             // Title_Info_Window
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(828, 441);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.rtb_notes);
+            this.Controls.Add(this.btn_addTitle);
             this.Controls.Add(this.btn_edit);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.btn_selectAuthor);
+            this.Controls.Add(this.dgv);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.tb_pubDate);
             this.Controls.Add(this.label5);
@@ -297,7 +297,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Title_Info_Window";
             this.Text = "Title Information ";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -322,10 +322,10 @@
         private System.Windows.Forms.TextBox tb_title;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.DataGridView dgv;
+        private System.Windows.Forms.Button btn_selectAuthor;
         private System.Windows.Forms.Button btn_edit;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btn_addTitle;
+        private System.Windows.Forms.RichTextBox rtb_notes;
     }
 }

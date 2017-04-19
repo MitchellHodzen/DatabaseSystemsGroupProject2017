@@ -45,7 +45,7 @@
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.btn_newJob = new System.Windows.Forms.Button();
             this.btn_submitTitle = new System.Windows.Forms.Button();
-            this.btn_hireEmployees = new System.Windows.Forms.Button();
+            this.btn_hire = new System.Windows.Forms.Button();
             this.btn_makeSale = new System.Windows.Forms.Button();
             this.rtb_info = new System.Windows.Forms.RichTextBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -73,7 +73,7 @@
             // 
             this.tb_pubname.Enabled = false;
             this.tb_pubname.Location = new System.Drawing.Point(153, 32);
-            this.tb_pubname.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_pubname.Margin = new System.Windows.Forms.Padding(4);
             this.tb_pubname.Name = "tb_pubname";
             this.tb_pubname.Size = new System.Drawing.Size(216, 22);
             this.tb_pubname.TabIndex = 1;
@@ -83,7 +83,7 @@
             // 
             this.tb_city.Enabled = false;
             this.tb_city.Location = new System.Drawing.Point(153, 96);
-            this.tb_city.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_city.Margin = new System.Windows.Forms.Padding(4);
             this.tb_city.Name = "tb_city";
             this.tb_city.Size = new System.Drawing.Size(216, 22);
             this.tb_city.TabIndex = 3;
@@ -102,7 +102,7 @@
             // 
             this.tb_state.Enabled = false;
             this.tb_state.Location = new System.Drawing.Point(153, 128);
-            this.tb_state.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_state.Margin = new System.Windows.Forms.Padding(4);
             this.tb_state.Name = "tb_state";
             this.tb_state.Size = new System.Drawing.Size(216, 22);
             this.tb_state.TabIndex = 5;
@@ -121,7 +121,7 @@
             // 
             this.tb_country.Enabled = false;
             this.tb_country.Location = new System.Drawing.Point(153, 160);
-            this.tb_country.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_country.Margin = new System.Windows.Forms.Padding(4);
             this.tb_country.Name = "tb_country";
             this.tb_country.Size = new System.Drawing.Size(216, 22);
             this.tb_country.TabIndex = 7;
@@ -141,7 +141,7 @@
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Location = new System.Drawing.Point(404, 32);
-            this.tabControl1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(4);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(333, 330);
@@ -154,9 +154,9 @@
             this.tabPage1.Controls.Add(this.btn_employees);
             this.tabPage1.Controls.Add(this.btn_sales);
             this.tabPage1.Location = new System.Drawing.Point(4, 25);
-            this.tabPage1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(4);
             this.tabPage1.Size = new System.Drawing.Size(325, 301);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "View";
@@ -165,7 +165,7 @@
             // btn_jobs
             // 
             this.btn_jobs.Location = new System.Drawing.Point(8, 84);
-            this.btn_jobs.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_jobs.Margin = new System.Windows.Forms.Padding(4);
             this.btn_jobs.Name = "btn_jobs";
             this.btn_jobs.Size = new System.Drawing.Size(307, 62);
             this.btn_jobs.TabIndex = 17;
@@ -175,7 +175,7 @@
             // btn_titles
             // 
             this.btn_titles.Location = new System.Drawing.Point(8, 153);
-            this.btn_titles.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_titles.Margin = new System.Windows.Forms.Padding(4);
             this.btn_titles.Name = "btn_titles";
             this.btn_titles.Size = new System.Drawing.Size(307, 62);
             this.btn_titles.TabIndex = 19;
@@ -185,7 +185,7 @@
             // btn_employees
             // 
             this.btn_employees.Location = new System.Drawing.Point(8, 15);
-            this.btn_employees.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_employees.Margin = new System.Windows.Forms.Padding(4);
             this.btn_employees.Name = "btn_employees";
             this.btn_employees.Size = new System.Drawing.Size(307, 62);
             this.btn_employees.TabIndex = 16;
@@ -195,7 +195,7 @@
             // btn_sales
             // 
             this.btn_sales.Location = new System.Drawing.Point(8, 222);
-            this.btn_sales.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_sales.Margin = new System.Windows.Forms.Padding(4);
             this.btn_sales.Name = "btn_sales";
             this.btn_sales.Size = new System.Drawing.Size(307, 62);
             this.btn_sales.TabIndex = 18;
@@ -206,12 +206,12 @@
             // 
             this.tabPage2.Controls.Add(this.btn_newJob);
             this.tabPage2.Controls.Add(this.btn_submitTitle);
-            this.tabPage2.Controls.Add(this.btn_hireEmployees);
+            this.tabPage2.Controls.Add(this.btn_hire);
             this.tabPage2.Controls.Add(this.btn_makeSale);
             this.tabPage2.Location = new System.Drawing.Point(4, 25);
-            this.tabPage2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage2.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(4);
             this.tabPage2.Size = new System.Drawing.Size(325, 301);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Update";
@@ -220,7 +220,7 @@
             // btn_newJob
             // 
             this.btn_newJob.Location = new System.Drawing.Point(8, 84);
-            this.btn_newJob.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_newJob.Margin = new System.Windows.Forms.Padding(4);
             this.btn_newJob.Name = "btn_newJob";
             this.btn_newJob.Size = new System.Drawing.Size(307, 62);
             this.btn_newJob.TabIndex = 13;
@@ -231,7 +231,7 @@
             // btn_submitTitle
             // 
             this.btn_submitTitle.Location = new System.Drawing.Point(8, 153);
-            this.btn_submitTitle.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_submitTitle.Margin = new System.Windows.Forms.Padding(4);
             this.btn_submitTitle.Name = "btn_submitTitle";
             this.btn_submitTitle.Size = new System.Drawing.Size(307, 62);
             this.btn_submitTitle.TabIndex = 15;
@@ -239,21 +239,21 @@
             this.btn_submitTitle.UseVisualStyleBackColor = true;
             this.btn_submitTitle.Click += new System.EventHandler(this.button6_Click);
             // 
-            // btn_hireEmployees
+            // btn_hire
             // 
-            this.btn_hireEmployees.Location = new System.Drawing.Point(8, 15);
-            this.btn_hireEmployees.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.btn_hireEmployees.Name = "btn_hireEmployees";
-            this.btn_hireEmployees.Size = new System.Drawing.Size(307, 62);
-            this.btn_hireEmployees.TabIndex = 12;
-            this.btn_hireEmployees.Text = "Hire Employees";
-            this.btn_hireEmployees.UseVisualStyleBackColor = true;
-            this.btn_hireEmployees.Click += new System.EventHandler(this.button7_Click);
+            this.btn_hire.Location = new System.Drawing.Point(8, 15);
+            this.btn_hire.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_hire.Name = "btn_hire";
+            this.btn_hire.Size = new System.Drawing.Size(307, 62);
+            this.btn_hire.TabIndex = 12;
+            this.btn_hire.Text = "Hire Employees";
+            this.btn_hire.UseVisualStyleBackColor = true;
+            this.btn_hire.Click += new System.EventHandler(this.button7_Click);
             // 
             // btn_makeSale
             // 
             this.btn_makeSale.Location = new System.Drawing.Point(8, 222);
-            this.btn_makeSale.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_makeSale.Margin = new System.Windows.Forms.Padding(4);
             this.btn_makeSale.Name = "btn_makeSale";
             this.btn_makeSale.Size = new System.Drawing.Size(307, 62);
             this.btn_makeSale.TabIndex = 14;
@@ -265,7 +265,7 @@
             // 
             this.rtb_info.Enabled = false;
             this.rtb_info.Location = new System.Drawing.Point(153, 192);
-            this.rtb_info.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rtb_info.Margin = new System.Windows.Forms.Padding(4);
             this.rtb_info.Name = "rtb_info";
             this.rtb_info.Size = new System.Drawing.Size(216, 133);
             this.rtb_info.TabIndex = 13;
@@ -284,7 +284,7 @@
             // btn_edit
             // 
             this.btn_edit.Location = new System.Drawing.Point(41, 334);
-            this.btn_edit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_edit.Margin = new System.Windows.Forms.Padding(4);
             this.btn_edit.Name = "btn_edit";
             this.btn_edit.Size = new System.Drawing.Size(153, 28);
             this.btn_edit.TabIndex = 15;
@@ -296,7 +296,7 @@
             // 
             this.btn_save.Enabled = false;
             this.btn_save.Location = new System.Drawing.Point(217, 334);
-            this.btn_save.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_save.Margin = new System.Windows.Forms.Padding(4);
             this.btn_save.Name = "btn_save";
             this.btn_save.Size = new System.Drawing.Size(153, 28);
             this.btn_save.TabIndex = 16;
@@ -308,7 +308,7 @@
             // 
             this.tb_pubid.Enabled = false;
             this.tb_pubid.Location = new System.Drawing.Point(153, 64);
-            this.tb_pubid.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_pubid.Margin = new System.Windows.Forms.Padding(4);
             this.tb_pubid.Name = "tb_pubid";
             this.tb_pubid.Size = new System.Drawing.Size(216, 22);
             this.tb_pubid.TabIndex = 18;
@@ -344,7 +344,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.tb_pubname);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Publisher_Window";
             this.Text = "Publisher_Window";
             this.tabControl1.ResumeLayout(false);
@@ -370,7 +370,7 @@
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.Button btn_newJob;
         private System.Windows.Forms.Button btn_submitTitle;
-        private System.Windows.Forms.Button btn_hireEmployees;
+        private System.Windows.Forms.Button btn_hire;
         private System.Windows.Forms.Button btn_makeSale;
         private System.Windows.Forms.Button btn_jobs;
         private System.Windows.Forms.Button btn_titles;
