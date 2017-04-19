@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Pubs_DB_App
+namespace Pubs_DB_App.Stores_Sales
 {
     public partial class Insert_Window_Sale : Form
     {
@@ -28,6 +28,11 @@ namespace Pubs_DB_App
         }
 
         private void button5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Insert_Window_Sale_Load(object sender, EventArgs e)
         {
 
         }

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Pubs_DB_App.Stores_Sales;
 
 namespace Pubs_DB_App.Publishers
 {
