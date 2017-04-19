@@ -58,6 +58,12 @@
     <Compile Include="Authors\Insert_Authors_Window.Designer.cs">
       <DependentUpon>Insert_Authors_Window.cs</DependentUpon>
     </Compile>
+    <Compile Include="ConnectionWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConnectionWindow.Designer.cs">
+      <DependentUpon>ConnectionWindow.cs</DependentUpon>
+    </Compile>
     <Compile Include="Titles\Title_Info_Window.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -119,6 +125,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Authors\Insert_Authors_Window.resx">
       <DependentUpon>Insert_Authors_Window.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConnectionWindow.resx">
+      <DependentUpon>ConnectionWindow.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Titles\Title_Info_Window.resx">
       <DependentUpon>Title_Info_Window.cs</DependentUpon>
