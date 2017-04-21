@@ -38,15 +38,15 @@
             this.label4 = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btn_jobs = new System.Windows.Forms.Button();
+            this.btn_titles = new System.Windows.Forms.Button();
+            this.btn_employees = new System.Windows.Forms.Button();
+            this.btn_sales = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
+            this.btn_newJob = new System.Windows.Forms.Button();
+            this.btn_submitTitle = new System.Windows.Forms.Button();
+            this.btn_hire = new System.Windows.Forms.Button();
+            this.btn_makeSale = new System.Windows.Forms.Button();
             this.rtb_info = new System.Windows.Forms.RichTextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.btn_edit = new System.Windows.Forms.Button();
@@ -75,6 +75,7 @@
             this.tb_pubname.Name = "tb_pubname";
             this.tb_pubname.Size = new System.Drawing.Size(163, 20);
             this.tb_pubname.TabIndex = 1;
+            this.tb_pubname.TextChanged += new System.EventHandler(this.tb_pubname_TextChanged);
             // 
             // tb_city
             // 
@@ -139,10 +140,10 @@
             // 
             // tabPage1
             // 
-            this.tabPage1.Controls.Add(this.button1);
-            this.tabPage1.Controls.Add(this.button2);
-            this.tabPage1.Controls.Add(this.button3);
-            this.tabPage1.Controls.Add(this.button4);
+            this.tabPage1.Controls.Add(this.btn_jobs);
+            this.tabPage1.Controls.Add(this.btn_titles);
+            this.tabPage1.Controls.Add(this.btn_employees);
+            this.tabPage1.Controls.Add(this.btn_sales);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
@@ -151,48 +152,50 @@
             this.tabPage1.Text = "View";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // btn_jobs
             // 
-            this.button1.Location = new System.Drawing.Point(6, 68);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(230, 50);
-            this.button1.TabIndex = 17;
-            this.button1.Text = "Jobs";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btn_jobs.Location = new System.Drawing.Point(6, 68);
+            this.btn_jobs.Name = "btn_jobs";
+            this.btn_jobs.Size = new System.Drawing.Size(230, 50);
+            this.btn_jobs.TabIndex = 17;
+            this.btn_jobs.Text = "Jobs";
+            this.btn_jobs.UseVisualStyleBackColor = true;
+            this.btn_jobs.Click += new System.EventHandler(this.btn_jobs_Click);
             // 
-            // button2
+            // btn_titles
             // 
-            this.button2.Location = new System.Drawing.Point(6, 124);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(230, 50);
-            this.button2.TabIndex = 19;
-            this.button2.Text = "Titles";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btn_titles.Location = new System.Drawing.Point(6, 124);
+            this.btn_titles.Name = "btn_titles";
+            this.btn_titles.Size = new System.Drawing.Size(230, 50);
+            this.btn_titles.TabIndex = 19;
+            this.btn_titles.Text = "Titles";
+            this.btn_titles.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // btn_employees
             // 
-            this.button3.Location = new System.Drawing.Point(6, 12);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(230, 50);
-            this.button3.TabIndex = 16;
-            this.button3.Text = "Employees";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btn_employees.Location = new System.Drawing.Point(6, 12);
+            this.btn_employees.Name = "btn_employees";
+            this.btn_employees.Size = new System.Drawing.Size(230, 50);
+            this.btn_employees.TabIndex = 16;
+            this.btn_employees.Text = "Employees";
+            this.btn_employees.UseVisualStyleBackColor = true;
+            this.btn_employees.Click += new System.EventHandler(this.btn_employees_Click);
             // 
-            // button4
+            // btn_sales
             // 
-            this.button4.Location = new System.Drawing.Point(6, 180);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(230, 50);
-            this.button4.TabIndex = 18;
-            this.button4.Text = "Sales";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btn_sales.Location = new System.Drawing.Point(6, 180);
+            this.btn_sales.Name = "btn_sales";
+            this.btn_sales.Size = new System.Drawing.Size(230, 50);
+            this.btn_sales.TabIndex = 18;
+            this.btn_sales.Text = "Sales";
+            this.btn_sales.UseVisualStyleBackColor = true;
             // 
             // tabPage2
             // 
-            this.tabPage2.Controls.Add(this.button5);
-            this.tabPage2.Controls.Add(this.button6);
-            this.tabPage2.Controls.Add(this.button7);
-            this.tabPage2.Controls.Add(this.button8);
+            this.tabPage2.Controls.Add(this.btn_newJob);
+            this.tabPage2.Controls.Add(this.btn_submitTitle);
+            this.tabPage2.Controls.Add(this.btn_hire);
+            this.tabPage2.Controls.Add(this.btn_makeSale);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
@@ -201,48 +204,45 @@
             this.tabPage2.Text = "Update";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // button5
+            // btn_newJob
             // 
-            this.button5.Location = new System.Drawing.Point(6, 68);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(230, 50);
-            this.button5.TabIndex = 13;
-            this.button5.Text = "Create New Job";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.btn_newJob.Location = new System.Drawing.Point(6, 68);
+            this.btn_newJob.Name = "btn_newJob";
+            this.btn_newJob.Size = new System.Drawing.Size(230, 50);
+            this.btn_newJob.TabIndex = 13;
+            this.btn_newJob.Text = "Create New Job";
+            this.btn_newJob.UseVisualStyleBackColor = true;
+            this.btn_newJob.Click += new System.EventHandler(this.button5_Click);
             // 
-            // button6
+            // btn_submitTitle
             // 
-            this.button6.Location = new System.Drawing.Point(6, 124);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(230, 50);
-            this.button6.TabIndex = 15;
-            this.button6.Text = "Submit Title";
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
+            this.btn_submitTitle.Location = new System.Drawing.Point(6, 124);
+            this.btn_submitTitle.Name = "btn_submitTitle";
+            this.btn_submitTitle.Size = new System.Drawing.Size(230, 50);
+            this.btn_submitTitle.TabIndex = 15;
+            this.btn_submitTitle.Text = "Submit Title";
+            this.btn_submitTitle.UseVisualStyleBackColor = true;
+            this.btn_submitTitle.Click += new System.EventHandler(this.button6_Click);
             // 
-            // button7
+            // btn_hire
             // 
-            this.button7.Location = new System.Drawing.Point(6, 12);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(230, 50);
-            this.button7.TabIndex = 12;
-            this.button7.Text = "Hire Employees";
-            this.button7.UseVisualStyleBackColor = true;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
+            this.btn_hire.Location = new System.Drawing.Point(6, 12);
+            this.btn_hire.Name = "btn_hire";
+            this.btn_hire.Size = new System.Drawing.Size(230, 50);
+            this.btn_hire.TabIndex = 12;
+            this.btn_hire.Text = "Hire Employees";
+            this.btn_hire.UseVisualStyleBackColor = true;
+            this.btn_hire.Click += new System.EventHandler(this.button7_Click);
             // 
-            // button8
+            // btn_makeSale
             // 
-            this.button8.Location = new System.Drawing.Point(6, 180);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(230, 50);
-            this.button8.TabIndex = 14;
-            this.button8.Text = "Make Sale";
-            this.button8.UseVisualStyleBackColor = true;
-<<<<<<< HEAD:Pubs_DB_App/Pubs_DB_App/Publisher_Window.Designer.cs
-            this.button8.Click += new System.EventHandler(this.button8_Click);
-=======
->>>>>>> refs/remotes/origin/master:Pubs_DB_App/Pubs_DB_App/Publishers/Publisher_Window.Designer.cs
+            this.btn_makeSale.Location = new System.Drawing.Point(6, 180);
+            this.btn_makeSale.Name = "btn_makeSale";
+            this.btn_makeSale.Size = new System.Drawing.Size(230, 50);
+            this.btn_makeSale.TabIndex = 14;
+            this.btn_makeSale.Text = "Make Sale";
+            this.btn_makeSale.UseVisualStyleBackColor = true;
+            this.btn_makeSale.Click += new System.EventHandler(this.button8_Click);
             // 
             // rtb_info
             // 
@@ -345,14 +345,14 @@
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btn_newJob;
+        private System.Windows.Forms.Button btn_submitTitle;
+        private System.Windows.Forms.Button btn_hire;
+        private System.Windows.Forms.Button btn_makeSale;
+        private System.Windows.Forms.Button btn_jobs;
+        private System.Windows.Forms.Button btn_titles;
+        private System.Windows.Forms.Button btn_employees;
+        private System.Windows.Forms.Button btn_sales;
         private System.Windows.Forms.RichTextBox rtb_info;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button btn_edit;

@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Pubs_DB_App
+namespace Pubs_DB_App.Authors
 {
-    public partial class Insert_Window_Job : Form
+    public partial class Insert_Authors_Window : Form
     {
-        public Insert_Window_Job()
+        public Insert_Authors_Window()
         {
             InitializeComponent();
         }

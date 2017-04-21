@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace Pubs_DB_App
 {
-    public partial class Insert_Window_Title : Form
+    public partial class Insert_Window_Store : Form
     {
-        public Insert_Window_Title()
+        public Insert_Window_Store()
         {
             InitializeComponent();
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

@@ -10,24 +10,24 @@ using System.Windows.Forms;
 
 namespace Pubs_DB_App
 {
-    public partial class Insert_Window_Employee : Form
+    public partial class Title_Info_Window : Form
     {
-        public Insert_Window_Employee()
+        public Title_Info_Window()
         {
             InitializeComponent();
         }
 
-        private void Insert_Window_Employee_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tb_city_TextChanged(object sender, EventArgs e)
         {
 
         }

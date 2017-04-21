@@ -8,16 +8,16 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Pubs_DB_App.Publishers
+namespace Pubs_DB_App
 {
-    public partial class Insert_Window_Job : Form
+    public partial class Insert_Window_Title : Form
     {
-        public Insert_Window_Job()
+        public Insert_Window_Title()
         {
             InitializeComponent();
         }
 
-        private void Insert_Window_Job_Load(object sender, EventArgs e)
+        private void button3_Click(object sender, EventArgs e)
         {
 
         }

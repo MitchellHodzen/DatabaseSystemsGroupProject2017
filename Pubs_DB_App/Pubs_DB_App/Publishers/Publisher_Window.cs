@@ -7,14 +7,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Pubs_DB_App.Stores_Sales;
 
 namespace Pubs_DB_App.Publishers
 {
     public partial class Publisher_Window : Form
     {
-        public Publisher_Window()
+
+        public string pubID;
+        public Publisher_Window(string pubID)
         {
             InitializeComponent();
+            this.pubID = pubID;
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -43,7 +47,6 @@ namespace Pubs_DB_App.Publishers
             iwe.Show();
         }
 
-<<<<<<< HEAD:Pubs_DB_App/Pubs_DB_App/Publisher_Window.cs
         private void button6_Click(object sender, EventArgs e)
         {
             Insert_Window_Title iwt = new Insert_Window_Title();
@@ -60,11 +63,28 @@ namespace Pubs_DB_App.Publishers
         {
             Insert_Window_Sale iws = new Insert_Window_Sale();
             iws.Show();
-=======
+        }
+
+        private void tb_pubname_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
         private void Publisher_Window_Load(object sender, EventArgs e)
         {
 
->>>>>>> refs/remotes/origin/master:Pubs_DB_App/Pubs_DB_App/Publishers/Publisher_Window.cs
+        }
+
+        private void btn_jobs_Click(object sender, EventArgs e)
+        {
+            View_Publisher_Jobs vpj = new View_Publisher_Jobs(pubID);
+            vpj.Show();
+        }
+
+        private void btn_employees_Click(object sender, EventArgs e)
+        {
+            View_Publisher_Employees vpe = new View_Publisher_Employees(pubID);
+            vpe.Show();
         }
     }
 }

@@ -46,29 +46,83 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Insert_Window_Employee.cs">
+    <Compile Include="Authors\Authors_Window.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Insert_Window_Employee.Designer.cs">
+    <Compile Include="Authors\Authors_Window.Designer.cs">
+      <DependentUpon>Authors_Window.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Authors\Insert_Authors_Window.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Authors\Insert_Authors_Window.Designer.cs">
+      <DependentUpon>Insert_Authors_Window.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConnectionWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConnectionWindow.Designer.cs">
+      <DependentUpon>ConnectionWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stores_Sales\Insert_Window_Store.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stores_Sales\Insert_Window_Store.Designer.cs">
+      <DependentUpon>Insert_Window_Store.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stores_Sales\Sales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stores_Sales\Sales.Designer.cs">
+      <DependentUpon>Sales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stores_Sales\Stores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stores_Sales\Stores.Designer.cs">
+      <DependentUpon>Stores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Titles\Title_Info_Window.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Titles\Title_Info_Window.Designer.cs">
+      <DependentUpon>Title_Info_Window.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Publishers\Insert_Window_Employee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Publishers\Insert_Window_Employee.Designer.cs">
       <DependentUpon>Insert_Window_Employee.cs</DependentUpon>
     </Compile>
-    <Compile Include="Insert_Window_Job.cs">
+    <Compile Include="Publishers\Insert_Window_Job.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Insert_Window_Job.Designer.cs">
+    <Compile Include="Publishers\Insert_Window_Job.Designer.cs">
       <DependentUpon>Insert_Window_Job.cs</DependentUpon>
     </Compile>
-    <Compile Include="Insert_Window_Sale.cs">
+    <Compile Include="Stores_Sales\Insert_Window_Sale.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Insert_Window_Sale.Designer.cs">
+    <Compile Include="Stores_Sales\Insert_Window_Sale.Designer.cs">
       <DependentUpon>Insert_Window_Sale.cs</DependentUpon>
     </Compile>
-    <Compile Include="Insert_Window_Title.cs">
+    <Compile Include="Titles\Insert_Window_Title.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Insert_Window_Title.Designer.cs">
+    <Compile Include="Titles\Insert_Window_Title.Designer.cs">
       <DependentUpon>Insert_Window_Title.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Publishers\View_Publisher_Employees.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Publishers\View_Publisher_Employees.Designer.cs">
+      <DependentUpon>View_Publisher_Employees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Publishers\View_Publisher_Jobs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Publishers\View_Publisher_Jobs.Designer.cs">
+      <DependentUpon>View_Publisher_Jobs.cs</DependentUpon>
     </Compile>
     <Compile Include="Start_Window.cs">
       <SubType>Form</SubType>
@@ -78,23 +132,50 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Publisher_Window.cs">
+    <Compile Include="Publishers\Publisher_Window.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Publisher_Window.Designer.cs">
+    <Compile Include="Publishers\Publisher_Window.Designer.cs">
       <DependentUpon>Publisher_Window.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Insert_Window_Employee.resx">
+    <EmbeddedResource Include="Authors\Authors_Window.resx">
+      <DependentUpon>Authors_Window.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Authors\Insert_Authors_Window.resx">
+      <DependentUpon>Insert_Authors_Window.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConnectionWindow.resx">
+      <DependentUpon>ConnectionWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stores_Sales\Insert_Window_Store.resx">
+      <DependentUpon>Insert_Window_Store.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stores_Sales\Sales.resx">
+      <DependentUpon>Sales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stores_Sales\Stores.resx">
+      <DependentUpon>Stores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Titles\Title_Info_Window.resx">
+      <DependentUpon>Title_Info_Window.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Publishers\Insert_Window_Employee.resx">
       <DependentUpon>Insert_Window_Employee.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Insert_Window_Job.resx">
+    <EmbeddedResource Include="Publishers\Insert_Window_Job.resx">
       <DependentUpon>Insert_Window_Job.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Insert_Window_Sale.resx">
+    <EmbeddedResource Include="Stores_Sales\Insert_Window_Sale.resx">
       <DependentUpon>Insert_Window_Sale.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Insert_Window_Title.resx">
+    <EmbeddedResource Include="Titles\Insert_Window_Title.resx">
       <DependentUpon>Insert_Window_Title.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Publishers\View_Publisher_Employees.resx">
+      <DependentUpon>View_Publisher_Employees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Publishers\View_Publisher_Jobs.resx">
+      <DependentUpon>View_Publisher_Jobs.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Start_Window.resx">
       <DependentUpon>Start_Window.cs</DependentUpon>
@@ -108,7 +189,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Publisher_Window.resx">
+    <EmbeddedResource Include="Publishers\Publisher_Window.resx">
       <DependentUpon>Publisher_Window.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
