@@ -13,6 +13,8 @@ namespace Pubs_DB_App.Publishers
 {
     public partial class Publisher_Window : Form
     {
+
+        public string pubID;
         public Publisher_Window()
         {
             InitializeComponent();
@@ -65,6 +67,18 @@ namespace Pubs_DB_App.Publishers
         private void tb_pubname_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void Publisher_Window_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_jobs_Click(object sender, EventArgs e)
+        {
+            View_Publisher_Jobs vpj = new View_Publisher_Jobs();
+            vpj.pubID = this.pubID;
+            vpj.Show();
         }
     }
 }

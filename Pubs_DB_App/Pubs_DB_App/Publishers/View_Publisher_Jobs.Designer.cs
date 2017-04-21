@@ -55,11 +55,9 @@
             this.EmployeeSearch.Controls.Add(this.label2);
             this.EmployeeSearch.Controls.Add(this.tb_jobID);
             this.EmployeeSearch.Controls.Add(this.label1);
-            this.EmployeeSearch.Location = new System.Drawing.Point(16, 15);
-            this.EmployeeSearch.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.EmployeeSearch.Location = new System.Drawing.Point(12, 12);
             this.EmployeeSearch.Name = "EmployeeSearch";
-            this.EmployeeSearch.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.EmployeeSearch.Size = new System.Drawing.Size(741, 164);
+            this.EmployeeSearch.Size = new System.Drawing.Size(556, 133);
             this.EmployeeSearch.TabIndex = 1;
             this.EmployeeSearch.TabStop = false;
             this.EmployeeSearch.Text = "Job Search";
@@ -70,85 +68,78 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(160, 16);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView1.Location = new System.Drawing.Point(120, 13);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(563, 124);
+            this.dataGridView1.Size = new System.Drawing.Size(422, 101);
             this.dataGridView1.TabIndex = 11;
             // 
             // btn_search
             // 
-            this.btn_search.Location = new System.Drawing.Point(52, 112);
-            this.btn_search.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_search.Location = new System.Drawing.Point(39, 91);
             this.btn_search.Name = "btn_search";
-            this.btn_search.Size = new System.Drawing.Size(100, 28);
+            this.btn_search.Size = new System.Drawing.Size(75, 23);
             this.btn_search.TabIndex = 10;
             this.btn_search.Text = "Search";
             this.btn_search.UseVisualStyleBackColor = true;
+            this.btn_search.Click += new System.EventHandler(this.btn_search_Click);
             // 
             // tb_minLvl
             // 
-            this.tb_minLvl.Location = new System.Drawing.Point(92, 48);
-            this.tb_minLvl.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_minLvl.Location = new System.Drawing.Point(69, 39);
             this.tb_minLvl.Name = "tb_minLvl";
-            this.tb_minLvl.Size = new System.Drawing.Size(59, 22);
+            this.tb_minLvl.Size = new System.Drawing.Size(45, 20);
             this.tb_minLvl.TabIndex = 5;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(13, 52);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(10, 42);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(68, 17);
+            this.label3.Size = new System.Drawing.Size(53, 13);
             this.label3.TabIndex = 4;
             this.label3.Text = "Min Level";
             // 
             // tb_maxLvl
             // 
-            this.tb_maxLvl.Location = new System.Drawing.Point(93, 80);
-            this.tb_maxLvl.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_maxLvl.Location = new System.Drawing.Point(70, 65);
             this.tb_maxLvl.Name = "tb_maxLvl";
-            this.tb_maxLvl.Size = new System.Drawing.Size(57, 22);
+            this.tb_maxLvl.Size = new System.Drawing.Size(44, 20);
             this.tb_maxLvl.TabIndex = 3;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(9, 84);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(7, 68);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(71, 17);
+            this.label2.Size = new System.Drawing.Size(56, 13);
             this.label2.TabIndex = 2;
             this.label2.Text = "Max Level";
             // 
             // tb_jobID
             // 
-            this.tb_jobID.Location = new System.Drawing.Point(92, 16);
-            this.tb_jobID.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_jobID.Location = new System.Drawing.Point(69, 13);
             this.tb_jobID.Name = "tb_jobID";
-            this.tb_jobID.Size = new System.Drawing.Size(59, 22);
+            this.tb_jobID.Size = new System.Drawing.Size(45, 20);
             this.tb_jobID.TabIndex = 1;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(33, 20);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(25, 16);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(48, 17);
+            this.label1.Size = new System.Drawing.Size(38, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Job ID";
             // 
             // View_Publisher_Jobs
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(773, 188);
+            this.ClientSize = new System.Drawing.Size(580, 153);
             this.Controls.Add(this.EmployeeSearch);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "View_Publisher_Jobs";
             this.Text = "Job Search";
+            this.Load += new System.EventHandler(this.View_Publisher_Jobs_Load);
             this.EmployeeSearch.ResumeLayout(false);
             this.EmployeeSearch.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

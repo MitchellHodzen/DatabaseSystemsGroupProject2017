@@ -97,6 +97,7 @@ namespace Pubs_DB_App
                     DataTable dataTable = new DataTable();
                     adapter.Fill(dataTable);
                     dgv_pub.DataSource = dataTable;
+                    dgv_pub.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
                 }
                 catch (Exception error)
                 {
@@ -187,7 +188,10 @@ namespace Pubs_DB_App
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            Publisher_Window pubWindow = new Publisher_Window();
+            pubWindow.pubID = (string)dgv_pub.CurrentRow.Cells[0].Value;
+            MessageBox.Show(pubWindow.pubID);
+            pubWindow.Show();
         }
     }
 }
