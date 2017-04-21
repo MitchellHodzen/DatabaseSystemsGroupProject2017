@@ -14,9 +14,10 @@ namespace Pubs_DB_App.Publishers
     public partial class View_Publisher_Jobs : Form
     {
         public string pubID;
-        public View_Publisher_Jobs()
+        public View_Publisher_Jobs(string pubID)
         {
             InitializeComponent();
+            this.pubID = pubID;
         }
 
         private void View_Publisher_Jobs_Load(object sender, EventArgs e)
@@ -62,6 +63,7 @@ namespace Pubs_DB_App.Publishers
                     DataTable dataTable = new DataTable();
                     adapter.Fill(dataTable);
                     dataGridView1.DataSource = dataTable;
+                    dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
                 }
                 catch (Exception error)
                 {

@@ -15,9 +15,10 @@ namespace Pubs_DB_App.Publishers
     {
 
         public string pubID;
-        public Publisher_Window()
+        public Publisher_Window(string pubID)
         {
             InitializeComponent();
+            this.pubID = pubID;
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -76,9 +77,14 @@ namespace Pubs_DB_App.Publishers
 
         private void btn_jobs_Click(object sender, EventArgs e)
         {
-            View_Publisher_Jobs vpj = new View_Publisher_Jobs();
-            vpj.pubID = this.pubID;
+            View_Publisher_Jobs vpj = new View_Publisher_Jobs(pubID);
             vpj.Show();
+        }
+
+        private void btn_employees_Click(object sender, EventArgs e)
+        {
+            View_Publisher_Employees vpe = new View_Publisher_Employees(pubID);
+            vpe.Show();
         }
     }
 }

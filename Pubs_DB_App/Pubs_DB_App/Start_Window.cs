@@ -188,9 +188,7 @@ namespace Pubs_DB_App
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Publisher_Window pubWindow = new Publisher_Window();
-            pubWindow.pubID = (string)dgv_pub.CurrentRow.Cells[0].Value;
-            MessageBox.Show(pubWindow.pubID);
+            Publisher_Window pubWindow = new Publisher_Window((string)dgv_pub.CurrentRow.Cells[0].Value);
             pubWindow.Show();
         }
     }
