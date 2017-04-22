@@ -459,7 +459,9 @@ namespace Pubs_DB_App
         }
         private void btn_selectStore_Click(object sender, EventArgs e)
         {
-            Stores storeWindow = new Stores((string)dgv_store.CurrentRow.Cells[0].Value);
+            Stores storeWindow = new Stores((string)dgv_store.CurrentRow.Cells[0].Value, (string)dgv_store.CurrentRow.Cells[1].Value,
+                (string)dgv_store.CurrentRow.Cells[2].Value, (string)dgv_store.CurrentRow.Cells[3].Value,
+                (string)dgv_store.CurrentRow.Cells[4].Value, (string)dgv_store.CurrentRow.Cells[5].Value);
             storeWindow.Show();
         }
         private void btn_addStore_Click(object sender, EventArgs e)
