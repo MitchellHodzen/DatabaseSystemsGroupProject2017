@@ -14,109 +14,70 @@ namespace Pubs_DB_App.Publishers
 {
     public partial class Stores : Form
     {
-        public string storeID;
-        public Stores(string storeID)
+        public Stores(string storeID, string storeName, string address, string city, string state, string zip)
         {
             InitializeComponent();
-            this.storeID = storeID;
+            tb_storeID.Text = storeID;
+            tb_storeName.Text = storeName;
+            tb_address.Text = address;
+            tb_city.Text = city;
+            tb_state.Text = state;
+            tb_zip.Text = zip;
+            using (SqlConnection connection = new SqlConnection(ConnectionWindow.ConnectionString))
+            {
+                using (SqlCommand showSales = new SqlCommand())
+                {
+                    showSales.Connection = connection;
+                    showSales.CommandType = CommandType.Text;
+                    showSales.CommandText = "SELECT * FROM SALE WHERE storeID = " + storeID;
+                    SqlDataAdapter adapater = new SqlDataAdapter(showSales);
+                    try
+                    {
+                        connection.Open();
+                        int recordsAffected = showSales.ExecuteNonQuery();
+                        DataTable table = new DataTable();
+                        adapater.Fill(table);
+                        dvg_results.DataSource = table;
+                        dvg_results.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+
+                    }
+                    catch (Exception error)
+                    {
+                        MessageBox.Show(error.ToString());
+                    }
+                    finally
+                    {
+                        connection.Close();
+                    }
+                }
+            }
         }
 
         private void label1_Click(object sender, EventArgs e)
         {
 
         }
-
-        private void btn_view_sales_Click(object sender, EventArgs e)
-        {
-            //Begin building the SQL command to view the publishers 
-            String command = "SELECT * FROM SALES";
-            bool addWhere = false;
-            String checks = "";
-            //Construct the where statement based on user input
-            if (!string.IsNullOrWhiteSpace(tb_storeName.Text))
-            {
-                checks = checks + "storeName = " + "'" + tb_storeName.Text + "'" + " ";
-                addWhere = true;
-            }
-            if (!string.IsNullOrWhiteSpace(tb_storeID.Text))
-            {
-                if (addWhere == true)
-                {
-                    checks = checks + " AND ";
-                }
-                checks = checks + "storeID = " + "'" + tb_storeID.Text + "'" + " ";
-                addWhere = true;
-            }
-            if (!string.IsNullOrWhiteSpace(tb_address.Text))
-            {
-                if (addWhere == true)
-                {
-                    checks = checks + " AND ";
-                }
-                checks = checks + "address = " + "'" + tb_address.Text + "'" + " ";
-                addWhere = true;
-            }
-            if (!string.IsNullOrWhiteSpace(tb_city.Text))
-            {
-                if (addWhere == true)
-                {
-                    checks = checks + " AND ";
-                }
-                checks = checks + "city = " + "'" + tb_city.Text + "'" + " ";
-                addWhere = true;
-            }
-            if (!string.IsNullOrWhiteSpace(tb_state.Text))
-            {
-                if (addWhere == true)
-                {
-                    checks = checks + " AND ";
-                }
-                checks = checks + "state = " + "'" + tb_state.Text + "'" + " ";
-                addWhere = true;
-            }
-            if (!string.IsNullOrWhiteSpace(tb_zip.Text))
-            {
-                if (addWhere == true)
-                {
-                    checks = checks + " AND ";
-                }
-                checks = checks + "zip = " + "'" + tb_zip.Text + "'" + " ";
-                addWhere = true;
-            }
-            //Combine the statements together
-            if (addWhere == true)
-            {
-                command = command + " WHERE " + checks;
-            }
-
-            //Connets to the database using the connection string from the connection page
-            using (SqlConnection connection = new SqlConnection(ConnectionWindow.ConnectionString))
-            {
-                try
-                {
-                    //Open the database
-                    connection.Open();
-                    //Creates SQL command using the command string generated earlier
-                    SqlCommand selectStoresCommand = new SqlCommand(command, connection);
-                    //Executes command and recieves output
-                    SqlDataAdapter adapter = new SqlDataAdapter(selectStoresCommand);
-
-                    //Displays output on grid view
-                    DataTable dataTable = new DataTable();
-                    adapter.Fill(dataTable);
-                    dvg_results.DataSource = dataTable;
-                    dvg_results.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-                }
-                catch (Exception error)
-                {
-                    MessageBox.Show(error.ToString());
-                }
-            }
-        }
         private void btn_addStore_Click(object sender, EventArgs e)
         {
             Insert_Window_Store addStoreWindow = new Insert_Window_Store();
             addStoreWindow.Show();
+        }
+        
+        private void btn_view_sale_Click(object sender, EventArgs e)
+        {
+
+            Sales sale = new Sales((string)dvg_results.CurrentRow.Cells[0].Value,
+                (string)dvg_results.CurrentRow.Cells[1].Value, 
+                (string)dvg_results.CurrentRow.Cells[2].Value, 
+                (DateTime)dvg_results.CurrentRow.Cells[3].Value, 
+                (short)dvg_results.CurrentRow.Cells[4].Value, 
+                (string)dvg_results.CurrentRow.Cells[5].Value);
+            sale.Show();
+        }
+
+        private void btn_remove_store_Click(object sender, EventArgs e)
+        {
+
         }
     }
 
