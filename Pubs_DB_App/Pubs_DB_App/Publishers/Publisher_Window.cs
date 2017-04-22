@@ -72,7 +72,7 @@ namespace Pubs_DB_App.Publishers
 
         private void Publisher_Window_Load(object sender, EventArgs e)
         {
-
+            tb_pubid.Text = pubID; 
         }
 
         private void btn_jobs_Click(object sender, EventArgs e)
@@ -85,6 +85,11 @@ namespace Pubs_DB_App.Publishers
         {
             View_Publisher_Employees vpe = new View_Publisher_Employees(pubID);
             vpe.Show();
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

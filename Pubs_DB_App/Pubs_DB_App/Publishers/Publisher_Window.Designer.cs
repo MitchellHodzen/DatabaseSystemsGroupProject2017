@@ -47,8 +47,6 @@
             this.btn_submitTitle = new System.Windows.Forms.Button();
             this.btn_hire = new System.Windows.Forms.Button();
             this.btn_makeSale = new System.Windows.Forms.Button();
-            this.rtb_info = new System.Windows.Forms.RichTextBox();
-            this.label5 = new System.Windows.Forms.Label();
             this.btn_edit = new System.Windows.Forms.Button();
             this.btn_save = new System.Windows.Forms.Button();
             this.tb_pubid = new System.Windows.Forms.TextBox();
@@ -70,18 +68,18 @@
             // 
             // tb_pubname
             // 
-            this.tb_pubname.Enabled = false;
             this.tb_pubname.Location = new System.Drawing.Point(115, 26);
             this.tb_pubname.Name = "tb_pubname";
+            this.tb_pubname.ReadOnly = true;
             this.tb_pubname.Size = new System.Drawing.Size(163, 20);
             this.tb_pubname.TabIndex = 1;
             this.tb_pubname.TextChanged += new System.EventHandler(this.tb_pubname_TextChanged);
             // 
             // tb_city
             // 
-            this.tb_city.Enabled = false;
             this.tb_city.Location = new System.Drawing.Point(115, 78);
             this.tb_city.Name = "tb_city";
+            this.tb_city.ReadOnly = true;
             this.tb_city.Size = new System.Drawing.Size(163, 20);
             this.tb_city.TabIndex = 3;
             // 
@@ -96,9 +94,9 @@
             // 
             // tb_state
             // 
-            this.tb_state.Enabled = false;
             this.tb_state.Location = new System.Drawing.Point(115, 104);
             this.tb_state.Name = "tb_state";
+            this.tb_state.ReadOnly = true;
             this.tb_state.Size = new System.Drawing.Size(163, 20);
             this.tb_state.TabIndex = 5;
             // 
@@ -113,9 +111,9 @@
             // 
             // tb_country
             // 
-            this.tb_country.Enabled = false;
             this.tb_country.Location = new System.Drawing.Point(115, 130);
             this.tb_country.Name = "tb_country";
+            this.tb_country.ReadOnly = true;
             this.tb_country.Size = new System.Drawing.Size(163, 20);
             this.tb_country.TabIndex = 7;
             // 
@@ -244,27 +242,9 @@
             this.btn_makeSale.UseVisualStyleBackColor = true;
             this.btn_makeSale.Click += new System.EventHandler(this.button8_Click);
             // 
-            // rtb_info
-            // 
-            this.rtb_info.Enabled = false;
-            this.rtb_info.Location = new System.Drawing.Point(115, 156);
-            this.rtb_info.Name = "rtb_info";
-            this.rtb_info.Size = new System.Drawing.Size(163, 109);
-            this.rtb_info.TabIndex = 13;
-            this.rtb_info.Text = "";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(84, 199);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(25, 13);
-            this.label5.TabIndex = 14;
-            this.label5.Text = "Info";
-            // 
             // btn_edit
             // 
-            this.btn_edit.Location = new System.Drawing.Point(31, 271);
+            this.btn_edit.Location = new System.Drawing.Point(31, 156);
             this.btn_edit.Name = "btn_edit";
             this.btn_edit.Size = new System.Drawing.Size(115, 23);
             this.btn_edit.TabIndex = 15;
@@ -275,7 +255,7 @@
             // btn_save
             // 
             this.btn_save.Enabled = false;
-            this.btn_save.Location = new System.Drawing.Point(163, 271);
+            this.btn_save.Location = new System.Drawing.Point(163, 156);
             this.btn_save.Name = "btn_save";
             this.btn_save.Size = new System.Drawing.Size(115, 23);
             this.btn_save.TabIndex = 16;
@@ -285,9 +265,9 @@
             // 
             // tb_pubid
             // 
-            this.tb_pubid.Enabled = false;
             this.tb_pubid.Location = new System.Drawing.Point(115, 52);
             this.tb_pubid.Name = "tb_pubid";
+            this.tb_pubid.ReadOnly = true;
             this.tb_pubid.Size = new System.Drawing.Size(163, 20);
             this.tb_pubid.TabIndex = 18;
             // 
@@ -310,8 +290,6 @@
             this.Controls.Add(this.label6);
             this.Controls.Add(this.btn_save);
             this.Controls.Add(this.btn_edit);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.rtb_info);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.tb_country);
             this.Controls.Add(this.label4);
@@ -353,8 +331,6 @@
         private System.Windows.Forms.Button btn_titles;
         private System.Windows.Forms.Button btn_employees;
         private System.Windows.Forms.Button btn_sales;
-        private System.Windows.Forms.RichTextBox rtb_info;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button btn_edit;
         private System.Windows.Forms.Button btn_save;
         private System.Windows.Forms.TextBox tb_pubid;

@@ -39,9 +39,9 @@ namespace Pubs_DB_App
         private void button1_Click(object sender, EventArgs e)
         {
             //Begin building the SQL command to view the publishers 
-            String command = "SELECT * FROM PUBLISHER";
+            string command = "SELECT pubID, pubName, city, state, country FROM PUBLISHER";
             bool addWhere = false;
-            String checks = "";
+            string checks = "";
             //Construct the where statement based on user input
             if (!string.IsNullOrWhiteSpace(tb_pub_pubName.Text))
             {
