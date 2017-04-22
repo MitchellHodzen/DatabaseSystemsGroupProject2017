@@ -309,6 +309,7 @@
             this.btn_newTitle.TabIndex = 28;
             this.btn_newTitle.Text = "Add New Title";
             this.btn_newTitle.UseVisualStyleBackColor = true;
+            this.btn_newTitle.Click += new System.EventHandler(this.btn_newTitle_Click);
             // 
             // btn_title_search
             // 
@@ -461,6 +462,7 @@
             this.btn_addAuthor.TabIndex = 19;
             this.btn_addAuthor.Text = "Add New Author";
             this.btn_addAuthor.UseVisualStyleBackColor = true;
+            this.btn_addAuthor.Click += new System.EventHandler(this.btn_addAuthor_Click);
             // 
             // btn_author_search
             // 

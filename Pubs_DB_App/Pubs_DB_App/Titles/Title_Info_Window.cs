@@ -106,5 +106,11 @@ namespace Pubs_DB_App
             Authors_Window authorWindow = new Authors_Window((string)dgv2.CurrentRow.Cells[0].Value);
             authorWindow.Show();
         }
+
+        private void tb_addtitle_Click(object sender, EventArgs e)
+        {
+            Insert_Window_Title insertTitle = new Insert_Window_Title();
+            insertTitle.Show();
+        }
     }
 }

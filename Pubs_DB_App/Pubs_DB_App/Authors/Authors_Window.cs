@@ -85,6 +85,13 @@ namespace Pubs_DB_App.Authors
             Title_Info_Window titleWindow = new Title_Info_Window((string)dgv2.CurrentRow.Cells[0].Value);
             titleWindow.Show();
         }
+
+
+        private void button3_Click_1(object sender, EventArgs e)
+        {
+            Insert_Authors_Window insertAuthor = new Insert_Authors_Window();
+            insertAuthor.Show();
+        }
     }
 }
 

@@ -356,5 +356,17 @@ namespace Pubs_DB_App
             Authors_Window authorWindow = new Authors_Window((string)dgv_author.CurrentRow.Cells[0].Value);
             authorWindow.Show();
         }
+
+        private void btn_newTitle_Click(object sender, EventArgs e)
+        {
+            Insert_Authors_Window insertAuthor = new Insert_Authors_Window();
+            insertAuthor.Show();
+        }
+
+        private void btn_addAuthor_Click(object sender, EventArgs e)
+        {
+            Insert_Authors_Window insertAuthor = new Insert_Authors_Window();
+            insertAuthor.Show();
+        }
     }
 }

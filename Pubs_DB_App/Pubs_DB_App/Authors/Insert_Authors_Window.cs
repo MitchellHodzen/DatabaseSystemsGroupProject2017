@@ -16,5 +16,10 @@ namespace Pubs_DB_App.Authors
         {
             InitializeComponent();
         }
+
+        private void btn_submit_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

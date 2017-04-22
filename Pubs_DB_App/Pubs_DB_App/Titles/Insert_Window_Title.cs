@@ -21,5 +21,10 @@ namespace Pubs_DB_App
         {
 
         }
+
+        private void btn_submit_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

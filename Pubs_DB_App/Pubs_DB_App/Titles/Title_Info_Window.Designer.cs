@@ -36,6 +36,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
+            this.tb_addtitle = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgv)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv2)).BeginInit();
             this.SuspendLayout();
@@ -46,9 +47,9 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv.Location = new System.Drawing.Point(118, 33);
+            this.dgv.Location = new System.Drawing.Point(142, 33);
             this.dgv.Name = "dgv";
-            this.dgv.Size = new System.Drawing.Size(452, 68);
+            this.dgv.Size = new System.Drawing.Size(459, 68);
             this.dgv.TabIndex = 82;
             // 
             // label1
@@ -87,15 +88,15 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgv2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv2.Location = new System.Drawing.Point(118, 130);
+            this.dgv2.Location = new System.Drawing.Point(142, 130);
             this.dgv2.Name = "dgv2";
-            this.dgv2.Size = new System.Drawing.Size(451, 66);
+            this.dgv2.Size = new System.Drawing.Size(458, 66);
             this.dgv2.TabIndex = 85;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(115, 17);
+            this.label3.Location = new System.Drawing.Point(139, 17);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(48, 13);
             this.label3.TabIndex = 86;
@@ -104,7 +105,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(115, 114);
+            this.label4.Location = new System.Drawing.Point(139, 114);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(49, 13);
             this.label4.TabIndex = 87;
@@ -112,19 +113,30 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(99, 202);
+            this.button2.Location = new System.Drawing.Point(142, 202);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(389, 23);
+            this.button2.Size = new System.Drawing.Size(459, 23);
             this.button2.TabIndex = 94;
             this.button2.Text = "Select Author";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // tb_addtitle
+            // 
+            this.tb_addtitle.Location = new System.Drawing.Point(0, 204);
+            this.tb_addtitle.Name = "tb_addtitle";
+            this.tb_addtitle.Size = new System.Drawing.Size(119, 23);
+            this.tb_addtitle.TabIndex = 95;
+            this.tb_addtitle.Text = "Add New Title";
+            this.tb_addtitle.UseVisualStyleBackColor = true;
+            this.tb_addtitle.Click += new System.EventHandler(this.tb_addtitle_Click);
+            // 
             // Title_Info_Window
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(574, 239);
+            this.ClientSize = new System.Drawing.Size(605, 239);
+            this.Controls.Add(this.tb_addtitle);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -153,5 +165,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button tb_addtitle;
     }
 }
