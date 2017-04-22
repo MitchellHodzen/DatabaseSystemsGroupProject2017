@@ -15,10 +15,14 @@ namespace Pubs_DB_App.Publishers
     {
 
         public string pubID;
-        public Publisher_Window(string pubID)
+        public Publisher_Window(string pubID, string name, string city, string state, string country)
         {
             InitializeComponent();
             this.pubID = pubID;
+            this.tb_pubname.Text = name;
+            this.tb_city.Text = city;
+            this.tb_state.Text = state;
+            this.tb_country.Text = country;
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -55,7 +59,7 @@ namespace Pubs_DB_App.Publishers
 
         private void button5_Click(object sender, EventArgs e)
         {
-            Insert_Window_Job iwj = new Insert_Window_Job();
+            Insert_Window_Job iwj = new Insert_Window_Job(pubID);
             iwj.Show();
         }
 
