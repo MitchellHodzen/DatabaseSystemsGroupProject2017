@@ -31,5 +31,10 @@ namespace Pubs_DB_App.Publishers
         {
 
         }
+
+        private void btn_submit_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

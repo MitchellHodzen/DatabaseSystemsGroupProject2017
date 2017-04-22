@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Pubs_DB_App.Publishers;
 using System.Data.SqlClient;
+using Pubs_DB_App.Authors;
 
 namespace Pubs_DB_App
 {
@@ -153,6 +154,146 @@ namespace Pubs_DB_App
 
         private void button5_Click(object sender, EventArgs e)
         {
+            //Begin building the SQL command to view the titles
+            string command = "select title.titleID, title, type, pubDate, authorFName, authorLName from title " +
+                "join titleauthor on title.titleID = titleauthor.titleID " +
+                "join author On titleauthor.authorID = author.authorID";
+
+            bool addWhere = false;
+            string checks = "";
+            //Construct the where statement based on user input
+            if (!string.IsNullOrWhiteSpace(tb_title_fName.Text))
+            {
+                checks = checks + "authorFName = " + "'" + tb_title_fName.Text + "'" + " ";
+                addWhere = true;
+            }
+            if (!string.IsNullOrWhiteSpace(tb_title_lName.Text))
+            {
+                if (addWhere == true)
+                {
+                    checks = checks + " AND ";
+                }
+                checks = checks + "authorLName = " + "'" + tb_title_lName.Text + "'" + " ";
+                addWhere = true;
+            }
+            if (!string.IsNullOrWhiteSpace(tb_title_type.Text))
+            {
+                if (addWhere == true)
+                {
+                    checks = checks + " AND ";
+                }
+                checks = checks + "type = " + "'" + tb_title_type.Text + "'" + " ";
+                addWhere = true;
+            }
+            if (!string.IsNullOrWhiteSpace(tb_title_pubDate.Text))
+            {
+                if (addWhere == true)
+                {
+                    checks = checks + " AND ";
+                }
+                checks = checks + "pubDate = " + "'" + tb_title_pubDate.Text + "'" + " ";
+                addWhere = true;
+            }
+            //Combine the statements together
+            if (addWhere == true)
+            {
+                command = command + " WHERE " + checks;
+            }
+
+            //Connets to the database using the connection string from the connection page
+            using (SqlConnection connection = new SqlConnection(ConnectionWindow.ConnectionString))
+            {
+                try
+                {
+                    //Open the database
+                    connection.Open();
+                    //Creates SQL command using the command string generated earlier
+                    SqlCommand selectTitlesCommand = new SqlCommand(command, connection);
+                    //Executes command and recieves output
+                    SqlDataAdapter adapter = new SqlDataAdapter(selectTitlesCommand);
+
+                    //Displays output on grid view
+                    DataTable dataTable = new DataTable();
+                    adapter.Fill(dataTable);
+                    dgv_title.DataSource = dataTable;
+                    dgv_title.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+                }
+                catch (Exception error)
+                {
+                    MessageBox.Show(error.ToString());
+                }
+            }
+        }
+
+        private void btn_author_search_Click(object sender, EventArgs e)
+        {
+            //Begin building the SQL command to view the titles
+            string command = "select authorID, authorFName, authorLName, city, state from author";
+
+            bool addWhere = false;
+            string checks = "";
+            //Construct the where statement based on user input
+            if (!string.IsNullOrWhiteSpace(tb_author_fName.Text))
+            {
+                checks = checks + "authorFName = " + "'" + tb_author_fName.Text + "'" + " ";
+                addWhere = true;
+            }
+            if (!string.IsNullOrWhiteSpace(tb_author_lName.Text))
+            {
+                if (addWhere == true)
+                {
+                    checks = checks + " AND ";
+                }
+                checks = checks + "authorLName = " + "'" + tb_author_lName.Text + "'" + " ";
+                addWhere = true;
+            }
+            if (!string.IsNullOrWhiteSpace(tb_author_city.Text))
+            {
+                if (addWhere == true)
+                {
+                    checks = checks + " AND ";
+                }
+                checks = checks + "type = " + "'" + tb_author_city.Text + "'" + " ";
+                addWhere = true;
+            }
+            if (!string.IsNullOrWhiteSpace(tb_author_state.Text))
+            {
+                if (addWhere == true)
+                {
+                    checks = checks + " AND ";
+                }
+                checks = checks + "pubDate = " + "'" + tb_author_state.Text + "'" + " ";
+                addWhere = true;
+            }
+            //Combine the statements together
+            if (addWhere == true)
+            {
+                command = command + " WHERE " + checks;
+            }
+
+            //Connets to the database using the connection string from the connection page
+            using (SqlConnection connection = new SqlConnection(ConnectionWindow.ConnectionString))
+            {
+                try
+                {
+                    //Open the database
+                    connection.Open();
+                    //Creates SQL command using the command string generated earlier
+                    SqlCommand selectTitlesCommand = new SqlCommand(command, connection);
+                    //Executes command and recieves output
+                    SqlDataAdapter adapter = new SqlDataAdapter(selectTitlesCommand);
+
+                    //Displays output on grid view
+                    DataTable dataTable = new DataTable();
+                    adapter.Fill(dataTable);
+                    dgv_author.DataSource = dataTable;
+                    dgv_author.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+                }
+                catch (Exception error)
+                {
+                    MessageBox.Show(error.ToString());
+                }
+            }
 
         }
 
@@ -190,6 +331,18 @@ namespace Pubs_DB_App
         {
             Publisher_Window pubWindow = new Publisher_Window((string)dgv_pub.CurrentRow.Cells[0].Value);
             pubWindow.Show();
+        }
+
+        private void btn_selectTitle_Click(object sender, EventArgs e)
+        {
+            Title_Info_Window titleWindow = new Title_Info_Window((string)dgv_title.CurrentRow.Cells[0].Value);
+            titleWindow.Show();
+        }
+
+        private void btn_selectAuthor_Click(object sender, EventArgs e)
+        {
+            Authors_Window authorWindow = new Authors_Window((string)dgv_author.CurrentRow.Cells[0].Value);
+            authorWindow.Show();
         }
     }
 }

@@ -132,7 +132,7 @@
             this.tabPage1.Controls.Add(this.splitContainer1);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage1.Size = new System.Drawing.Size(763, 336);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Publishers";
@@ -268,7 +268,7 @@
             this.tabPage2.Controls.Add(this.splitContainer2);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage2.Size = new System.Drawing.Size(763, 336);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Titles";
@@ -404,6 +404,7 @@
             this.btn_selectTitle.TabIndex = 4;
             this.btn_selectTitle.Text = "Select Title";
             this.btn_selectTitle.UseVisualStyleBackColor = true;
+            this.btn_selectTitle.Click += new System.EventHandler(this.btn_selectTitle_Click);
             // 
             // dgv_title
             // 
@@ -418,7 +419,7 @@
             this.tabPage3.Controls.Add(this.splitContainer3);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage3.Size = new System.Drawing.Size(763, 336);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Authors";
@@ -469,6 +470,7 @@
             this.btn_author_search.TabIndex = 18;
             this.btn_author_search.Text = "Search";
             this.btn_author_search.UseVisualStyleBackColor = true;
+            this.btn_author_search.Click += new System.EventHandler(this.btn_author_search_Click);
             // 
             // tb_author_state
             // 
@@ -547,6 +549,7 @@
             this.btn_selectAuthor.TabIndex = 3;
             this.btn_selectAuthor.Text = "Select Author";
             this.btn_selectAuthor.UseVisualStyleBackColor = true;
+            this.btn_selectAuthor.Click += new System.EventHandler(this.btn_selectAuthor_Click);
             // 
             // dgv_author
             // 
@@ -561,7 +564,7 @@
             this.tabPage4.Controls.Add(this.splitContainer4);
             this.tabPage4.Location = new System.Drawing.Point(4, 22);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage4.Size = new System.Drawing.Size(763, 336);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Stores";
