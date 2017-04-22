@@ -253,7 +253,7 @@ namespace Pubs_DB_App
                 {
                     checks = checks + " AND ";
                 }
-                checks = checks + "type = " + "'" + tb_author_city.Text + "'" + " ";
+                checks = checks + "city = " + "'" + tb_author_city.Text + "'" + " ";
                 addWhere = true;
             }
             if (!string.IsNullOrWhiteSpace(tb_author_state.Text))
@@ -262,7 +262,7 @@ namespace Pubs_DB_App
                 {
                     checks = checks + " AND ";
                 }
-                checks = checks + "pubDate = " + "'" + tb_author_state.Text + "'" + " ";
+                checks = checks + "state = " + "'" + tb_author_state.Text + "'" + " ";
                 addWhere = true;
             }
             //Combine the statements together
