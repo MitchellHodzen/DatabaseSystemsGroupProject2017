@@ -5,7 +5,7 @@ use master
 
 IF exists (SELECT * FROM sysdatabases WHERE name='Group1Pubs')
 BEGIN
-  raiserror('Dropping existing pubs database ....',0,1)
+  raiserror('Dropping existing Group1Pubs database ....',0,1)
   DROP DATABASE Group1Pubs
 END
 
@@ -16,14 +16,14 @@ use Group1Pubs
 CREATE TABLE [AUTHOR]
 ( 
 	[authorID]           varchar(11)  NOT NULL ,
-	[authorFName]        varchar(20)  NULL ,
-	[authorLName]        varchar(40)  NULL ,
-	[phone]              char(12)     NULL ,
+	[authorFName]        varchar(20)  NOT NULL ,
+	[authorLName]        varchar(40)  NOT NULL ,
+	[phone]              char(12)     NOT NULL ,
 	[address]            varchar(40)  NULL ,
 	[city]               varchar(20)  NULL ,
 	[state]              char(2)      NULL ,
 	[zip]                char(5)      NULL ,
-	[contract]           bit          NULL 
+	[contract]           bit          NOT NULL 
 )
 go
 
@@ -47,8 +47,8 @@ CREATE TABLE [DISCOUNT]
 ( 
 	[discountID]         smallint IDENTITY(1,1),
 	[pubID]              char(4)  NOT NULL ,
-	[discountTypeDesc]   varchar(40)  NULL ,
-	[discountAmount]     money  NULL 
+	[discountTypeDesc]   varchar(40)  NOT NULL ,
+	[discountAmount]     money  NOT NULL 
 )
 go
 
@@ -60,9 +60,9 @@ CREATE TABLE [EMPLOYMENT]
 ( 
 	[SSN]                char(9)  NOT NULL ,
 	[jobID]              smallint NOT NULL ,
-	[job_lvl]            tinyint  NULL ,
-	[positionStartDate]  date     NULL ,
-	[empID]              char(9) NULL ,
+	[job_lvl]            tinyint  NOT NULL ,
+	[positionStartDate]  date     NOT NULL ,
+	[empID]              char(9)  NOT NULL ,
 	[pubID]              char(4)  NOT NULL 
 )
 go
@@ -75,9 +75,9 @@ CREATE TABLE [JOB]
 ( 
 	[jobID]              smallint IDENTITY(1,1),
 	[pubID]              char(4)   NOT NULL ,
-	[jobDesc]            varchar(50)  NULL ,
-	[min_lvl]            tinyint  NULL ,
-	[max_lvl]            tinyint  NULL 
+	[jobDesc]            varchar(50)  NOT NULL ,
+	[min_lvl]            tinyint  NOT NULL ,
+	[max_lvl]            tinyint  NOT NULL 
 )
 go
 
@@ -88,8 +88,8 @@ go
 CREATE TABLE [PERSON]
 ( 
 	[SSN]                char(9)  NOT NULL ,
-	[personFName]        varchar(20)  NULL ,
-	[personLName]        varchar(30)  NULL ,
+	[personFName]        varchar(20)  NOT NULL ,
+	[personLName]        varchar(30)  NOT NULL , 
 	[personMInit]        char(1)  NULL 
 )
 go
@@ -101,7 +101,7 @@ go
 CREATE TABLE [PUBLISHER]
 ( 
 	[pubID]              char(4)  NOT NULL ,
-	[pubName]            varchar(40)  NULL ,
+	[pubName]            varchar(40)  NOT NULL ,
 	[city]               varchar(20)  NULL ,
 	[state]              char(2)  NULL ,
 	[country]            varchar(30)  NULL ,
@@ -119,9 +119,9 @@ CREATE TABLE [SALE]
 	[orderNO]            varchar(20)   NOT NULL ,
 	[titleID]            varchar(6)  NOT NULL ,
 	[storeID]            char(4)  NOT NULL ,
-	[orderDate]          date  NULL ,
-	[quantity]           smallint  NULL ,
-	[payterms]           varchar(12)  NULL 
+	[orderDate]          date  NOT NULL ,
+	[quantity]           smallint  NOT NULL ,
+	[payterms]           varchar(12)  NOT NULL 
 )
 go
 
@@ -144,7 +144,7 @@ go
 CREATE TABLE [STORE]
 ( 
 	[storeID]            char(4)  NOT NULL ,
-	[storeName]          varchar(40)  NULL ,
+	[storeName]          varchar(40)  NOT NULL ,
 	[address]            varchar(40)  NULL ,
 	[city]               varchar(20)  NULL ,
 	[state]              char(2)  NULL ,
@@ -160,7 +160,7 @@ CREATE TABLE [TITLE]
 ( 
 	[titleID]            varchar(6)  NOT NULL ,
 	[pubID]              char(4)  NOT NULL ,
-	[title]              varchar(80)  NULL ,
+	[title]              varchar(80)  NOT NULL ,
 	[type]               char(12)  NULL ,
 	[TypeList]           char(18)  NULL , --keep?
 	[price]              money  NULL ,
@@ -191,8 +191,8 @@ go
 CREATE TABLE [VOLUMEDISC]
 ( 
 	[discountID]         smallint  NOT NULL ,
-	[lowQty]             smallint  NULL ,
-	[highQty]            smallint  NULL ,
+	[lowQty]             smallint  NOT NULL ,
+	[highQty]            smallint  NOT NULL ,
 	[pubID]              char(4)  NOT NULL 
 )
 go
