@@ -368,5 +368,109 @@ namespace Pubs_DB_App
             Insert_Authors_Window insertAuthor = new Insert_Authors_Window();
             insertAuthor.Show();
         }
+
+        //Store Tab Functions
+        private void btn_store_search_Click(object sender, EventArgs e)
+        {
+            //Begin building the SQL command to view the publishers 
+            String command = "SELECT * FROM STORE";
+            bool addWhere = false;
+            String checks = "";
+            //Construct the where statement based on user input
+            if (!string.IsNullOrWhiteSpace(tb_store_name.Text))
+            {
+                checks = checks + "storeName = " + "'" + tb_store_name.Text + "'" + " ";
+                addWhere = true;
+            }
+            if (!string.IsNullOrWhiteSpace(tb_store_id.Text))
+            {
+                if (addWhere == true)
+                {
+                    checks = checks + " AND ";
+                }
+                checks = checks + "storeID = " + "'" + tb_store_id.Text + "'" + " ";
+                addWhere = true;
+            }
+            if (!string.IsNullOrWhiteSpace(tb_store_address.Text))
+            {
+                if (addWhere == true)
+                {
+                    checks = checks + " AND ";
+                }
+                checks = checks + "address = " + "'" + tb_store_address.Text + "'" + " ";
+                addWhere = true;
+            }
+            if (!string.IsNullOrWhiteSpace(tb_pub_city.Text))
+            {
+                if (addWhere == true)
+                {
+                    checks = checks + " AND ";
+                }
+                checks = checks + "city = " + "'" + tb_store_city.Text + "'" + " ";
+                addWhere = true;
+            }
+            if (!string.IsNullOrWhiteSpace(tb_store_state.Text))
+            {
+                if (addWhere == true)
+                {
+                    checks = checks + " AND ";
+                }
+                checks = checks + "state = " + "'" + tb_store_state.Text + "'" + " ";
+                addWhere = true;
+            }
+            if (!string.IsNullOrWhiteSpace(tb_store_zip.Text))
+            {
+                if (addWhere == true)
+                {
+                    checks = checks + " AND ";
+                }
+                checks = checks + "zip = " + "'" + tb_store_zip.Text + "'" + " ";
+                addWhere = true;
+            }
+            //Combine the statements together
+            if (addWhere == true)
+            {
+                command = command + " WHERE " + checks;
+            }
+
+            //Connets to the database using the connection string from the connection page
+            using (SqlConnection connection = new SqlConnection(ConnectionWindow.ConnectionString))
+            {
+                try
+                {
+                    //Open the database
+                    connection.Open();
+                    //Creates SQL command using the command string generated earlier
+                    SqlCommand selectStoresCommand = new SqlCommand(command, connection);
+                    //Executes command and recieves output
+                    SqlDataAdapter adapter = new SqlDataAdapter(selectStoresCommand);
+
+                    //Displays output on grid view
+                    DataTable dataTable = new DataTable();
+                    adapter.Fill(dataTable);
+                    dgv_store.DataSource = dataTable;
+                    dgv_store.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+                }
+                catch (Exception error)
+                {
+                    MessageBox.Show(error.ToString());
+                }
+            }
+        }
+        private void btn_selectStore_Click(object sender, EventArgs e)
+        {
+            Stores storeWindow = new Stores((string)dgv_store.CurrentRow.Cells[0].Value);
+            storeWindow.Show();
+        }
+        private void btn_addStore_Click(object sender, EventArgs e)
+        {
+            Insert_Window_Store addStoreWindow = new Insert_Window_Store();
+            addStoreWindow.Show();
+        }
+
+        private void tb_store_city_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
