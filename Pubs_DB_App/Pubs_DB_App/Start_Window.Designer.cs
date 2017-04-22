@@ -33,13 +33,9 @@
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.tb_pub_country = new System.Windows.Forms.TextBox();
             this.btn_pub_search = new System.Windows.Forms.Button();
-            this.check_pub_country = new System.Windows.Forms.CheckBox();
             this.tb_pub_state = new System.Windows.Forms.TextBox();
-            this.check_pub_state = new System.Windows.Forms.CheckBox();
             this.tb_pub_city = new System.Windows.Forms.TextBox();
-            this.check_pub_city = new System.Windows.Forms.CheckBox();
             this.tb_pub_pubName = new System.Windows.Forms.TextBox();
-            this.check_pub_pubName = new System.Windows.Forms.CheckBox();
             this.btn_selectPub = new System.Windows.Forms.Button();
             this.dgv_pub = new System.Windows.Forms.DataGridView();
             this.tabPage2 = new System.Windows.Forms.TabPage();
@@ -47,13 +43,9 @@
             this.btn_newTitle = new System.Windows.Forms.Button();
             this.btn_title_search = new System.Windows.Forms.Button();
             this.tb_title_pubDate = new System.Windows.Forms.TextBox();
-            this.check_title_pubDate = new System.Windows.Forms.CheckBox();
             this.tb_title_type = new System.Windows.Forms.TextBox();
-            this.check_title_type = new System.Windows.Forms.CheckBox();
             this.tb_title_lName = new System.Windows.Forms.TextBox();
-            this.check_title_lName = new System.Windows.Forms.CheckBox();
             this.tb_title_fName = new System.Windows.Forms.TextBox();
-            this.check_title_fname = new System.Windows.Forms.CheckBox();
             this.btn_selectTitle = new System.Windows.Forms.Button();
             this.dgv_title = new System.Windows.Forms.DataGridView();
             this.tabPage3 = new System.Windows.Forms.TabPage();
@@ -61,25 +53,15 @@
             this.btn_addAuthor = new System.Windows.Forms.Button();
             this.btn_author_search = new System.Windows.Forms.Button();
             this.tb_author_state = new System.Windows.Forms.TextBox();
-            this.check_author_state = new System.Windows.Forms.CheckBox();
             this.tb_author_city = new System.Windows.Forms.TextBox();
-            this.check_author_city = new System.Windows.Forms.CheckBox();
             this.tb_author_lName = new System.Windows.Forms.TextBox();
-            this.check_author_lName = new System.Windows.Forms.CheckBox();
             this.tb_author_fName = new System.Windows.Forms.TextBox();
-            this.check_author_fName = new System.Windows.Forms.CheckBox();
             this.btn_selectAuthor = new System.Windows.Forms.Button();
             this.dgv_author = new System.Windows.Forms.DataGridView();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.splitContainer4 = new System.Windows.Forms.SplitContainer();
             this.btn_addStore = new System.Windows.Forms.Button();
             this.btn_store_search = new System.Windows.Forms.Button();
-            this.check_store_zip = new System.Windows.Forms.CheckBox();
-            this.check_store_state = new System.Windows.Forms.CheckBox();
-            this.check_store_city = new System.Windows.Forms.CheckBox();
-            this.check_store_address = new System.Windows.Forms.CheckBox();
-            this.check_store_id = new System.Windows.Forms.CheckBox();
-            this.check_store_name = new System.Windows.Forms.CheckBox();
             this.tb_store_id = new System.Windows.Forms.TextBox();
             this.tb_store_address = new System.Windows.Forms.TextBox();
             this.tb_store_city = new System.Windows.Forms.TextBox();
@@ -88,6 +70,24 @@
             this.tb_store_name = new System.Windows.Forms.TextBox();
             this.btn_selectStore = new System.Windows.Forms.Button();
             this.dgv_store = new System.Windows.Forms.DataGridView();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
@@ -132,7 +132,7 @@
             this.tabPage1.Controls.Add(this.splitContainer1);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage1.Size = new System.Drawing.Size(763, 336);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Publishers";
@@ -146,15 +146,15 @@
             // 
             // splitContainer1.Panel1
             // 
+            this.splitContainer1.Panel1.Controls.Add(this.label4);
+            this.splitContainer1.Panel1.Controls.Add(this.label3);
+            this.splitContainer1.Panel1.Controls.Add(this.label2);
+            this.splitContainer1.Panel1.Controls.Add(this.label1);
             this.splitContainer1.Panel1.Controls.Add(this.tb_pub_country);
             this.splitContainer1.Panel1.Controls.Add(this.btn_pub_search);
-            this.splitContainer1.Panel1.Controls.Add(this.check_pub_country);
             this.splitContainer1.Panel1.Controls.Add(this.tb_pub_state);
-            this.splitContainer1.Panel1.Controls.Add(this.check_pub_state);
             this.splitContainer1.Panel1.Controls.Add(this.tb_pub_city);
-            this.splitContainer1.Panel1.Controls.Add(this.check_pub_city);
             this.splitContainer1.Panel1.Controls.Add(this.tb_pub_pubName);
-            this.splitContainer1.Panel1.Controls.Add(this.check_pub_pubName);
             // 
             // splitContainer1.Panel2
             // 
@@ -166,7 +166,7 @@
             // 
             // tb_pub_country
             // 
-            this.tb_pub_country.Location = new System.Drawing.Point(109, 107);
+            this.tb_pub_country.Location = new System.Drawing.Point(100, 107);
             this.tb_pub_country.Name = "tb_pub_country";
             this.tb_pub_country.Size = new System.Drawing.Size(136, 20);
             this.tb_pub_country.TabIndex = 9;
@@ -181,67 +181,26 @@
             this.btn_pub_search.UseVisualStyleBackColor = true;
             this.btn_pub_search.Click += new System.EventHandler(this.button1_Click);
             // 
-            // check_pub_country
-            // 
-            this.check_pub_country.AutoSize = true;
-            this.check_pub_country.Location = new System.Drawing.Point(3, 109);
-            this.check_pub_country.Name = "check_pub_country";
-            this.check_pub_country.Size = new System.Drawing.Size(62, 17);
-            this.check_pub_country.TabIndex = 8;
-            this.check_pub_country.Text = "Country";
-            this.check_pub_country.UseVisualStyleBackColor = true;
-            // 
             // tb_pub_state
             // 
-            this.tb_pub_state.Location = new System.Drawing.Point(109, 81);
+            this.tb_pub_state.Location = new System.Drawing.Point(100, 81);
             this.tb_pub_state.Name = "tb_pub_state";
             this.tb_pub_state.Size = new System.Drawing.Size(136, 20);
             this.tb_pub_state.TabIndex = 7;
             // 
-            // check_pub_state
-            // 
-            this.check_pub_state.AutoSize = true;
-            this.check_pub_state.Location = new System.Drawing.Point(3, 83);
-            this.check_pub_state.Name = "check_pub_state";
-            this.check_pub_state.Size = new System.Drawing.Size(51, 17);
-            this.check_pub_state.TabIndex = 6;
-            this.check_pub_state.Text = "State";
-            this.check_pub_state.UseVisualStyleBackColor = true;
-            // 
             // tb_pub_city
             // 
-            this.tb_pub_city.Location = new System.Drawing.Point(109, 55);
+            this.tb_pub_city.Location = new System.Drawing.Point(100, 55);
             this.tb_pub_city.Name = "tb_pub_city";
             this.tb_pub_city.Size = new System.Drawing.Size(136, 20);
             this.tb_pub_city.TabIndex = 5;
             // 
-            // check_pub_city
-            // 
-            this.check_pub_city.AutoSize = true;
-            this.check_pub_city.Location = new System.Drawing.Point(3, 57);
-            this.check_pub_city.Name = "check_pub_city";
-            this.check_pub_city.Size = new System.Drawing.Size(43, 17);
-            this.check_pub_city.TabIndex = 4;
-            this.check_pub_city.Text = "City";
-            this.check_pub_city.UseVisualStyleBackColor = true;
-            this.check_pub_city.CheckedChanged += new System.EventHandler(this.checkBox3_CheckedChanged);
-            // 
             // tb_pub_pubName
             // 
-            this.tb_pub_pubName.Location = new System.Drawing.Point(109, 29);
+            this.tb_pub_pubName.Location = new System.Drawing.Point(100, 29);
             this.tb_pub_pubName.Name = "tb_pub_pubName";
             this.tb_pub_pubName.Size = new System.Drawing.Size(136, 20);
             this.tb_pub_pubName.TabIndex = 2;
-            // 
-            // check_pub_pubName
-            // 
-            this.check_pub_pubName.AutoSize = true;
-            this.check_pub_pubName.Location = new System.Drawing.Point(3, 31);
-            this.check_pub_pubName.Name = "check_pub_pubName";
-            this.check_pub_pubName.Size = new System.Drawing.Size(100, 17);
-            this.check_pub_pubName.TabIndex = 0;
-            this.check_pub_pubName.Text = "Publisher Name";
-            this.check_pub_pubName.UseVisualStyleBackColor = true;
             // 
             // btn_selectPub
             // 
@@ -268,7 +227,7 @@
             this.tabPage2.Controls.Add(this.splitContainer2);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage2.Size = new System.Drawing.Size(763, 336);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Titles";
@@ -282,16 +241,16 @@
             // 
             // splitContainer2.Panel1
             // 
+            this.splitContainer2.Panel1.Controls.Add(this.label8);
+            this.splitContainer2.Panel1.Controls.Add(this.label7);
+            this.splitContainer2.Panel1.Controls.Add(this.label6);
+            this.splitContainer2.Panel1.Controls.Add(this.label5);
             this.splitContainer2.Panel1.Controls.Add(this.btn_newTitle);
             this.splitContainer2.Panel1.Controls.Add(this.btn_title_search);
             this.splitContainer2.Panel1.Controls.Add(this.tb_title_pubDate);
-            this.splitContainer2.Panel1.Controls.Add(this.check_title_pubDate);
             this.splitContainer2.Panel1.Controls.Add(this.tb_title_type);
-            this.splitContainer2.Panel1.Controls.Add(this.check_title_type);
             this.splitContainer2.Panel1.Controls.Add(this.tb_title_lName);
-            this.splitContainer2.Panel1.Controls.Add(this.check_title_lName);
             this.splitContainer2.Panel1.Controls.Add(this.tb_title_fName);
-            this.splitContainer2.Panel1.Controls.Add(this.check_title_fname);
             // 
             // splitContainer2.Panel2
             // 
@@ -323,79 +282,35 @@
             // 
             // tb_title_pubDate
             // 
-            this.tb_title_pubDate.Location = new System.Drawing.Point(110, 95);
+            this.tb_title_pubDate.Location = new System.Drawing.Point(105, 95);
             this.tb_title_pubDate.Name = "tb_title_pubDate";
             this.tb_title_pubDate.Size = new System.Drawing.Size(135, 20);
             this.tb_title_pubDate.TabIndex = 26;
             this.tb_title_pubDate.TextChanged += new System.EventHandler(this.textBox9_TextChanged);
             // 
-            // check_title_pubDate
-            // 
-            this.check_title_pubDate.AutoSize = true;
-            this.check_title_pubDate.Location = new System.Drawing.Point(4, 97);
-            this.check_title_pubDate.Name = "check_title_pubDate";
-            this.check_title_pubDate.Size = new System.Drawing.Size(98, 17);
-            this.check_title_pubDate.TabIndex = 25;
-            this.check_title_pubDate.Text = "Published Date";
-            this.check_title_pubDate.UseVisualStyleBackColor = true;
-            this.check_title_pubDate.CheckedChanged += new System.EventHandler(this.checkBox9_CheckedChanged);
-            // 
             // tb_title_type
             // 
-            this.tb_title_type.Location = new System.Drawing.Point(110, 69);
+            this.tb_title_type.Location = new System.Drawing.Point(105, 69);
             this.tb_title_type.Name = "tb_title_type";
             this.tb_title_type.Size = new System.Drawing.Size(135, 20);
             this.tb_title_type.TabIndex = 24;
             this.tb_title_type.TextChanged += new System.EventHandler(this.textBox10_TextChanged);
             // 
-            // check_title_type
-            // 
-            this.check_title_type.AutoSize = true;
-            this.check_title_type.Location = new System.Drawing.Point(4, 71);
-            this.check_title_type.Name = "check_title_type";
-            this.check_title_type.Size = new System.Drawing.Size(50, 17);
-            this.check_title_type.TabIndex = 23;
-            this.check_title_type.Text = "Type";
-            this.check_title_type.UseVisualStyleBackColor = true;
-            this.check_title_type.CheckedChanged += new System.EventHandler(this.checkBox10_CheckedChanged);
-            // 
             // tb_title_lName
             // 
-            this.tb_title_lName.Location = new System.Drawing.Point(110, 43);
+            this.tb_title_lName.Location = new System.Drawing.Point(105, 43);
             this.tb_title_lName.Name = "tb_title_lName";
             this.tb_title_lName.Size = new System.Drawing.Size(135, 20);
             this.tb_title_lName.TabIndex = 22;
             this.tb_title_lName.TextChanged += new System.EventHandler(this.textBox11_TextChanged);
             // 
-            // check_title_lName
-            // 
-            this.check_title_lName.AutoSize = true;
-            this.check_title_lName.Location = new System.Drawing.Point(4, 45);
-            this.check_title_lName.Name = "check_title_lName";
-            this.check_title_lName.Size = new System.Drawing.Size(111, 17);
-            this.check_title_lName.TabIndex = 21;
-            this.check_title_lName.Text = "Author Last Name";
-            this.check_title_lName.UseVisualStyleBackColor = true;
-            this.check_title_lName.CheckedChanged += new System.EventHandler(this.checkBox11_CheckedChanged);
-            // 
             // tb_title_fName
             // 
-            this.tb_title_fName.Location = new System.Drawing.Point(110, 17);
+            this.tb_title_fName.Location = new System.Drawing.Point(105, 17);
             this.tb_title_fName.Name = "tb_title_fName";
             this.tb_title_fName.Size = new System.Drawing.Size(135, 20);
             this.tb_title_fName.TabIndex = 20;
             this.tb_title_fName.TextChanged += new System.EventHandler(this.textBox12_TextChanged);
-            // 
-            // check_title_fname
-            // 
-            this.check_title_fname.AutoSize = true;
-            this.check_title_fname.Location = new System.Drawing.Point(4, 19);
-            this.check_title_fname.Name = "check_title_fname";
-            this.check_title_fname.Size = new System.Drawing.Size(110, 17);
-            this.check_title_fname.TabIndex = 19;
-            this.check_title_fname.Text = "Author First Name";
-            this.check_title_fname.UseVisualStyleBackColor = true;
-            this.check_title_fname.CheckedChanged += new System.EventHandler(this.checkBox12_CheckedChanged);
             // 
             // btn_selectTitle
             // 
@@ -420,7 +335,7 @@
             this.tabPage3.Controls.Add(this.splitContainer3);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage3.Size = new System.Drawing.Size(763, 336);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Authors";
@@ -434,16 +349,16 @@
             // 
             // splitContainer3.Panel1
             // 
+            this.splitContainer3.Panel1.Controls.Add(this.label12);
+            this.splitContainer3.Panel1.Controls.Add(this.label11);
+            this.splitContainer3.Panel1.Controls.Add(this.label10);
+            this.splitContainer3.Panel1.Controls.Add(this.label9);
             this.splitContainer3.Panel1.Controls.Add(this.btn_addAuthor);
             this.splitContainer3.Panel1.Controls.Add(this.btn_author_search);
             this.splitContainer3.Panel1.Controls.Add(this.tb_author_state);
-            this.splitContainer3.Panel1.Controls.Add(this.check_author_state);
             this.splitContainer3.Panel1.Controls.Add(this.tb_author_city);
-            this.splitContainer3.Panel1.Controls.Add(this.check_author_city);
             this.splitContainer3.Panel1.Controls.Add(this.tb_author_lName);
-            this.splitContainer3.Panel1.Controls.Add(this.check_author_lName);
             this.splitContainer3.Panel1.Controls.Add(this.tb_author_fName);
-            this.splitContainer3.Panel1.Controls.Add(this.check_author_fName);
             this.splitContainer3.Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.splitContainer3_Panel1_Paint);
             // 
             // splitContainer3.Panel2
@@ -476,72 +391,31 @@
             // 
             // tb_author_state
             // 
-            this.tb_author_state.Location = new System.Drawing.Point(110, 104);
+            this.tb_author_state.Location = new System.Drawing.Point(89, 104);
             this.tb_author_state.Name = "tb_author_state";
             this.tb_author_state.Size = new System.Drawing.Size(135, 20);
             this.tb_author_state.TabIndex = 17;
             // 
-            // check_author_state
-            // 
-            this.check_author_state.AutoSize = true;
-            this.check_author_state.Location = new System.Drawing.Point(4, 106);
-            this.check_author_state.Name = "check_author_state";
-            this.check_author_state.Size = new System.Drawing.Size(51, 17);
-            this.check_author_state.TabIndex = 16;
-            this.check_author_state.Text = "State";
-            this.check_author_state.UseVisualStyleBackColor = true;
-            // 
             // tb_author_city
             // 
-            this.tb_author_city.Location = new System.Drawing.Point(110, 78);
+            this.tb_author_city.Location = new System.Drawing.Point(89, 78);
             this.tb_author_city.Name = "tb_author_city";
             this.tb_author_city.Size = new System.Drawing.Size(135, 20);
             this.tb_author_city.TabIndex = 15;
             // 
-            // check_author_city
-            // 
-            this.check_author_city.AutoSize = true;
-            this.check_author_city.Location = new System.Drawing.Point(4, 80);
-            this.check_author_city.Name = "check_author_city";
-            this.check_author_city.Size = new System.Drawing.Size(43, 17);
-            this.check_author_city.TabIndex = 14;
-            this.check_author_city.Text = "City";
-            this.check_author_city.UseVisualStyleBackColor = true;
-            // 
             // tb_author_lName
             // 
-            this.tb_author_lName.Location = new System.Drawing.Point(110, 52);
+            this.tb_author_lName.Location = new System.Drawing.Point(89, 52);
             this.tb_author_lName.Name = "tb_author_lName";
             this.tb_author_lName.Size = new System.Drawing.Size(135, 20);
             this.tb_author_lName.TabIndex = 13;
             // 
-            // check_author_lName
-            // 
-            this.check_author_lName.AutoSize = true;
-            this.check_author_lName.Location = new System.Drawing.Point(4, 54);
-            this.check_author_lName.Name = "check_author_lName";
-            this.check_author_lName.Size = new System.Drawing.Size(77, 17);
-            this.check_author_lName.TabIndex = 12;
-            this.check_author_lName.Text = "Last Name";
-            this.check_author_lName.UseVisualStyleBackColor = true;
-            // 
             // tb_author_fName
             // 
-            this.tb_author_fName.Location = new System.Drawing.Point(110, 26);
+            this.tb_author_fName.Location = new System.Drawing.Point(89, 26);
             this.tb_author_fName.Name = "tb_author_fName";
             this.tb_author_fName.Size = new System.Drawing.Size(135, 20);
             this.tb_author_fName.TabIndex = 11;
-            // 
-            // check_author_fName
-            // 
-            this.check_author_fName.AutoSize = true;
-            this.check_author_fName.Location = new System.Drawing.Point(4, 28);
-            this.check_author_fName.Name = "check_author_fName";
-            this.check_author_fName.Size = new System.Drawing.Size(76, 17);
-            this.check_author_fName.TabIndex = 10;
-            this.check_author_fName.Text = "First Name";
-            this.check_author_fName.UseVisualStyleBackColor = true;
-            this.check_author_fName.CheckedChanged += new System.EventHandler(this.checkBox8_CheckedChanged);
             // 
             // btn_selectAuthor
             // 
@@ -566,7 +440,7 @@
             this.tabPage4.Controls.Add(this.splitContainer4);
             this.tabPage4.Location = new System.Drawing.Point(4, 22);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage4.Size = new System.Drawing.Size(763, 336);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Stores";
@@ -576,19 +450,19 @@
             // 
             this.splitContainer4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainer4.Location = new System.Drawing.Point(3, 3);
-            this.splitContainer4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.splitContainer4.Margin = new System.Windows.Forms.Padding(2);
             this.splitContainer4.Name = "splitContainer4";
             // 
             // splitContainer4.Panel1
             // 
+            this.splitContainer4.Panel1.Controls.Add(this.label18);
+            this.splitContainer4.Panel1.Controls.Add(this.label17);
+            this.splitContainer4.Panel1.Controls.Add(this.label16);
+            this.splitContainer4.Panel1.Controls.Add(this.label15);
+            this.splitContainer4.Panel1.Controls.Add(this.label14);
+            this.splitContainer4.Panel1.Controls.Add(this.label13);
             this.splitContainer4.Panel1.Controls.Add(this.btn_addStore);
             this.splitContainer4.Panel1.Controls.Add(this.btn_store_search);
-            this.splitContainer4.Panel1.Controls.Add(this.check_store_zip);
-            this.splitContainer4.Panel1.Controls.Add(this.check_store_state);
-            this.splitContainer4.Panel1.Controls.Add(this.check_store_city);
-            this.splitContainer4.Panel1.Controls.Add(this.check_store_address);
-            this.splitContainer4.Panel1.Controls.Add(this.check_store_id);
-            this.splitContainer4.Panel1.Controls.Add(this.check_store_name);
             this.splitContainer4.Panel1.Controls.Add(this.tb_store_id);
             this.splitContainer4.Panel1.Controls.Add(this.tb_store_address);
             this.splitContainer4.Panel1.Controls.Add(this.tb_store_city);
@@ -608,7 +482,7 @@
             // btn_addStore
             // 
             this.btn_addStore.Location = new System.Drawing.Point(4, 299);
-            this.btn_addStore.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_addStore.Margin = new System.Windows.Forms.Padding(2);
             this.btn_addStore.Name = "btn_addStore";
             this.btn_addStore.Size = new System.Drawing.Size(243, 29);
             this.btn_addStore.TabIndex = 16;
@@ -619,7 +493,7 @@
             // btn_store_search
             // 
             this.btn_store_search.Location = new System.Drawing.Point(4, 182);
-            this.btn_store_search.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_store_search.Margin = new System.Windows.Forms.Padding(2);
             this.btn_store_search.Name = "btn_store_search";
             this.btn_store_search.Size = new System.Drawing.Size(243, 31);
             this.btn_store_search.TabIndex = 15;
@@ -627,92 +501,26 @@
             this.btn_store_search.UseVisualStyleBackColor = true;
             this.btn_store_search.Click += new System.EventHandler(this.btn_store_search_Click);
             // 
-            // check_store_zip
-            // 
-            this.check_store_zip.AutoSize = true;
-            this.check_store_zip.Location = new System.Drawing.Point(13, 146);
-            this.check_store_zip.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.check_store_zip.Name = "check_store_zip";
-            this.check_store_zip.Size = new System.Drawing.Size(41, 17);
-            this.check_store_zip.TabIndex = 14;
-            this.check_store_zip.Text = "Zip";
-            this.check_store_zip.UseVisualStyleBackColor = true;
-            // 
-            // check_store_state
-            // 
-            this.check_store_state.AutoSize = true;
-            this.check_store_state.Location = new System.Drawing.Point(13, 122);
-            this.check_store_state.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.check_store_state.Name = "check_store_state";
-            this.check_store_state.Size = new System.Drawing.Size(51, 17);
-            this.check_store_state.TabIndex = 13;
-            this.check_store_state.Text = "State";
-            this.check_store_state.UseVisualStyleBackColor = true;
-            // 
-            // check_store_city
-            // 
-            this.check_store_city.AutoSize = true;
-            this.check_store_city.Location = new System.Drawing.Point(13, 98);
-            this.check_store_city.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.check_store_city.Name = "check_store_city";
-            this.check_store_city.Size = new System.Drawing.Size(43, 17);
-            this.check_store_city.TabIndex = 12;
-            this.check_store_city.Text = "City";
-            this.check_store_city.UseVisualStyleBackColor = true;
-            // 
-            // check_store_address
-            // 
-            this.check_store_address.AutoSize = true;
-            this.check_store_address.Location = new System.Drawing.Point(13, 74);
-            this.check_store_address.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.check_store_address.Name = "check_store_address";
-            this.check_store_address.Size = new System.Drawing.Size(64, 17);
-            this.check_store_address.TabIndex = 11;
-            this.check_store_address.Text = "Address";
-            this.check_store_address.UseVisualStyleBackColor = true;
-            // 
-            // check_store_id
-            // 
-            this.check_store_id.AutoSize = true;
-            this.check_store_id.Location = new System.Drawing.Point(13, 50);
-            this.check_store_id.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.check_store_id.Name = "check_store_id";
-            this.check_store_id.Size = new System.Drawing.Size(37, 17);
-            this.check_store_id.TabIndex = 10;
-            this.check_store_id.Text = "ID";
-            this.check_store_id.UseVisualStyleBackColor = true;
-            // 
-            // check_store_name
-            // 
-            this.check_store_name.AutoSize = true;
-            this.check_store_name.Location = new System.Drawing.Point(13, 26);
-            this.check_store_name.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.check_store_name.Name = "check_store_name";
-            this.check_store_name.Size = new System.Drawing.Size(54, 17);
-            this.check_store_name.TabIndex = 9;
-            this.check_store_name.Text = "Name";
-            this.check_store_name.UseVisualStyleBackColor = true;
-            // 
             // tb_store_id
             // 
-            this.tb_store_id.Location = new System.Drawing.Point(81, 48);
-            this.tb_store_id.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tb_store_id.Location = new System.Drawing.Point(66, 48);
+            this.tb_store_id.Margin = new System.Windows.Forms.Padding(2);
             this.tb_store_id.Name = "tb_store_id";
             this.tb_store_id.Size = new System.Drawing.Size(166, 20);
             this.tb_store_id.TabIndex = 8;
             // 
             // tb_store_address
             // 
-            this.tb_store_address.Location = new System.Drawing.Point(81, 72);
-            this.tb_store_address.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tb_store_address.Location = new System.Drawing.Point(66, 72);
+            this.tb_store_address.Margin = new System.Windows.Forms.Padding(2);
             this.tb_store_address.Name = "tb_store_address";
             this.tb_store_address.Size = new System.Drawing.Size(166, 20);
             this.tb_store_address.TabIndex = 7;
             // 
             // tb_store_city
             // 
-            this.tb_store_city.Location = new System.Drawing.Point(81, 96);
-            this.tb_store_city.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tb_store_city.Location = new System.Drawing.Point(66, 96);
+            this.tb_store_city.Margin = new System.Windows.Forms.Padding(2);
             this.tb_store_city.Name = "tb_store_city";
             this.tb_store_city.Size = new System.Drawing.Size(166, 20);
             this.tb_store_city.TabIndex = 6;
@@ -720,24 +528,24 @@
             // 
             // tb_store_state
             // 
-            this.tb_store_state.Location = new System.Drawing.Point(81, 120);
-            this.tb_store_state.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tb_store_state.Location = new System.Drawing.Point(66, 120);
+            this.tb_store_state.Margin = new System.Windows.Forms.Padding(2);
             this.tb_store_state.Name = "tb_store_state";
             this.tb_store_state.Size = new System.Drawing.Size(166, 20);
             this.tb_store_state.TabIndex = 5;
             // 
             // tb_store_zip
             // 
-            this.tb_store_zip.Location = new System.Drawing.Point(81, 144);
-            this.tb_store_zip.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tb_store_zip.Location = new System.Drawing.Point(66, 144);
+            this.tb_store_zip.Margin = new System.Windows.Forms.Padding(2);
             this.tb_store_zip.Name = "tb_store_zip";
             this.tb_store_zip.Size = new System.Drawing.Size(166, 20);
             this.tb_store_zip.TabIndex = 4;
             // 
             // tb_store_name
             // 
-            this.tb_store_name.Location = new System.Drawing.Point(81, 24);
-            this.tb_store_name.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tb_store_name.Location = new System.Drawing.Point(66, 24);
+            this.tb_store_name.Margin = new System.Windows.Forms.Padding(2);
             this.tb_store_name.Name = "tb_store_name";
             this.tb_store_name.Size = new System.Drawing.Size(166, 20);
             this.tb_store_name.TabIndex = 3;
@@ -745,7 +553,7 @@
             // btn_selectStore
             // 
             this.btn_selectStore.Location = new System.Drawing.Point(2, 299);
-            this.btn_selectStore.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_selectStore.Margin = new System.Windows.Forms.Padding(2);
             this.btn_selectStore.Name = "btn_selectStore";
             this.btn_selectStore.Size = new System.Drawing.Size(501, 29);
             this.btn_selectStore.TabIndex = 1;
@@ -757,11 +565,173 @@
             // 
             this.dgv_store.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_store.Location = new System.Drawing.Point(-1, -2);
-            this.dgv_store.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgv_store.Margin = new System.Windows.Forms.Padding(2);
             this.dgv_store.Name = "dgv_store";
             this.dgv_store.Size = new System.Drawing.Size(504, 297);
             this.dgv_store.TabIndex = 0;
             this.dgv_store.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView4_CellContentClick);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(13, 32);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(81, 13);
+            this.label1.TabIndex = 10;
+            this.label1.Text = "Publisher Name";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(69, 55);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(25, 13);
+            this.label2.TabIndex = 11;
+            this.label2.Text = "CIty";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(62, 84);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(32, 13);
+            this.label3.TabIndex = 12;
+            this.label3.Text = "State";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(51, 110);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(43, 13);
+            this.label4.TabIndex = 13;
+            this.label4.Text = "Country";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(8, 20);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(91, 13);
+            this.label5.TabIndex = 29;
+            this.label5.Text = "Author First Name";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(8, 46);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(92, 13);
+            this.label6.TabIndex = 30;
+            this.label6.Text = "Author Last Name";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(68, 72);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(31, 13);
+            this.label7.TabIndex = 31;
+            this.label7.Text = "Type";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(20, 98);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(79, 13);
+            this.label8.TabIndex = 32;
+            this.label8.Text = "Published Date";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(25, 55);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(58, 13);
+            this.label9.TabIndex = 20;
+            this.label9.Text = "Last Name";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(26, 29);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(57, 13);
+            this.label10.TabIndex = 21;
+            this.label10.Text = "First Name";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(59, 81);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(24, 13);
+            this.label11.TabIndex = 22;
+            this.label11.Text = "City";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(51, 107);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(32, 13);
+            this.label12.TabIndex = 23;
+            this.label12.Text = "State";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(39, 147);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(22, 13);
+            this.label13.TabIndex = 22;
+            this.label13.Text = "Zip";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(29, 123);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(32, 13);
+            this.label14.TabIndex = 23;
+            this.label14.Text = "State";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(37, 99);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(24, 13);
+            this.label15.TabIndex = 24;
+            this.label15.Text = "City";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(16, 75);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(45, 13);
+            this.label16.TabIndex = 25;
+            this.label16.Text = "Address";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(43, 51);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(18, 13);
+            this.label17.TabIndex = 26;
+            this.label17.Text = "ID";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(26, 27);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(35, 13);
+            this.label18.TabIndex = 27;
+            this.label18.Text = "Name";
             // 
             // Start_Window
             // 
@@ -818,55 +788,55 @@
         private System.Windows.Forms.DataGridView dgv_pub;
         private System.Windows.Forms.Button btn_pub_search;
         private System.Windows.Forms.TextBox tb_pub_state;
-        private System.Windows.Forms.CheckBox check_pub_state;
         private System.Windows.Forms.TextBox tb_pub_city;
-        private System.Windows.Forms.CheckBox check_pub_city;
         private System.Windows.Forms.TextBox tb_pub_pubName;
-        private System.Windows.Forms.CheckBox check_pub_pubName;
         private System.Windows.Forms.TextBox tb_pub_country;
-        private System.Windows.Forms.CheckBox check_pub_country;
         private System.Windows.Forms.Button btn_selectPub;
         private System.Windows.Forms.Button btn_title_search;
         private System.Windows.Forms.TextBox tb_title_pubDate;
-        private System.Windows.Forms.CheckBox check_title_pubDate;
         private System.Windows.Forms.TextBox tb_title_type;
-        private System.Windows.Forms.CheckBox check_title_type;
         private System.Windows.Forms.TextBox tb_title_lName;
-        private System.Windows.Forms.CheckBox check_title_lName;
         private System.Windows.Forms.TextBox tb_title_fName;
-        private System.Windows.Forms.CheckBox check_title_fname;
         private System.Windows.Forms.SplitContainer splitContainer3;
         private System.Windows.Forms.Button btn_author_search;
         private System.Windows.Forms.TextBox tb_author_state;
-        private System.Windows.Forms.CheckBox check_author_state;
         private System.Windows.Forms.TextBox tb_author_city;
-        private System.Windows.Forms.CheckBox check_author_city;
         private System.Windows.Forms.TextBox tb_author_lName;
-        private System.Windows.Forms.CheckBox check_author_lName;
         private System.Windows.Forms.TextBox tb_author_fName;
-        private System.Windows.Forms.CheckBox check_author_fName;
         private System.Windows.Forms.Button btn_selectAuthor;
         private System.Windows.Forms.DataGridView dgv_author;
         private System.Windows.Forms.Button btn_selectTitle;
         private System.Windows.Forms.DataGridView dgv_title;
         private System.Windows.Forms.Button btn_addAuthor;
         private System.Windows.Forms.Button btn_newTitle;
-        private System.Windows.Forms.CheckBox check_store_name;
         private System.Windows.Forms.TextBox tb_store_id;
         private System.Windows.Forms.TextBox tb_store_address;
         private System.Windows.Forms.TextBox tb_store_city;
         private System.Windows.Forms.TextBox tb_store_state;
         private System.Windows.Forms.TextBox tb_store_zip;
         private System.Windows.Forms.TextBox tb_store_name;
-        private System.Windows.Forms.CheckBox check_store_address;
-        private System.Windows.Forms.CheckBox check_store_id;
-        private System.Windows.Forms.CheckBox check_store_zip;
-        private System.Windows.Forms.CheckBox check_store_state;
-        private System.Windows.Forms.CheckBox check_store_city;
         private System.Windows.Forms.Button btn_store_search;
         private System.Windows.Forms.DataGridView dgv_store;
         private System.Windows.Forms.Button btn_addStore;
         private System.Windows.Forms.Button btn_selectStore;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label13;
     }
 }
 
