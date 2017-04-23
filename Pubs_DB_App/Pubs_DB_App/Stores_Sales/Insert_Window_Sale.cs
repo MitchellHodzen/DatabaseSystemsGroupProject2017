@@ -16,7 +16,6 @@ namespace Pubs_DB_App.Stores_Sales
         public Insert_Window_Sale()
         {
             InitializeComponent();
-            string c1 = "select pubID from PUBLISHER";
             string c2 = "select titleID from title";
             string c3 = "select storeID from store";
             //Connets to the database using the connection string from the connection page
@@ -27,27 +26,19 @@ namespace Pubs_DB_App.Stores_Sales
                     //Open the database
                     connection.Open();
                     //Creates SQL command using the command string generated earlier
-                    SqlCommand pubid = new SqlCommand(c1, connection);
                     SqlCommand titleid = new SqlCommand(c2, connection);
                     SqlCommand storeid = new SqlCommand(c3, connection);
                     //Executes command and recieves output
-                    SqlDataAdapter adapter = new SqlDataAdapter(pubid);
                     SqlDataAdapter adapter2 = new SqlDataAdapter(titleid);
                     SqlDataAdapter adapter3 = new SqlDataAdapter(storeid);
                     //Fills comboboxes
                     DataTable dataTable = new DataTable();
                     DataTable dataTable2 = new DataTable();
                     DataTable dataTable3 = new DataTable();
-                    adapter.Fill(dataTable);
                     adapter2.Fill(dataTable2);
                     adapter3.Fill(dataTable3);
-                    pubidcombo.Items.Add("");
                     titleidcombo.Items.Add("");
                     storeidcombo.Items.Add("");
-                    foreach (DataRow row in dataTable.Rows)
-                    {
-                        pubidcombo.Items.Add(row[0]);
-                    }
                     foreach (DataRow row in dataTable2.Rows)
                     {
                         titleidcombo.Items.Add(row[0]);
@@ -69,40 +60,36 @@ namespace Pubs_DB_App.Stores_Sales
             string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
             char[] order = new char[8];
             Random random = new Random();
-
             for (int i = 0; i < order.Length; i++)
             {
                 order[i] = chars[random.Next(chars.Length)];
             }
-
             string finalorderno = new String(order);
-            using (SqlConnection connection = new SqlConnection(ConnectionWindow.ConnectionString))
+
+            if (!string.IsNullOrWhiteSpace(titleidcombo.Text) && !string.IsNullOrWhiteSpace(storeidcombo.Text) && 
+                !string.IsNullOrWhiteSpace(tb_qty.Text) && !string.IsNullOrWhiteSpace(tb_payTerms.Text) && 
+                !string.IsNullOrWhiteSpace(textBox1.Text))
             {
-                using (SqlCommand insertSale = new SqlCommand())
+                string command = "insert into sale " +
+                    "VALUES (" + "'" + finalorderno + "', '" + titleidcombo.Text + "', '" + storeidcombo.Text + "', '" + textBox1.Text + "', '" + tb_qty.Text + "', '" + tb_payTerms.Text + "')";
+                //Connets to the database using the connection string from the connection page
+                using (SqlConnection connection = new SqlConnection(ConnectionWindow.ConnectionString))
                 {
-                    insertSale.Connection = connection;
-                    insertSale.CommandType = CommandType.Text;
-                    insertSale.CommandText = "INSERT INTO SALE(orderno, titleid, storeid, orderdate, quantity, payterms) VALUES(@orderno, @titleid, @storeID, @orderdate, @quantity, @payterms)";
-                    insertSale.Parameters.AddWithValue("@storeID", storeidcombo.Text);
-                    insertSale.Parameters.AddWithValue("@orderno", finalorderno);
-                    insertSale.Parameters.AddWithValue("@pubid", pubidcombo.Text);
-                    insertSale.Parameters.AddWithValue("@titleid", titleidcombo.Text);
-                    insertSale.Parameters.AddWithValue("@quantity", tb_qty.Text);
-                    insertSale.Parameters.AddWithValue("@orderdate", tb_salesDateY.Text + combo_salesDateM.Text + combo_salesDateD.Text);
-                    insertSale.Parameters.AddWithValue("@payterms", tb_payTerms.Text);
                     try
                     {
+                        //Open the database
                         connection.Open();
-                        int recordsAffected = insertSale.ExecuteNonQuery();
-                        this.Close();
+                        //Creates SQL command using the command string generated earlier
+                        SqlCommand insertSale = new SqlCommand(command, connection);
+                        //Executes command
+                        insertSale.ExecuteNonQuery();
+                        //Display success message
+                        MessageBox.Show("Sale was added to database!", "Sale Created",
+                        MessageBoxButtons.OK);
                     }
                     catch (Exception error)
                     {
                         MessageBox.Show(error.ToString());
-                    }
-                    finally
-                    {
-                        connection.Close();
                     }
                 }
             }

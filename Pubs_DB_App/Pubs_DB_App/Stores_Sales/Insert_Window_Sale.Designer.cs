@@ -32,24 +32,20 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.storeidcombo = new System.Windows.Forms.ComboBox();
             this.titleidcombo = new System.Windows.Forms.ComboBox();
-            this.pubidcombo = new System.Windows.Forms.ComboBox();
             this.tb_payTerms = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.tb_qty = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.tb_salesDateY = new System.Windows.Forms.TextBox();
-            this.combo_salesDateD = new System.Windows.Forms.ComboBox();
-            this.combo_salesDateM = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // btn_Submit
             // 
-            this.btn_Submit.Location = new System.Drawing.Point(12, 232);
+            this.btn_Submit.Location = new System.Drawing.Point(12, 198);
             this.btn_Submit.Name = "btn_Submit";
             this.btn_Submit.Size = new System.Drawing.Size(260, 23);
             this.btn_Submit.TabIndex = 20;
@@ -59,23 +55,19 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.textBox1);
             this.groupBox2.Controls.Add(this.storeidcombo);
             this.groupBox2.Controls.Add(this.titleidcombo);
-            this.groupBox2.Controls.Add(this.pubidcombo);
             this.groupBox2.Controls.Add(this.tb_payTerms);
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Controls.Add(this.tb_qty);
             this.groupBox2.Controls.Add(this.label4);
-            this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Controls.Add(this.label1);
-            this.groupBox2.Controls.Add(this.tb_salesDateY);
-            this.groupBox2.Controls.Add(this.combo_salesDateD);
-            this.groupBox2.Controls.Add(this.combo_salesDateM);
             this.groupBox2.Controls.Add(this.label9);
             this.groupBox2.Location = new System.Drawing.Point(12, 12);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(260, 214);
+            this.groupBox2.Size = new System.Drawing.Size(361, 171);
             this.groupBox2.TabIndex = 19;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Sale Details";
@@ -83,7 +75,7 @@
             // storeidcombo
             // 
             this.storeidcombo.FormattingEnabled = true;
-            this.storeidcombo.Location = new System.Drawing.Point(74, 72);
+            this.storeidcombo.Location = new System.Drawing.Point(147, 51);
             this.storeidcombo.Name = "storeidcombo";
             this.storeidcombo.Size = new System.Drawing.Size(175, 21);
             this.storeidcombo.TabIndex = 42;
@@ -91,22 +83,14 @@
             // titleidcombo
             // 
             this.titleidcombo.FormattingEnabled = true;
-            this.titleidcombo.Location = new System.Drawing.Point(74, 47);
+            this.titleidcombo.Location = new System.Drawing.Point(147, 25);
             this.titleidcombo.Name = "titleidcombo";
             this.titleidcombo.Size = new System.Drawing.Size(175, 21);
             this.titleidcombo.TabIndex = 41;
             // 
-            // pubidcombo
-            // 
-            this.pubidcombo.FormattingEnabled = true;
-            this.pubidcombo.Location = new System.Drawing.Point(74, 21);
-            this.pubidcombo.Name = "pubidcombo";
-            this.pubidcombo.Size = new System.Drawing.Size(174, 21);
-            this.pubidcombo.TabIndex = 40;
-            // 
             // tb_payTerms
             // 
-            this.tb_payTerms.Location = new System.Drawing.Point(74, 125);
+            this.tb_payTerms.Location = new System.Drawing.Point(147, 103);
             this.tb_payTerms.MaxLength = 20;
             this.tb_payTerms.Name = "tb_payTerms";
             this.tb_payTerms.Size = new System.Drawing.Size(175, 20);
@@ -115,7 +99,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(11, 128);
+            this.label5.Location = new System.Drawing.Point(84, 106);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(57, 13);
             this.label5.TabIndex = 35;
@@ -123,7 +107,7 @@
             // 
             // tb_qty
             // 
-            this.tb_qty.Location = new System.Drawing.Point(74, 99);
+            this.tb_qty.Location = new System.Drawing.Point(147, 77);
             this.tb_qty.MaxLength = 4;
             this.tb_qty.Name = "tb_qty";
             this.tb_qty.Size = new System.Drawing.Size(175, 20);
@@ -132,25 +116,16 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(22, 102);
+            this.label4.Location = new System.Drawing.Point(95, 80);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(46, 13);
             this.label4.TabIndex = 33;
             this.label4.Text = "Quantity";
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(28, 24);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(40, 13);
-            this.label3.TabIndex = 31;
-            this.label3.Text = "Pub ID";
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(22, 76);
+            this.label2.Location = new System.Drawing.Point(95, 54);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(46, 13);
             this.label2.TabIndex = 29;
@@ -159,95 +134,33 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(27, 50);
+            this.label1.Location = new System.Drawing.Point(100, 28);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(41, 13);
             this.label1.TabIndex = 27;
             this.label1.Text = "Title ID";
             // 
-            // tb_salesDateY
-            // 
-            this.tb_salesDateY.Location = new System.Drawing.Point(171, 153);
-            this.tb_salesDateY.MaxLength = 4;
-            this.tb_salesDateY.Name = "tb_salesDateY";
-            this.tb_salesDateY.Size = new System.Drawing.Size(78, 20);
-            this.tb_salesDateY.TabIndex = 25;
-            // 
-            // combo_salesDateD
-            // 
-            this.combo_salesDateD.FormattingEnabled = true;
-            this.combo_salesDateD.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11",
-            "12",
-            "13",
-            "14",
-            "15",
-            "16",
-            "17",
-            "18",
-            "19",
-            "20",
-            "21",
-            "22",
-            "23",
-            "24",
-            "25",
-            "26",
-            "27",
-            "28",
-            "29",
-            "30",
-            "31"});
-            this.combo_salesDateD.Location = new System.Drawing.Point(126, 152);
-            this.combo_salesDateD.Name = "combo_salesDateD";
-            this.combo_salesDateD.Size = new System.Drawing.Size(39, 21);
-            this.combo_salesDateD.TabIndex = 24;
-            // 
-            // combo_salesDateM
-            // 
-            this.combo_salesDateM.FormattingEnabled = true;
-            this.combo_salesDateM.Items.AddRange(new object[] {
-            "Jan",
-            "Feb",
-            "Mar",
-            "Apr",
-            "May",
-            "Jun",
-            "Jul",
-            "Aug",
-            "Sep",
-            "Oct",
-            "Nov",
-            "Dec"});
-            this.combo_salesDateM.Location = new System.Drawing.Point(74, 152);
-            this.combo_salesDateM.Name = "combo_salesDateM";
-            this.combo_salesDateM.Size = new System.Drawing.Size(46, 21);
-            this.combo_salesDateM.TabIndex = 23;
-            // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(14, 156);
+            this.label9.Location = new System.Drawing.Point(6, 131);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(54, 13);
+            this.label9.Size = new System.Drawing.Size(135, 13);
             this.label9.TabIndex = 22;
-            this.label9.Text = "Sale Date";
+            this.label9.Text = "Sale Date (MM/DD/YYYY)";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(147, 128);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(175, 20);
+            this.textBox1.TabIndex = 43;
             // 
             // Insert_Window_Sale
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 269);
+            this.ClientSize = new System.Drawing.Size(398, 233);
             this.Controls.Add(this.btn_Submit);
             this.Controls.Add(this.groupBox2);
             this.Name = "Insert_Window_Sale";
@@ -263,19 +176,15 @@
 
         private System.Windows.Forms.Button btn_Submit;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.TextBox tb_salesDateY;
-        private System.Windows.Forms.ComboBox combo_salesDateD;
-        private System.Windows.Forms.ComboBox combo_salesDateM;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox tb_payTerms;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox tb_qty;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox pubidcombo;
         private System.Windows.Forms.ComboBox titleidcombo;
         private System.Windows.Forms.ComboBox storeidcombo;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }

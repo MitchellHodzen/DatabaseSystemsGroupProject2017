@@ -28,7 +28,7 @@ namespace Pubs_DB_App
             tb_orderNum.Text = orderNO;
             tb_title.Text = titleID;
             tb_store.Text = storeID;
-            tb_orderDate.Text = orderDate.ToString("yyyy-mm-dd");
+            tb_orderDate.Text = orderDate.ToString();
             tb_quantity.Text = quantity.ToString();
             tb_discount.Text = payterms;
             tb_pubid.Text = getPubID();
