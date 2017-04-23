@@ -72,11 +72,9 @@ namespace Pubs_DB_App.Publishers
         {
             if (verifySubmission())
             {
-                string command = "INSERT INTO EMPLOYMENT (SSN, jobID, job_lvl, positionStartDate, empID, pubID) VALUES (" +
+                string command = "INSERT INTO EMPLOYMENT (SSN, jobID, job_lvl, positionStartDate, pubID) VALUES (" +
                     tb_SSN.Text + ", " + combo_job.Text + ", " + tb_joblvl.Text + ", '" + tb_hireDateY.Text + "-"
-                    + combo_hireDateM.Text + "-" + combo_hireDateD.Text + "', 1234, '" + tb_pubID.Text + "')";
-
-                MessageBox.Show(command);
+                    + combo_hireDateM.Text + "-" + combo_hireDateD.Text + "', '" + tb_pubID.Text + "')";
 
                 using (SqlConnection connection = new SqlConnection(ConnectionWindow.ConnectionString))
                 {
