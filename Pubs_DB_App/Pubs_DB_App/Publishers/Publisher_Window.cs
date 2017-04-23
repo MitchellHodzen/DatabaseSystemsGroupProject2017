@@ -104,5 +104,11 @@ namespace Pubs_DB_App.Publishers
             startWindow.SetTab("tabPage2");
             startWindow.SetTitlesPublisher(pubID);
         }
+
+        private void btn_sales_Click(object sender, EventArgs e)
+        {
+            Sales viewSales = new Sales(pubID);
+            viewSales.Show();
+        }
     }
 }

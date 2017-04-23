@@ -186,6 +186,7 @@
             this.btn_sales.TabIndex = 18;
             this.btn_sales.Text = "Sales";
             this.btn_sales.UseVisualStyleBackColor = true;
+            this.btn_sales.Click += new System.EventHandler(this.btn_sales_Click);
             // 
             // tabPage2
             // 
