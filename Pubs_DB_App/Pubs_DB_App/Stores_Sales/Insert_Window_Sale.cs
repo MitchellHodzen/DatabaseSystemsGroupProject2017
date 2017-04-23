@@ -86,6 +86,7 @@ namespace Pubs_DB_App.Stores_Sales
                         //Display success message
                         MessageBox.Show("Sale was added to database!", "Sale Created",
                         MessageBoxButtons.OK);
+                        this.Close();
                     }
                     catch (Exception error)
                     {
