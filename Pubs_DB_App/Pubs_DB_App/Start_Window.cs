@@ -155,7 +155,7 @@ namespace Pubs_DB_App
         private void button5_Click(object sender, EventArgs e)
         {
             //Begin building the SQL command to view the titles
-            string command = "select title.titleID, title, type, pubDate, authorFName, authorLName from title " +
+            string command = "select Distinct title.titleID, title,type, pubDate from title " +
                 "join titleauthor on title.titleID = titleauthor.titleID " +
                 "join author On titleauthor.authorID = author.authorID";
 
@@ -192,6 +192,15 @@ namespace Pubs_DB_App
                     checks = checks + " AND ";
                 }
                 checks = checks + "pubDate = " + "'" + tb_title_pubDate.Text + "'" + " ";
+                addWhere = true;
+            }
+            if (!string.IsNullOrWhiteSpace(tb_title_titleID.Text))
+            {
+                if (addWhere == true)
+                {
+                    checks = checks + " AND ";
+                }
+                checks = checks + "title.titleID = " + "'" + tb_title_titleID.Text + "'" + " ";
                 addWhere = true;
             }
             //Combine the statements together
@@ -359,8 +368,8 @@ namespace Pubs_DB_App
 
         private void btn_newTitle_Click(object sender, EventArgs e)
         {
-            Insert_Authors_Window insertAuthor = new Insert_Authors_Window();
-            insertAuthor.Show();
+            Insert_Window_Title insertTitle = new Insert_Window_Title();
+            insertTitle.Show();
         }
 
         private void btn_addAuthor_Click(object sender, EventArgs e)

@@ -34,7 +34,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.dgv2 = new System.Windows.Forms.DataGridView();
             this.dgv = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgv2)).BeginInit();
@@ -86,7 +85,7 @@
             this.dgv2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv2.Location = new System.Drawing.Point(190, 113);
             this.dgv2.Name = "dgv2";
-            this.dgv2.Size = new System.Drawing.Size(388, 90);
+            this.dgv2.Size = new System.Drawing.Size(250, 67);
             this.dgv2.TabIndex = 89;
             // 
             // dgv
@@ -97,24 +96,14 @@
             this.dgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv.Location = new System.Drawing.Point(189, 28);
             this.dgv.Name = "dgv";
-            this.dgv.Size = new System.Drawing.Size(389, 66);
+            this.dgv.Size = new System.Drawing.Size(967, 66);
             this.dgv.TabIndex = 88;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(15, 129);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(119, 23);
-            this.button1.TabIndex = 92;
-            this.button1.Text = "Submit";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(189, 205);
+            this.button2.Location = new System.Drawing.Point(189, 186);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(389, 23);
+            this.button2.Size = new System.Drawing.Size(251, 23);
             this.button2.TabIndex = 93;
             this.button2.Text = "Select Title";
             this.button2.UseVisualStyleBackColor = true;
@@ -134,10 +123,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(590, 240);
+            this.ClientSize = new System.Drawing.Size(1168, 240);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.dgv2);
@@ -162,7 +150,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.DataGridView dgv2;
         private System.Windows.Forms.DataGridView dgv;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
     }

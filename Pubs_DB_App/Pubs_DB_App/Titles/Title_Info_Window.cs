@@ -21,44 +21,11 @@ namespace Pubs_DB_App
             InitializeComponent();
             this.titleID = titleID;
             label2.Text = titleID;
-        }
 
-        private void label7_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tb_city_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btn_edit_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click_1(object sender, EventArgs e)
-        {
-            string command = "select title.titleID, pubID, title, type, price, advance, royalty, notes, " +
-                 "pubdate from title join titleauthor on title.titleID = titleauthor.titleID " +
-                 "join author On titleauthor.authorID = author.authorID " +
-                 "Where title.titleID = " + "'" + titleID + "'";
+            string command = "select Distinct title.titleID, pubID, title, type, price, advance, royalty, notes, " +
+                "pubdate from title join titleauthor on title.titleID = titleauthor.titleID " +
+                "join author On titleauthor.authorID = author.authorID " +
+                "Where title.titleID = " + "'" + titleID + "'";
 
             string command2 = "select author.authorID, authorfname, authorlname from author " +
                 "Join TITLEAUTHOR on author.authorID = TITLEAUTHOR.authorID " +
@@ -96,6 +63,41 @@ namespace Pubs_DB_App
             }
         }
 
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tb_city_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_edit_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+           
+        }
+
         private void Title_Info_Window_Load(object sender, EventArgs e)
         {
 
@@ -111,6 +113,11 @@ namespace Pubs_DB_App
         {
             Insert_Window_Title insertTitle = new Insert_Window_Title();
             insertTitle.Show();
+        }
+
+        private void dgv_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

@@ -31,7 +31,6 @@
             this.dgv = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.dgv2 = new System.Windows.Forms.DataGridView();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -49,8 +48,9 @@
             this.dgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv.Location = new System.Drawing.Point(142, 33);
             this.dgv.Name = "dgv";
-            this.dgv.Size = new System.Drawing.Size(459, 68);
+            this.dgv.Size = new System.Drawing.Size(950, 68);
             this.dgv.TabIndex = 82;
+            this.dgv.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_CellContentClick);
             // 
             // label1
             // 
@@ -72,16 +72,6 @@
             this.label2.Text = "TitleID";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(9, 109);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(85, 23);
-            this.button1.TabIndex = 84;
-            this.button1.Text = "Submit";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
-            // 
             // dgv2
             // 
             this.dgv2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -90,7 +80,7 @@
             this.dgv2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv2.Location = new System.Drawing.Point(142, 130);
             this.dgv2.Name = "dgv2";
-            this.dgv2.Size = new System.Drawing.Size(458, 66);
+            this.dgv2.Size = new System.Drawing.Size(361, 84);
             this.dgv2.TabIndex = 85;
             // 
             // label3
@@ -113,9 +103,9 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(142, 202);
+            this.button2.Location = new System.Drawing.Point(142, 220);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(459, 23);
+            this.button2.Size = new System.Drawing.Size(361, 23);
             this.button2.TabIndex = 94;
             this.button2.Text = "Select Author";
             this.button2.UseVisualStyleBackColor = true;
@@ -123,7 +113,7 @@
             // 
             // tb_addtitle
             // 
-            this.tb_addtitle.Location = new System.Drawing.Point(0, 204);
+            this.tb_addtitle.Location = new System.Drawing.Point(0, 220);
             this.tb_addtitle.Name = "tb_addtitle";
             this.tb_addtitle.Size = new System.Drawing.Size(119, 23);
             this.tb_addtitle.TabIndex = 95;
@@ -135,13 +125,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(605, 239);
+            this.ClientSize = new System.Drawing.Size(1104, 255);
             this.Controls.Add(this.tb_addtitle);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.dgv2);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.dgv);
             this.Controls.Add(this.label1);
@@ -160,7 +149,6 @@
         private System.Windows.Forms.DataGridView dgv;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DataGridView dgv2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;

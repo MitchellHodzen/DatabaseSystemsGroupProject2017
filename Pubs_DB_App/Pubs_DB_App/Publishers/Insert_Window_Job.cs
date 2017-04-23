@@ -61,5 +61,10 @@ namespace Pubs_DB_App.Publishers
                 MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }
