@@ -47,8 +47,6 @@
             this.btn_submitTitle = new System.Windows.Forms.Button();
             this.btn_hire = new System.Windows.Forms.Button();
             this.btn_makeSale = new System.Windows.Forms.Button();
-            this.btn_edit = new System.Windows.Forms.Button();
-            this.btn_save = new System.Windows.Forms.Button();
             this.tb_pubid = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
@@ -59,7 +57,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(28, 29);
+            this.label1.Location = new System.Drawing.Point(28, 101);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(81, 13);
             this.label1.TabIndex = 0;
@@ -68,7 +66,7 @@
             // 
             // tb_pubname
             // 
-            this.tb_pubname.Location = new System.Drawing.Point(115, 26);
+            this.tb_pubname.Location = new System.Drawing.Point(115, 98);
             this.tb_pubname.Name = "tb_pubname";
             this.tb_pubname.ReadOnly = true;
             this.tb_pubname.Size = new System.Drawing.Size(163, 20);
@@ -77,7 +75,7 @@
             // 
             // tb_city
             // 
-            this.tb_city.Location = new System.Drawing.Point(115, 78);
+            this.tb_city.Location = new System.Drawing.Point(115, 150);
             this.tb_city.Name = "tb_city";
             this.tb_city.ReadOnly = true;
             this.tb_city.Size = new System.Drawing.Size(163, 20);
@@ -86,7 +84,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(85, 81);
+            this.label2.Location = new System.Drawing.Point(85, 153);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(24, 13);
             this.label2.TabIndex = 2;
@@ -94,7 +92,7 @@
             // 
             // tb_state
             // 
-            this.tb_state.Location = new System.Drawing.Point(115, 104);
+            this.tb_state.Location = new System.Drawing.Point(115, 176);
             this.tb_state.Name = "tb_state";
             this.tb_state.ReadOnly = true;
             this.tb_state.Size = new System.Drawing.Size(163, 20);
@@ -103,7 +101,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(77, 107);
+            this.label3.Location = new System.Drawing.Point(77, 179);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(32, 13);
             this.label3.TabIndex = 4;
@@ -111,7 +109,7 @@
             // 
             // tb_country
             // 
-            this.tb_country.Location = new System.Drawing.Point(115, 130);
+            this.tb_country.Location = new System.Drawing.Point(115, 202);
             this.tb_country.Name = "tb_country";
             this.tb_country.ReadOnly = true;
             this.tb_country.Size = new System.Drawing.Size(163, 20);
@@ -120,7 +118,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(66, 133);
+            this.label4.Location = new System.Drawing.Point(66, 205);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(43, 13);
             this.label4.TabIndex = 6;
@@ -242,30 +240,9 @@
             this.btn_makeSale.UseVisualStyleBackColor = true;
             this.btn_makeSale.Click += new System.EventHandler(this.button8_Click);
             // 
-            // btn_edit
-            // 
-            this.btn_edit.Location = new System.Drawing.Point(31, 156);
-            this.btn_edit.Name = "btn_edit";
-            this.btn_edit.Size = new System.Drawing.Size(115, 23);
-            this.btn_edit.TabIndex = 15;
-            this.btn_edit.Text = "Edit";
-            this.btn_edit.UseVisualStyleBackColor = true;
-            this.btn_edit.Click += new System.EventHandler(this.button9_Click);
-            // 
-            // btn_save
-            // 
-            this.btn_save.Enabled = false;
-            this.btn_save.Location = new System.Drawing.Point(163, 156);
-            this.btn_save.Name = "btn_save";
-            this.btn_save.Size = new System.Drawing.Size(115, 23);
-            this.btn_save.TabIndex = 16;
-            this.btn_save.Text = "Save";
-            this.btn_save.UseVisualStyleBackColor = true;
-            this.btn_save.Click += new System.EventHandler(this.button10_Click);
-            // 
             // tb_pubid
             // 
-            this.tb_pubid.Location = new System.Drawing.Point(115, 52);
+            this.tb_pubid.Location = new System.Drawing.Point(115, 124);
             this.tb_pubid.Name = "tb_pubid";
             this.tb_pubid.ReadOnly = true;
             this.tb_pubid.Size = new System.Drawing.Size(163, 20);
@@ -274,7 +251,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(45, 55);
+            this.label6.Location = new System.Drawing.Point(45, 127);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(64, 13);
             this.label6.TabIndex = 17;
@@ -288,8 +265,6 @@
             this.ClientSize = new System.Drawing.Size(580, 321);
             this.Controls.Add(this.tb_pubid);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.btn_save);
-            this.Controls.Add(this.btn_edit);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.tb_country);
             this.Controls.Add(this.label4);
@@ -331,8 +306,6 @@
         private System.Windows.Forms.Button btn_titles;
         private System.Windows.Forms.Button btn_employees;
         private System.Windows.Forms.Button btn_sales;
-        private System.Windows.Forms.Button btn_edit;
-        private System.Windows.Forms.Button btn_save;
         private System.Windows.Forms.TextBox tb_pubid;
         private System.Windows.Forms.Label label6;
     }
