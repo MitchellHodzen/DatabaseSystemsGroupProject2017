@@ -554,5 +554,41 @@ namespace Pubs_DB_App
             }
             combo.SelectedIndex = combo.FindStringExact(pubID);
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void executeQuery_Click(object sender, EventArgs e)
+        {
+            //Begin building the SQL command to view the publishers 
+            String command = queryTextBox.Text;
+
+            //Connets to the database using the connection string from the connection page
+            using (SqlConnection connection = new SqlConnection(ConnectionWindow.ConnectionString))
+            {
+                try
+                {
+                    //Open the database
+                    connection.Open();
+                    //Creates SQL command using the command string generated earlier
+                    SqlCommand query = new SqlCommand(command, connection);
+                    //Executes command and recieves output
+                    SqlDataAdapter adapter = new SqlDataAdapter(query);
+
+                    //Displays output on grid view
+                    DataTable dataTable = new DataTable();
+                    adapter.Fill(dataTable);
+                    queryDatagridView.DataSource = dataTable;
+                    queryDatagridView.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+                }
+                catch (Exception error)
+                {
+                    MessageBox.Show("That query could not be made");
+                    MessageBox.Show(error.ToString());
+                }
+            }
+        }
     }
 }

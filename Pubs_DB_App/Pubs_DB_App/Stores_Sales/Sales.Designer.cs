@@ -259,6 +259,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "Sales";
             this.Text = "View Sale";
+            this.Load += new System.EventHandler(this.Sales_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_sales)).EndInit();

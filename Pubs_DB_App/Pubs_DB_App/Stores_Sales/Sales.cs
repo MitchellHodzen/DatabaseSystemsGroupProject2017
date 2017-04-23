@@ -82,6 +82,12 @@ namespace Pubs_DB_App
             tb_discount.Text = string.Empty;
             tb_pubid.Text = string.Empty;
         }
+
+        private void Sales_Load(object sender, EventArgs e)
+        {
+
+        }
+
         private void btn_search_Click(Object sender, EventArgs e)
         {
             string cmd = "select orderNO, sale.titleID, storeID, title.pubID, orderDate, quantity, payterms from sale join title on sale.titleID = title.TitleID where pubid ='" + tb_pubid.Text + "'" + " ";
