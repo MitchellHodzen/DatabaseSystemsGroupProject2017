@@ -54,9 +54,9 @@
             // 
             // btn_submit
             // 
-            this.btn_submit.Location = new System.Drawing.Point(5, 290);
+            this.btn_submit.Location = new System.Drawing.Point(5, 296);
             this.btn_submit.Name = "btn_submit";
-            this.btn_submit.Size = new System.Drawing.Size(269, 23);
+            this.btn_submit.Size = new System.Drawing.Size(307, 23);
             this.btn_submit.TabIndex = 80;
             this.btn_submit.Text = "Submit";
             this.btn_submit.UseVisualStyleBackColor = true;
@@ -64,7 +64,7 @@
             // 
             // tb_royalty
             // 
-            this.tb_royalty.Location = new System.Drawing.Point(110, 207);
+            this.tb_royalty.Location = new System.Drawing.Point(149, 208);
             this.tb_royalty.Name = "tb_royalty";
             this.tb_royalty.Size = new System.Drawing.Size(163, 20);
             this.tb_royalty.TabIndex = 79;
@@ -89,7 +89,7 @@
             // 
             // tb_pubDate
             // 
-            this.tb_pubDate.Location = new System.Drawing.Point(111, 260);
+            this.tb_pubDate.Location = new System.Drawing.Point(149, 260);
             this.tb_pubDate.Name = "tb_pubDate";
             this.tb_pubDate.Size = new System.Drawing.Size(163, 20);
             this.tb_pubDate.TabIndex = 75;
@@ -99,13 +99,13 @@
             this.label9.AutoSize = true;
             this.label9.Location = new System.Drawing.Point(1, 238);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(79, 13);
+            this.label9.Size = new System.Drawing.Size(146, 13);
             this.label9.TabIndex = 74;
-            this.label9.Text = "Date Published";
+            this.label9.Text = "Date Published (MM/DD/YY)";
             // 
             // tb_advance
             // 
-            this.tb_advance.Location = new System.Drawing.Point(110, 185);
+            this.tb_advance.Location = new System.Drawing.Point(149, 185);
             this.tb_advance.Name = "tb_advance";
             this.tb_advance.Size = new System.Drawing.Size(163, 20);
             this.tb_advance.TabIndex = 73;
@@ -130,7 +130,7 @@
             // 
             // tb_price
             // 
-            this.tb_price.Location = new System.Drawing.Point(110, 159);
+            this.tb_price.Location = new System.Drawing.Point(149, 160);
             this.tb_price.Name = "tb_price";
             this.tb_price.Size = new System.Drawing.Size(163, 20);
             this.tb_price.TabIndex = 69;
@@ -146,7 +146,7 @@
             // 
             // tb_type
             // 
-            this.tb_type.Location = new System.Drawing.Point(110, 133);
+            this.tb_type.Location = new System.Drawing.Point(149, 133);
             this.tb_type.Name = "tb_type";
             this.tb_type.Size = new System.Drawing.Size(163, 20);
             this.tb_type.TabIndex = 67;
@@ -162,7 +162,7 @@
             // 
             // tb_title
             // 
-            this.tb_title.Location = new System.Drawing.Point(110, 107);
+            this.tb_title.Location = new System.Drawing.Point(149, 107);
             this.tb_title.Name = "tb_title";
             this.tb_title.Size = new System.Drawing.Size(163, 20);
             this.tb_title.TabIndex = 65;
@@ -178,7 +178,7 @@
             // 
             // tb_titleID
             // 
-            this.tb_titleID.Location = new System.Drawing.Point(110, 28);
+            this.tb_titleID.Location = new System.Drawing.Point(149, 29);
             this.tb_titleID.Name = "tb_titleID";
             this.tb_titleID.Size = new System.Drawing.Size(163, 20);
             this.tb_titleID.TabIndex = 63;
@@ -195,7 +195,7 @@
             // combo
             // 
             this.combo.FormattingEnabled = true;
-            this.combo.Location = new System.Drawing.Point(110, 55);
+            this.combo.Location = new System.Drawing.Point(149, 52);
             this.combo.Name = "combo";
             this.combo.Size = new System.Drawing.Size(163, 21);
             this.combo.TabIndex = 82;
@@ -213,7 +213,7 @@
             // combo2
             // 
             this.combo2.FormattingEnabled = true;
-            this.combo2.Location = new System.Drawing.Point(109, 82);
+            this.combo2.Location = new System.Drawing.Point(149, 82);
             this.combo2.Name = "combo2";
             this.combo2.Size = new System.Drawing.Size(163, 21);
             this.combo2.TabIndex = 85;
@@ -229,7 +229,7 @@
             // 
             // tb_notes
             // 
-            this.tb_notes.Location = new System.Drawing.Point(111, 234);
+            this.tb_notes.Location = new System.Drawing.Point(149, 235);
             this.tb_notes.Name = "tb_notes";
             this.tb_notes.Size = new System.Drawing.Size(163, 20);
             this.tb_notes.TabIndex = 86;
@@ -238,7 +238,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 414);
+            this.ClientSize = new System.Drawing.Size(324, 329);
             this.Controls.Add(this.tb_notes);
             this.Controls.Add(this.combo2);
             this.Controls.Add(this.label11);

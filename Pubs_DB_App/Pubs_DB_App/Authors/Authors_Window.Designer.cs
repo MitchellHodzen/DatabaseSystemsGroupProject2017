@@ -85,7 +85,7 @@
             this.dgv2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv2.Location = new System.Drawing.Point(190, 113);
             this.dgv2.Name = "dgv2";
-            this.dgv2.Size = new System.Drawing.Size(250, 67);
+            this.dgv2.Size = new System.Drawing.Size(250, 86);
             this.dgv2.TabIndex = 89;
             // 
             // dgv
@@ -101,7 +101,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(189, 186);
+            this.button2.Location = new System.Drawing.Point(189, 205);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(251, 23);
             this.button2.TabIndex = 93;
