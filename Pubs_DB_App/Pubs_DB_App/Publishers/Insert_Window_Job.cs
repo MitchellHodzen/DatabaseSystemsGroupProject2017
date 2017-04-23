@@ -43,10 +43,9 @@ namespace Pubs_DB_App.Publishers
                         connection.Open();
                         //Creates SQL command using the command string generated earlier
                         SqlCommand insertJobCommand = new SqlCommand(command, connection);
-                        //Executes command and recieves output
+                        //Executes command
                         insertJobCommand.ExecuteNonQuery();
                         //Display success message
-                        tb_description.Text = command;
                         MessageBox.Show("Job was submitted to the database successfully.", "Job Created",
                         MessageBoxButtons.OK);
                     }
@@ -58,7 +57,7 @@ namespace Pubs_DB_App.Publishers
             }
             else
             {
-                MessageBox.Show("You must input text for all required fields. Bad user! No!", "MISSING FEILDS ERROR",
+                MessageBox.Show("You must input text for all required fields.", "MISSING FEILDS ERROR",
                 MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }

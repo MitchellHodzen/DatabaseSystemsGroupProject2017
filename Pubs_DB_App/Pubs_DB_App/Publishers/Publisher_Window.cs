@@ -47,7 +47,7 @@ namespace Pubs_DB_App.Publishers
 
         private void button7_Click(object sender, EventArgs e)
         {
-            Insert_Window_Employee iwe = new Insert_Window_Employee();
+            Insert_Window_Employee iwe = new Insert_Window_Employee(pubID);
             iwe.Show();
         }
 
