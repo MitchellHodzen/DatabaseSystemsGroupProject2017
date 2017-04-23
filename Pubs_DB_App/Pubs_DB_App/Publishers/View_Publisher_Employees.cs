@@ -69,7 +69,7 @@ namespace Pubs_DB_App.Publishers
         private void btn_search_Click(object sender, EventArgs e)
         {
             //Begin building the SQL command to view the publishers 
-            String command = "SELECT empID, JOB.pubID, JOB.jobID, personFName, personMInit, personLName, PERSON.SSN, job_lvl, positionStartDate, JOB.jobDesc " + 
+            String command = "SELECT JOB.pubID, JOB.jobID, personFName, personMInit, personLName, PERSON.SSN, job_lvl, positionStartDate, JOB.jobDesc " + 
                              " FROM PERSON" +
                              " JOIN EMPLOYMENT ON PERSON.SSN = EMPLOYMENT.SSN" + 
                              " JOIN JOB ON EMPLOYMENT.jobID = JOB.jobID AND EMPLOYMENT.pubID = JOB.pubID" +
