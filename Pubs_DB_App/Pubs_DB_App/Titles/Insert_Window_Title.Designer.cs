@@ -55,7 +55,7 @@
             // btn_submit
             // 
             this.btn_submit.Location = new System.Drawing.Point(7, 364);
-            this.btn_submit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_submit.Margin = new System.Windows.Forms.Padding(4);
             this.btn_submit.Name = "btn_submit";
             this.btn_submit.Size = new System.Drawing.Size(409, 28);
             this.btn_submit.TabIndex = 80;
@@ -66,7 +66,7 @@
             // tb_royalty
             // 
             this.tb_royalty.Location = new System.Drawing.Point(215, 258);
-            this.tb_royalty.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_royalty.Margin = new System.Windows.Forms.Padding(4);
             this.tb_royalty.Name = "tb_royalty";
             this.tb_royalty.Size = new System.Drawing.Size(216, 22);
             this.tb_royalty.TabIndex = 79;
@@ -94,7 +94,7 @@
             // tb_pubDate
             // 
             this.tb_pubDate.Location = new System.Drawing.Point(215, 322);
-            this.tb_pubDate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_pubDate.Margin = new System.Windows.Forms.Padding(4);
             this.tb_pubDate.Name = "tb_pubDate";
             this.tb_pubDate.Size = new System.Drawing.Size(216, 22);
             this.tb_pubDate.TabIndex = 75;
@@ -112,7 +112,7 @@
             // tb_advance
             // 
             this.tb_advance.Location = new System.Drawing.Point(215, 230);
-            this.tb_advance.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_advance.Margin = new System.Windows.Forms.Padding(4);
             this.tb_advance.Name = "tb_advance";
             this.tb_advance.Size = new System.Drawing.Size(216, 22);
             this.tb_advance.TabIndex = 73;
@@ -140,7 +140,7 @@
             // tb_price
             // 
             this.tb_price.Location = new System.Drawing.Point(215, 199);
-            this.tb_price.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_price.Margin = new System.Windows.Forms.Padding(4);
             this.tb_price.Name = "tb_price";
             this.tb_price.Size = new System.Drawing.Size(216, 22);
             this.tb_price.TabIndex = 69;
@@ -158,7 +158,7 @@
             // tb_type
             // 
             this.tb_type.Location = new System.Drawing.Point(215, 166);
-            this.tb_type.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_type.Margin = new System.Windows.Forms.Padding(4);
             this.tb_type.Name = "tb_type";
             this.tb_type.Size = new System.Drawing.Size(216, 22);
             this.tb_type.TabIndex = 67;
@@ -176,7 +176,7 @@
             // tb_title
             // 
             this.tb_title.Location = new System.Drawing.Point(215, 134);
-            this.tb_title.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_title.Margin = new System.Windows.Forms.Padding(4);
             this.tb_title.Name = "tb_title";
             this.tb_title.Size = new System.Drawing.Size(216, 22);
             this.tb_title.TabIndex = 65;
@@ -194,7 +194,7 @@
             // tb_titleID
             // 
             this.tb_titleID.Location = new System.Drawing.Point(215, 38);
-            this.tb_titleID.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_titleID.Margin = new System.Windows.Forms.Padding(4);
             this.tb_titleID.Name = "tb_titleID";
             this.tb_titleID.Size = new System.Drawing.Size(216, 22);
             this.tb_titleID.TabIndex = 63;
@@ -213,7 +213,7 @@
             // 
             this.combo.FormattingEnabled = true;
             this.combo.Location = new System.Drawing.Point(215, 66);
-            this.combo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.combo.Margin = new System.Windows.Forms.Padding(4);
             this.combo.Name = "combo";
             this.combo.Size = new System.Drawing.Size(216, 24);
             this.combo.TabIndex = 82;
@@ -233,7 +233,7 @@
             // 
             this.combo2.FormattingEnabled = true;
             this.combo2.Location = new System.Drawing.Point(215, 103);
-            this.combo2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.combo2.Margin = new System.Windows.Forms.Padding(4);
             this.combo2.Name = "combo2";
             this.combo2.Size = new System.Drawing.Size(216, 24);
             this.combo2.TabIndex = 85;
@@ -251,7 +251,7 @@
             // tb_notes
             // 
             this.tb_notes.Location = new System.Drawing.Point(215, 291);
-            this.tb_notes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_notes.Margin = new System.Windows.Forms.Padding(4);
             this.tb_notes.Name = "tb_notes";
             this.tb_notes.Size = new System.Drawing.Size(216, 22);
             this.tb_notes.TabIndex = 86;
@@ -283,9 +283,10 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.tb_titleID);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Insert_Window_Title";
             this.Text = "Insert New Title";
+            this.Load += new System.EventHandler(this.Insert_Window_Title_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

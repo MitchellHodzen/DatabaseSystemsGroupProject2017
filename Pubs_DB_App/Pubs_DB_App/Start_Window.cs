@@ -19,6 +19,7 @@ namespace Pubs_DB_App
         {
             InitializeComponent();
             this.Shown += Start_Window_Shown;
+           
         }
 
         private void Start_Window_Shown(Object sender, EventArgs e)
@@ -155,7 +156,7 @@ namespace Pubs_DB_App
         private void button5_Click(object sender, EventArgs e)
         {
             //Begin building the SQL command to view the titles
-            string command = "select Distinct title.titleID, title,type, pubDate from title " +
+            string command = "select Distinct title.titleID, pubID, title,type, pubDate from title " +
                 "join titleauthor on title.titleID = titleauthor.titleID " +
                 "join author On titleauthor.authorID = author.authorID";
 
@@ -201,6 +202,15 @@ namespace Pubs_DB_App
                     checks = checks + " AND ";
                 }
                 checks = checks + "title.titleID = " + "'" + tb_title_titleID.Text + "'" + " ";
+                addWhere = true;
+            }
+            if (!string.IsNullOrWhiteSpace(combo.Text))
+            {
+                if (addWhere == true)
+                {
+                    checks = checks + " AND ";
+                }
+                checks = checks + "pubID = " + "'" + combo.Text + "'" + " ";
                 addWhere = true;
             }
             //Combine the statements together
@@ -482,6 +492,53 @@ namespace Pubs_DB_App
         private void tb_store_city_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        public void setPubCombo()
+        {
+            //Populates pubID and authorID combobox
+            String command = "Select pubID FROM Publisher";
+            //Connets to the database using the connection string from the connection page
+            using (SqlConnection connection = new SqlConnection(ConnectionWindow.ConnectionString))
+            {
+                try
+                {
+                    //Open the database
+                    connection.Open();
+                    //Creates SQL command using the command string generated earlier
+                    SqlCommand getpubIDCommand = new SqlCommand(command, connection);
+                    //Executes command and recieves output
+                    SqlDataAdapter adapter = new SqlDataAdapter(getpubIDCommand);
+                    //Fills comboboxes
+                    DataTable dataTable = new DataTable();
+                    adapter.Fill(dataTable);
+                    combo.Items.Add("");
+                    foreach (DataRow row in dataTable.Rows)
+                    {
+                        combo.Items.Add(row[0]);
+                    }
+                }
+                catch (Exception error)
+                {
+                    MessageBox.Show(error.ToString());
+                }
+            }
+        }
+
+        private void combo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+           
+        }
+
+        Boolean i = false;
+        private void combo_MouseClick(object sender, MouseEventArgs e)
+        {
+             if(i == false)
+            {
+                setPubCombo();
+                i = true;
+            }
+            
         }
     }
 }

@@ -156,5 +156,10 @@ namespace Pubs_DB_App
         {
 
         }
+
+        private void Insert_Window_Title_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
