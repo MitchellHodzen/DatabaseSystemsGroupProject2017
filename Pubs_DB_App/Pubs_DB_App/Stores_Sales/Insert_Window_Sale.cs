@@ -54,6 +54,39 @@ namespace Pubs_DB_App.Stores_Sales
                 }
             }
         }
+        public Insert_Window_Sale(string sid)
+        {
+            InitializeComponent();
+            string c2 = "select titleID from title";
+            string c3 = "select storeID from store";
+            storeidcombo.Text = sid;
+            //Connets to the database using the connection string from the connection page
+            using (SqlConnection connection = new SqlConnection(ConnectionWindow.ConnectionString))
+            {
+                try
+                {
+                    //Open the database
+                    connection.Open();
+                    //Creates SQL command using the command string generated earlier
+                    SqlCommand titleid = new SqlCommand(c2, connection);
+                    //Executes command and recieves output
+                    SqlDataAdapter adapter2 = new SqlDataAdapter(titleid);
+                    //Fills comboboxes
+                    DataTable dataTable2 = new DataTable();
+                    adapter2.Fill(dataTable2);
+                    titleidcombo.Items.Add("");
+                    storeidcombo.Items.Add("");
+                    foreach (DataRow row in dataTable2.Rows)
+                    {
+                        titleidcombo.Items.Add(row[0]);
+                    }
+                }
+                catch (Exception error)
+                {
+                    MessageBox.Show(error.ToString());
+                }
+            }
+        }
 
         private void button3_Click(object sender, EventArgs e)
         {

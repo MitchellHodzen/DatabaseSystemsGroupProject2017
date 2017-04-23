@@ -44,6 +44,7 @@
             this.dvg_results = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.btn_make_sale = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dvg_results)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -171,6 +172,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.btn_make_sale);
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label1);
@@ -192,6 +194,16 @@
             this.button1.Text = "View Sale";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.btn_view_sale_Click);
+            // 
+            // btn_make_sale
+            // 
+            this.btn_make_sale.Location = new System.Drawing.Point(77, 188);
+            this.btn_make_sale.Name = "btn_make_sale";
+            this.btn_make_sale.Size = new System.Drawing.Size(157, 23);
+            this.btn_make_sale.TabIndex = 16;
+            this.btn_make_sale.Text = "Make a Sale";
+            this.btn_make_sale.UseVisualStyleBackColor = true;
+            this.btn_make_sale.Click += new System.EventHandler(this.btn_make_sale_Click);
             // 
             // Stores
             // 
@@ -237,5 +249,6 @@
         private System.Windows.Forms.DataGridView dvg_results;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_make_sale;
     }
 }

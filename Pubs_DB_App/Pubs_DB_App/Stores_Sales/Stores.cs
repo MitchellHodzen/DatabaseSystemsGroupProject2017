@@ -9,15 +9,18 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Pubs_DB_App.Publishers;
 using System.Data.SqlClient;
+using Pubs_DB_App.Stores_Sales;
 
 namespace Pubs_DB_App.Publishers
 {
     public partial class Stores : Form
     {
+        string storeid;
         public Stores(string storeID, string storeName, string address, string city, string state, string zip)
         {
             InitializeComponent();
             tb_storeID.Text = storeID;
+            this.storeid = storeID;
             tb_storeName.Text = storeName;
             tb_address.Text = address;
             tb_city.Text = city;
@@ -78,6 +81,12 @@ namespace Pubs_DB_App.Publishers
         private void btn_remove_store_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btn_make_sale_Click(object sender, EventArgs e)
+        {
+            Insert_Window_Sale storeSale = new Insert_Window_Sale(storeid);
+            storeSale.Show();
         }
     }
 
