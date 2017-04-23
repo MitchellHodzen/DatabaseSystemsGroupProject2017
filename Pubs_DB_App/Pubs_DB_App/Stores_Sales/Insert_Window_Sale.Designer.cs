@@ -30,6 +30,9 @@
         {
             this.btn_Submit = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.storeidcombo = new System.Windows.Forms.ComboBox();
+            this.titleidcombo = new System.Windows.Forms.ComboBox();
+            this.pubidcombo = new System.Windows.Forms.ComboBox();
             this.tb_payTerms = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.tb_qty = new System.Windows.Forms.TextBox();
@@ -37,14 +40,10 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.btn_currentDate = new System.Windows.Forms.Button();
             this.tb_salesDateY = new System.Windows.Forms.TextBox();
             this.combo_salesDateD = new System.Windows.Forms.ComboBox();
             this.combo_salesDateM = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -60,9 +59,9 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.comboBox3);
-            this.groupBox2.Controls.Add(this.comboBox2);
-            this.groupBox2.Controls.Add(this.comboBox1);
+            this.groupBox2.Controls.Add(this.storeidcombo);
+            this.groupBox2.Controls.Add(this.titleidcombo);
+            this.groupBox2.Controls.Add(this.pubidcombo);
             this.groupBox2.Controls.Add(this.tb_payTerms);
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Controls.Add(this.tb_qty);
@@ -70,7 +69,6 @@
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Controls.Add(this.label1);
-            this.groupBox2.Controls.Add(this.btn_currentDate);
             this.groupBox2.Controls.Add(this.tb_salesDateY);
             this.groupBox2.Controls.Add(this.combo_salesDateD);
             this.groupBox2.Controls.Add(this.combo_salesDateM);
@@ -82,10 +80,34 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Sale Details";
             // 
+            // storeidcombo
+            // 
+            this.storeidcombo.FormattingEnabled = true;
+            this.storeidcombo.Location = new System.Drawing.Point(74, 72);
+            this.storeidcombo.Name = "storeidcombo";
+            this.storeidcombo.Size = new System.Drawing.Size(175, 21);
+            this.storeidcombo.TabIndex = 42;
+            // 
+            // titleidcombo
+            // 
+            this.titleidcombo.FormattingEnabled = true;
+            this.titleidcombo.Location = new System.Drawing.Point(74, 47);
+            this.titleidcombo.Name = "titleidcombo";
+            this.titleidcombo.Size = new System.Drawing.Size(175, 21);
+            this.titleidcombo.TabIndex = 41;
+            // 
+            // pubidcombo
+            // 
+            this.pubidcombo.FormattingEnabled = true;
+            this.pubidcombo.Location = new System.Drawing.Point(74, 21);
+            this.pubidcombo.Name = "pubidcombo";
+            this.pubidcombo.Size = new System.Drawing.Size(174, 21);
+            this.pubidcombo.TabIndex = 40;
+            // 
             // tb_payTerms
             // 
             this.tb_payTerms.Location = new System.Drawing.Point(74, 125);
-            this.tb_payTerms.MaxLength = 4;
+            this.tb_payTerms.MaxLength = 20;
             this.tb_payTerms.Name = "tb_payTerms";
             this.tb_payTerms.Size = new System.Drawing.Size(175, 20);
             this.tb_payTerms.TabIndex = 36;
@@ -142,15 +164,6 @@
             this.label1.Size = new System.Drawing.Size(41, 13);
             this.label1.TabIndex = 27;
             this.label1.Text = "Title ID";
-            // 
-            // btn_currentDate
-            // 
-            this.btn_currentDate.Location = new System.Drawing.Point(74, 179);
-            this.btn_currentDate.Name = "btn_currentDate";
-            this.btn_currentDate.Size = new System.Drawing.Size(175, 23);
-            this.btn_currentDate.TabIndex = 26;
-            this.btn_currentDate.Text = "Current Date";
-            this.btn_currentDate.UseVisualStyleBackColor = true;
             // 
             // tb_salesDateY
             // 
@@ -230,31 +243,6 @@
             this.label9.TabIndex = 22;
             this.label9.Text = "Sale Date";
             // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(74, 21);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(174, 21);
-            this.comboBox1.TabIndex = 40;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(74, 47);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(175, 21);
-            this.comboBox2.TabIndex = 41;
-            // 
-            // comboBox3
-            // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(74, 72);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(175, 21);
-            this.comboBox3.TabIndex = 42;
-            // 
             // Insert_Window_Sale
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -275,7 +263,6 @@
 
         private System.Windows.Forms.Button btn_Submit;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Button btn_currentDate;
         private System.Windows.Forms.TextBox tb_salesDateY;
         private System.Windows.Forms.ComboBox combo_salesDateD;
         private System.Windows.Forms.ComboBox combo_salesDateM;
@@ -287,8 +274,8 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox pubidcombo;
+        private System.Windows.Forms.ComboBox titleidcombo;
+        private System.Windows.Forms.ComboBox storeidcombo;
     }
 }

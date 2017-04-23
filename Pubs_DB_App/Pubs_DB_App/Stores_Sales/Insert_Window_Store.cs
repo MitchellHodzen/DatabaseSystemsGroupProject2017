@@ -40,8 +40,6 @@ namespace Pubs_DB_App
                         connection.Open();
                         int recordsAffected = insertStore.ExecuteNonQuery();
                         this.Close();
-                       
-
                     }
                     catch (Exception error)
                     {

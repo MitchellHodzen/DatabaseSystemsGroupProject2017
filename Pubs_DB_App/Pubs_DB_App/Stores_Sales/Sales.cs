@@ -100,8 +100,7 @@ namespace Pubs_DB_App
             }
             if (!string.IsNullOrWhiteSpace(tb_orderDate.Text))
             {
-                DateTime oDate = DateTime.ParseExact(tb_orderDate.Text, "yyyy-mm-dd", null);
-                check = check + "and orderdate = " + "'" + oDate + "'" + " ";
+                check = check + "and orderdate = " + "'" + tb_orderDate.Text + "'" + " ";
             }
             if (!string.IsNullOrWhiteSpace(tb_quantity.Text))
             {
