@@ -15,7 +15,8 @@ namespace Pubs_DB_App.Publishers
     {
 
         public string pubID;
-        public Publisher_Window(string pubID, string name, string city, string state, string country)
+        Start_Window startWindow;
+        public Publisher_Window(Start_Window startWindow, string pubID, string name, string city, string state, string country)
         {
             InitializeComponent();
             this.pubID = pubID;
@@ -23,6 +24,7 @@ namespace Pubs_DB_App.Publishers
             this.tb_city.Text = city;
             this.tb_state.Text = state;
             this.tb_country.Text = country;
+            this.startWindow = startWindow;
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -94,6 +96,12 @@ namespace Pubs_DB_App.Publishers
         private void label5_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btn_titles_Click(object sender, EventArgs e)
+        {
+            startWindow.Focus();
+            startWindow.SetTab("tabPage2");
         }
     }
 }

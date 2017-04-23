@@ -166,6 +166,7 @@
             this.btn_titles.TabIndex = 19;
             this.btn_titles.Text = "Titles";
             this.btn_titles.UseVisualStyleBackColor = true;
+            this.btn_titles.Click += new System.EventHandler(this.btn_titles_Click);
             // 
             // btn_employees
             // 

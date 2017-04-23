@@ -349,9 +349,14 @@ namespace Pubs_DB_App
                 stateString = (string)dgv_pub.CurrentRow.Cells[3].Value;
             }
 
-            Publisher_Window pubWindow = new Publisher_Window((string)dgv_pub.CurrentRow.Cells[0].Value, (string)dgv_pub.CurrentRow.Cells[1].Value,
+            Publisher_Window pubWindow = new Publisher_Window(this, (string)dgv_pub.CurrentRow.Cells[0].Value, (string)dgv_pub.CurrentRow.Cells[1].Value,
                 (string)dgv_pub.CurrentRow.Cells[2].Value, stateString, (string)dgv_pub.CurrentRow.Cells[4].Value);
             pubWindow.Show();
+        }
+
+        public void SetTab(string tab)
+        {
+            tabControl1.SelectTab(tab);
         }
 
         private void btn_selectTitle_Click(object sender, EventArgs e)
