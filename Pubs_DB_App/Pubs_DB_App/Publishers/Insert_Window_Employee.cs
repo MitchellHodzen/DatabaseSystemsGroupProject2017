@@ -72,14 +72,15 @@ namespace Pubs_DB_App.Publishers
         {
             if (verifySubmission())
             {
-                string command = "INSERT INTO EMPLOYMENT (SSN, jobID, job_lvl, positionStartDate, pubID) VALUES (" +
-                    tb_SSN.Text + ", " + combo_job.Text + ", " + tb_joblvl.Text + ", '" + tb_hireDateY.Text + "-"
+                string command = "INSERT INTO EMPLOYMENT (SSN, jobID, job_lvl, positionStartDate, pubID) VALUES ('" +
+                    tb_SSN.Text + "', " + combo_job.Text + ", " + tb_joblvl.Text + ", '" + tb_hireDateY.Text + "-"
                     + combo_hireDateM.Text + "-" + combo_hireDateD.Text + "', '" + tb_pubID.Text + "')";
 
                 using (SqlConnection connection = new SqlConnection(ConnectionWindow.ConnectionString))
                 {
                     try
                     {
+                        MessageBox.Show(command);
                         //Open the database
                         connection.Open();
                         //Creates SQL command using the command string generated earlier
@@ -200,13 +201,13 @@ namespace Pubs_DB_App.Publishers
             string command;
             if (!string.IsNullOrWhiteSpace(tb_middle.Text))
             {
-                command = "INSERT INTO PERSON (SSN, personFName, personLName, personMInit) VALUES ("
-                + tb_SSN.Text + ", '" + tb_fName.Text + "', '" + tb_lName.Text + "', '" + tb_middle.Text + "')";
+                command = "INSERT INTO PERSON (SSN, personFName, personLName, personMInit) VALUES ('"
+                + tb_SSN.Text + "', '" + tb_fName.Text + "', '" + tb_lName.Text + "', '" + tb_middle.Text + "')";
             }
             else
             {
-                command = "INSERT INTO PERSON (SSN, personFName, personLName) VALUES ("
-                + tb_SSN.Text + ", '" + tb_fName.Text + "', '" + tb_lName.Text + "')";
+                command = "INSERT INTO PERSON (SSN, personFName, personLName) VALUES ('"
+                + tb_SSN.Text + "', '" + tb_fName.Text + "', '" + tb_lName.Text + "')";
             }
 
             //insert command into DB
