@@ -77,6 +77,7 @@ namespace Pubs_DB_App
                 {
                     checks = checks + ", null ";
                 }
+                checks = checks + ", null ";
                 if (!string.IsNullOrWhiteSpace(tb_price.Text))
                 {
                     checks = checks + ", '" + tb_price.Text + "'";
@@ -85,7 +86,7 @@ namespace Pubs_DB_App
                 {
                     checks = checks + ", null ";
                 }
-                checks = checks + ", null ";
+                
                 if (!string.IsNullOrWhiteSpace(tb_advance.Text))
                 {
 
@@ -139,7 +140,7 @@ namespace Pubs_DB_App
                         insertTitleCommand.ExecuteNonQuery();
                         insertTitleAuthor.ExecuteNonQuery();
                         //Display success message
-                        MessageBox.Show("Title was submitted to the database successfully.", "Title Created",
+                        MessageBox.Show("Title was submitted to the Database!", "Title Created",
                         MessageBoxButtons.OK);
                     }
                     catch (Exception error)
