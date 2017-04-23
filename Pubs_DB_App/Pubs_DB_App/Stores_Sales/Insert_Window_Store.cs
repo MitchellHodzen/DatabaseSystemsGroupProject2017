@@ -39,9 +39,9 @@ namespace Pubs_DB_App
                     {
                         connection.Open();
                         int recordsAffected = insertStore.ExecuteNonQuery();
-                        Success success = new Success();
+                        //Success success = new Success();
                         this.Close();
-                        success.Show();
+                        //success.Show();
 
                     }
                     catch (Exception error)

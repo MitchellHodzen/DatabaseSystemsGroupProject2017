@@ -90,7 +90,7 @@ namespace Pubs_DB_App.Publishers
             }
             if (!string.IsNullOrWhiteSpace(tb_SSN.Text))
             {
-                checks = checks + "AND SSN = " + "'" + tb_SSN.Text + "' ";
+                checks = checks + "AND PERSON.SSN = " + "'" + tb_SSN.Text + "' ";
             }
             if (!string.IsNullOrWhiteSpace(JobList.Text))
             {
