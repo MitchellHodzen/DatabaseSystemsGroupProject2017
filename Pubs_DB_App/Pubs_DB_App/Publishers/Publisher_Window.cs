@@ -55,7 +55,7 @@ namespace Pubs_DB_App.Publishers
 
         private void button6_Click(object sender, EventArgs e)
         {
-            Insert_Window_Title iwt = new Insert_Window_Title();
+            Insert_Window_Title iwt = new Insert_Window_Title(pubID);
             iwt.Show();
         }
 
@@ -102,6 +102,7 @@ namespace Pubs_DB_App.Publishers
         {
             startWindow.Focus();
             startWindow.SetTab("tabPage2");
+            startWindow.SetTitlesPublisher(pubID);
         }
     }
 }

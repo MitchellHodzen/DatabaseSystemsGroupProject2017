@@ -111,7 +111,7 @@ namespace Pubs_DB_App
 
         private void tb_addtitle_Click(object sender, EventArgs e)
         {
-            Insert_Window_Title insertTitle = new Insert_Window_Title();
+            Insert_Window_Title insertTitle = new Insert_Window_Title(null);
             insertTitle.Show();
         }
 

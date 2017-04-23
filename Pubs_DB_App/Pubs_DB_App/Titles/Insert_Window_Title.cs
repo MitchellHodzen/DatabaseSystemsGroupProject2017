@@ -13,7 +13,7 @@ namespace Pubs_DB_App
 {
     public partial class Insert_Window_Title : Form
     {
-        public Insert_Window_Title()
+        public Insert_Window_Title(string pubID)
         {
             InitializeComponent();
             //Populates pubID and authorID combobox
@@ -52,6 +52,10 @@ namespace Pubs_DB_App
                 {
                     MessageBox.Show(error.ToString());
                 }
+            }
+            if (!string.IsNullOrWhiteSpace(pubID))
+            {
+                combo.SelectedIndex = combo.FindStringExact(pubID);
             }
         }
 

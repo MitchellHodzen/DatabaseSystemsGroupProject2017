@@ -383,7 +383,7 @@ namespace Pubs_DB_App
 
         private void btn_newTitle_Click(object sender, EventArgs e)
         {
-            Insert_Window_Title insertTitle = new Insert_Window_Title();
+            Insert_Window_Title insertTitle = new Insert_Window_Title(null);
             insertTitle.Show();
         }
 
@@ -544,6 +544,15 @@ namespace Pubs_DB_App
                 i = true;
             }
             
+        }
+        public void SetTitlesPublisher(string pubID)
+        {
+            if (i == false)
+            {
+                setPubCombo();
+                i = true;
+            }
+            combo.SelectedIndex = combo.FindStringExact(pubID);
         }
     }
 }
