@@ -58,7 +58,6 @@ namespace Pubs_DB_App.Stores_Sales
         {
             InitializeComponent();
             string c2 = "select titleID from title";
-            string c3 = "select storeID from store";
             storeidcombo.Text = sid;
             //Connets to the database using the connection string from the connection page
             using (SqlConnection connection = new SqlConnection(ConnectionWindow.ConnectionString))

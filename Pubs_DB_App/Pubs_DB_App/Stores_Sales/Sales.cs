@@ -32,6 +32,55 @@ namespace Pubs_DB_App
             tb_quantity.Text = quantity.ToString();
             tb_discount.Text = payterms;
             tb_pubid.Text = getPubID();
+            string cmd = "select orderNO, sale.titleID, storeID, title.pubID, orderDate, quantity, payterms from sale join title on sale.titleID = title.TitleID where pubid ='" + tb_pubid.Text + "'" + " ";
+            string check = "";
+            if (!string.IsNullOrWhiteSpace(tb_orderNum.Text))
+            {
+                check = check + "and orderNO = " + "'" + tb_orderNum.Text + "'" + " ";
+            }
+            if (!string.IsNullOrWhiteSpace(tb_title.Text))
+            {
+                check = check + "and sale.titleid = " + "'" + tb_title.Text + "'" + " ";
+            }
+            if (!string.IsNullOrWhiteSpace(tb_store.Text))
+            {
+                check = check + "and storeid = " + "'" + tb_store.Text + "'" + " ";
+            }
+            if (!string.IsNullOrWhiteSpace(tb_orderDate.Text))
+            {
+                check = check + "and orderdate = " + "'" + tb_orderDate.Text + "'" + " ";
+            }
+            if (!string.IsNullOrWhiteSpace(tb_quantity.Text))
+            {
+                check = check + "and quantity = " + "'" + tb_quantity.Text + "'" + " ";
+            }
+            if (!string.IsNullOrWhiteSpace(tb_discount.Text))
+            {
+                check = check + "and payterms = " + "'" + tb_discount.Text + "'" + " ";
+            }
+            cmd = cmd + check;
+            using (SqlConnection connection = new SqlConnection(ConnectionWindow.ConnectionString))
+            {
+                try
+                {
+                    //Open the database
+                    connection.Open();
+                    //Creates SQL command using the command string generated earlier
+                    SqlCommand viewJobsCommand = new SqlCommand(cmd, connection);
+                    //Executes command and recieves output
+                    SqlDataAdapter adapter = new SqlDataAdapter(viewJobsCommand);
+
+                    //Displays output on grid view
+                    DataTable dataTable = new DataTable();
+                    adapter.Fill(dataTable);
+                    dgv_sales.DataSource = dataTable;
+                    dgv_sales.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+                }
+                catch (Exception error)
+                {
+                    MessageBox.Show(error.ToString());
+                }
+            }
         }
         public Sales(string pubID)
         {
@@ -61,7 +110,7 @@ namespace Pubs_DB_App
         }
         private void btn_view_title_info_Click(object sender, EventArgs e)
         {
-            Title_Info_Window titleWindow = new Title_Info_Window(titleID);
+            Title_Info_Window titleWindow = new Title_Info_Window((string)dgv_sales.CurrentRow.Cells[1].Value);
             this.Close();
             titleWindow.Show();
         }
