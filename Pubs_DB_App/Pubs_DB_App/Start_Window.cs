@@ -156,7 +156,7 @@ namespace Pubs_DB_App
         private void button5_Click(object sender, EventArgs e)
         {
             //Begin building the SQL command to view the titles
-            string command = "select Distinct title.titleID, pubID, title,type, pubDate from title " +
+            string command = "select Distinct title.titleID, pubID, title, type, pubDate from title " +
                 "join titleauthor on title.titleID = titleauthor.titleID " +
                 "join author On titleauthor.authorID = author.authorID";
 
@@ -211,6 +211,15 @@ namespace Pubs_DB_App
                     checks = checks + " AND ";
                 }
                 checks = checks + "pubID = " + "'" + combo.Text + "'" + " ";
+                addWhere = true;
+            }
+            if (!string.IsNullOrWhiteSpace(tb_title_title.Text))
+            {
+                if (addWhere == true)
+                {
+                    checks = checks + " AND ";
+                }
+                checks = checks + "title = " + "'" + tb_title_title.Text + "'" + " ";
                 addWhere = true;
             }
             //Combine the statements together
