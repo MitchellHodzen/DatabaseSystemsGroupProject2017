@@ -201,7 +201,7 @@
             this.btn_make_sale.Name = "btn_make_sale";
             this.btn_make_sale.Size = new System.Drawing.Size(157, 23);
             this.btn_make_sale.TabIndex = 16;
-            this.btn_make_sale.Text = "Make a Sale";
+            this.btn_make_sale.Text = "Make a Purchase";
             this.btn_make_sale.UseVisualStyleBackColor = true;
             this.btn_make_sale.Click += new System.EventHandler(this.btn_make_sale_Click);
             // 
