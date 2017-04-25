@@ -44,9 +44,18 @@ namespace Pubs_DB_App
             string command = "SELECT pubID, pubName, city, state, country FROM PUBLISHER";
             bool addWhere = false;
             string checks = "";
-            //Construct the where statement based on user input
+            //Construct the where statement based on user 
+            if (!string.IsNullOrWhiteSpace(tb_pub_pubID.Text))
+            {
+                checks = checks + "pubID = " + "'" + tb_pub_pubID.Text + "'" + " ";
+                addWhere = true;
+            }
             if (!string.IsNullOrWhiteSpace(tb_pub_pubName.Text))
             {
+                if (addWhere == true)
+                {
+                    checks = checks + " AND ";
+                }
                 checks = checks + "pubName = " + "'" + tb_pub_pubName.Text + "'" + " ";
                 addWhere = true;
             }

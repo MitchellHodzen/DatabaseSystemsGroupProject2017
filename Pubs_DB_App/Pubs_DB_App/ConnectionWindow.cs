@@ -26,7 +26,9 @@ namespace Pubs_DB_App
 
         private void retrieveInput_Click(object sender, EventArgs e)
         {
+            //Assigns the user input server name to a variable
             string serverName = serverNameInput.Text;
+            //Creates a connection string based on the server name and assigns it to the ConnectionString static variable
             ConnectionString = "Server = " + serverName + ";" + "database = Group1Pubs;" + "Trusted_Connection = yes;";
             this.Close();
         }
