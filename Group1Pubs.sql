@@ -2466,7 +2466,8 @@ INSERT INTO PERSON (SSN, personFName, personMInit, personLName) VALUES
 	('111141111', 'Manuel', '', 'Pereira'),
 	('111151111', 'Karla', 'J', 'Jablonski'),
 	('111161111', 'Pirkko', 'O', 'Koskitalo'),
-	('111171111', 'Patricia', 'C', 'McKenna')
+	('111171111', 'Patricia', 'C', 'McKenna'),
+	('111181111', 'Joe', '', 'Shmoe')
 GO
 
 INSERT INTO EMPLOYMENT (jobID, job_lvl, pubID, positionStartDate, SSN) VALUES
@@ -2512,7 +2513,8 @@ INSERT INTO EMPLOYMENT (jobID, job_lvl, pubID, positionStartDate, SSN) VALUES
 	(8, 101, (SELECT pubID FROM JOB WHERE jobID = 8), '01/09/89', '111141111'),
 	(9, 170, (SELECT pubID FROM JOB WHERE jobID = 9), '03/11/94', '111151111'),
 	(10, 80, (SELECT pubID FROM JOB WHERE jobID = 10),'11/29/93', '111161111'),
-	(11, 150, (SELECT pubID FROM JOB WHERE jobID = 11),'08/01/89','111171111')
+	(11, 150, (SELECT pubID FROM JOB WHERE jobID = 11),'08/01/89','111171111'),
+	(9, 170, (SELECT pubID FROM JOB WHERE jobID = 9),'08/01/89','111171111')
 GO
 
 INSERT INTO DISCOUNT (pubID, discountTypeDesc, discountAmount) VALUES
@@ -2581,6 +2583,17 @@ INSERT INTO CUSTDISC (pubID, storeID, discountID) VALUES
 	('9999', 8042, 36),
 	('9999', 6380, 37),	
 	('9999', 6380, 38)
+GO
+
+INSERT INTO SALEDISCOUNT (discountID, orderNO, pubID) VALUES
+	(3, '6871', '0736'),
+	(3, '722a', '0736'),
+	(3, 'A2976', '0736'),
+	(5, 'D4482', '0736'),
+	(4, 'P2121', '0736'),
+	(4, 'P2122', '0736'),
+	(4, 'P2123', '0736'),
+	(5, 'QA7442.3', '0736')
 GO
 
 INSERT INTO VOLUMEDISC (pubID, discountID, lowQty, highQty) VALUES
