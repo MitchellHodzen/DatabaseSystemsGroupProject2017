@@ -366,20 +366,28 @@ namespace Pubs_DB_App
 
         private void button2_Click(object sender, EventArgs e)
         {
-            string stateString;
-            //check if state is null before passing it as string
-            if (dgv_pub.CurrentRow.Cells[3].Value.GetType() == typeof(DBNull))
+            try
             {
-                stateString = "";
+                string stateString;
+                //check if state is null before passing it as string
+                if (dgv_pub.CurrentRow.Cells[3].Value.GetType() == typeof(DBNull))
+                {
+                    stateString = "";
+                }
+                else
+                {
+                    stateString = (string)dgv_pub.CurrentRow.Cells[3].Value;
+                }
+
+                Publisher_Window pubWindow = new Publisher_Window(this, (string)dgv_pub.CurrentRow.Cells[0].Value, (string)dgv_pub.CurrentRow.Cells[1].Value,
+                    (string)dgv_pub.CurrentRow.Cells[2].Value, stateString, (string)dgv_pub.CurrentRow.Cells[4].Value);
+                pubWindow.Show();
             }
-            else
+            catch
             {
-                stateString = (string)dgv_pub.CurrentRow.Cells[3].Value;
+                MessageBox.Show("Please search and select a publisher");
             }
 
-            Publisher_Window pubWindow = new Publisher_Window(this, (string)dgv_pub.CurrentRow.Cells[0].Value, (string)dgv_pub.CurrentRow.Cells[1].Value,
-                (string)dgv_pub.CurrentRow.Cells[2].Value, stateString, (string)dgv_pub.CurrentRow.Cells[4].Value);
-            pubWindow.Show();
         }
 
         public void SetTab(string tab)
